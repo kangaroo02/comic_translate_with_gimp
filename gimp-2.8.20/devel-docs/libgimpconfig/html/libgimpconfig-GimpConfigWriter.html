@@ -1,0 +1,651 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GimpConfigWriter: GIMP Config Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Config Library Reference Manual">
+<link rel="up" href="libgimpconfig.html" title="Part I. GIMP Config Library">
+<link rel="prev" href="libgimpconfig-GimpConfig-utils.html" title="GimpConfig-utils">
+<link rel="next" href="libgimpconfig-GimpScanner.html" title="GimpScanner">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimpconfig-GimpConfigWriter.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimpconfig.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimpconfig-GimpConfig-utils.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimpconfig-GimpScanner.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimpconfig-GimpConfigWriter"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimpconfig-GimpConfigWriter.top_of_page"></a>GimpConfigWriter</span></h2>
+<p>GimpConfigWriter — Functions for writing config info to a file for
+                    libgimpconfig.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimpconfig-GimpConfigWriter.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="returnvalue">GimpConfigWriter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-new-file" title="gimp_config_writer_new_file ()">gimp_config_writer_new_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="returnvalue">GimpConfigWriter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-new-fd" title="gimp_config_writer_new_fd ()">gimp_config_writer_new_fd</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="returnvalue">GimpConfigWriter</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-new-string" title="gimp_config_writer_new_string ()">gimp_config_writer_new_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-open" title="gimp_config_writer_open ()">gimp_config_writer_open</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-comment-mode" title="gimp_config_writer_comment_mode ()">gimp_config_writer_comment_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-print" title="gimp_config_writer_print ()">gimp_config_writer_print</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-printf" title="gimp_config_writer_printf ()">gimp_config_writer_printf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-identifier" title="gimp_config_writer_identifier ()">gimp_config_writer_identifier</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-string" title="gimp_config_writer_string ()">gimp_config_writer_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-data" title="gimp_config_writer_data ()">gimp_config_writer_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-comment" title="gimp_config_writer_comment ()">gimp_config_writer_comment</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-linefeed" title="gimp_config_writer_linefeed ()">gimp_config_writer_linefeed</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-revert" title="gimp_config_writer_revert ()">gimp_config_writer_revert</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-close" title="gimp_config_writer_close ()">gimp_config_writer_close</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-finish" title="gimp_config_writer_finish ()">gimp_config_writer_finish</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpconfig-GimpConfigWriter.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter">GimpConfigWriter</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpconfig-GimpConfigWriter.description"></a><h2>Description</h2>
+<p>Functions for writing config info to a file for libgimpconfig.</p>
+</div>
+<div class="refsect1">
+<a name="libgimpconfig-GimpConfigWriter.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-config-writer-new-file"></a><h3>gimp_config_writer_new_file ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="returnvalue">GimpConfigWriter</span></a> *
+gimp_config_writer_new_file (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> atomic</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *header</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Creates a new <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> and sets it up to write to
+<em class="parameter"><code>filename</code></em>
+. If <em class="parameter"><code>atomic</code></em>
+ is <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, a temporary file is used to avoid
+possible race conditions. The temporary file is then moved to
+<em class="parameter"><code>filename</code></em>
+ when the writer is closed.</p>
+<div class="refsect3">
+<a name="gimp-config-writer-new-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>a filename</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>atomic</p></td>
+<td class="parameter_description"><p>if <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> the file is written atomically</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>header</p></td>
+<td class="parameter_description"><p>text to include as comment at the top of the file</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for errors</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-config-writer-new-file.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> in case of an error</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-config-writer-new-fd"></a><h3>gimp_config_writer_new_fd ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="returnvalue">GimpConfigWriter</span></a> *
+gimp_config_writer_new_fd (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> fd</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-config-writer-new-fd.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> in case of an error</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-config-writer-new-string"></a><h3>gimp_config_writer_new_string ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="returnvalue">GimpConfigWriter</span></a> *
+gimp_config_writer_new_string (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Strings.html#GString"><span class="type">GString</span></a> *string</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-config-writer-new-string.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> in case of an error</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-config-writer-open"></a><h3>gimp_config_writer_open ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_config_writer_open (<em class="parameter"><code><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> *writer</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>This function writes the opening parenthese followed by <em class="parameter"><code>name</code></em>
+.
+It also increases the indentation level and sets a mark that
+can be used by <a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-revert" title="gimp_config_writer_revert ()"><code class="function">gimp_config_writer_revert()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-config-writer-open.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>writer</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of the element to open</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-config-writer-comment-mode"></a><h3>gimp_config_writer_comment_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_config_writer_comment_mode (<em class="parameter"><code><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> *writer</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> enable</code></em>);</pre>
+<p>This function toggles whether the <em class="parameter"><code>writer</code></em>
+ should create commented
+or uncommented output. This feature is used to generate the
+system-wide installed gimprc that documents the default settings.</p>
+<p>Since comments have to start at the beginning of a line, this
+funtion will insert a newline if necessary.</p>
+<div class="refsect3">
+<a name="gimp-config-writer-comment-mode.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>writer</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>enable</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to enable comment mode, <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> to disable it</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-config-writer-print"></a><h3>gimp_config_writer_print ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_config_writer_print (<em class="parameter"><code><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> *writer</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *string</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> len</code></em>);</pre>
+<p>Appends a space followed by <em class="parameter"><code>string</code></em>
+ to the <em class="parameter"><code>writer</code></em>
+. Note that string
+must not contain any special characters that might need to be escaped.</p>
+<div class="refsect3">
+<a name="gimp-config-writer-print.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>writer</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>a string to write</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>len</p></td>
+<td class="parameter_description"><p>number of bytes from <em class="parameter"><code>string</code></em>
+or -1 if <em class="parameter"><code>string</code></em>
+is NUL-terminated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-config-writer-printf"></a><h3>gimp_config_writer_printf ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_config_writer_printf (<em class="parameter"><code><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> *writer</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *format</code></em>,
+                           <em class="parameter"><code>...</code></em>);</pre>
+<p>A printf-like function for <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a>.</p>
+<div class="refsect3">
+<a name="gimp-config-writer-printf.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>writer</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>a format string as described for <a href="/usr/share/gtk-doc/html/glibglib-String-Utility-Functions.html#g-strdup-printf"><code class="function">g_strdup_printf()</code></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>list of arguments according to <em class="parameter"><code>format</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-config-writer-identifier"></a><h3>gimp_config_writer_identifier ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_config_writer_identifier (<em class="parameter"><code><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> *writer</code></em>,
+                               <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *identifier</code></em>);</pre>
+<p>Writes an identifier to <em class="parameter"><code>writer</code></em>
+. The <em class="parameter"><code>string</code></em>
+ is *not* quoted and special
+characters are *not* escaped.</p>
+<div class="refsect3">
+<a name="gimp-config-writer-identifier.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>writer</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>identifier</p></td>
+<td class="parameter_description"><p>a NUL-terminated string</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-config-writer-string"></a><h3>gimp_config_writer_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_config_writer_string (<em class="parameter"><code><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> *writer</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *string</code></em>);</pre>
+<p>Writes a string value to <em class="parameter"><code>writer</code></em>
+. The <em class="parameter"><code>string</code></em>
+ is quoted and special
+characters are escaped.</p>
+<div class="refsect3">
+<a name="gimp-config-writer-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>writer</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>a NUL-terminated string</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-config-writer-data"></a><h3>gimp_config_writer_data ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_config_writer_data (<em class="parameter"><code><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> *writer</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> length</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *data</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-config-writer-data.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>writer</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-config-writer-comment"></a><h3>gimp_config_writer_comment ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_config_writer_comment (<em class="parameter"><code><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> *writer</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *comment</code></em>);</pre>
+<p>Appends the <em class="parameter"><code>comment</code></em>
+ to <em class="parameter"><code>str</code></em>
+ and inserts linebreaks and hash-marks to
+format it as a comment. Note that this function does not handle non-ASCII
+characters.</p>
+<div class="refsect3">
+<a name="gimp-config-writer-comment.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>writer</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>comment</p></td>
+<td class="parameter_description"><p>the comment to write (ASCII only)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-config-writer-linefeed"></a><h3>gimp_config_writer_linefeed ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_config_writer_linefeed (<em class="parameter"><code><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> *writer</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-config-writer-revert"></a><h3>gimp_config_writer_revert ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_config_writer_revert (<em class="parameter"><code><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> *writer</code></em>);</pre>
+<p>Reverts all changes to <em class="parameter"><code>writer</code></em>
+ that were done since the last call
+to <a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-open" title="gimp_config_writer_open ()"><code class="function">gimp_config_writer_open()</code></a>. This can only work if you didn't call
+<a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-close" title="gimp_config_writer_close ()"><code class="function">gimp_config_writer_close()</code></a> yet.</p>
+<div class="refsect3">
+<a name="gimp-config-writer-revert.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>writer</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-config-writer-close"></a><h3>gimp_config_writer_close ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_config_writer_close (<em class="parameter"><code><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> *writer</code></em>);</pre>
+<p>Closes an element opened with <a class="link" href="libgimpconfig-GimpConfigWriter.html#gimp-config-writer-open" title="gimp_config_writer_open ()"><code class="function">gimp_config_writer_open()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-config-writer-close.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>writer</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-config-writer-finish"></a><h3>gimp_config_writer_finish ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_config_writer_finish (<em class="parameter"><code><a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a> *writer</code></em>,
+                           <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *footer</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>This function finishes the work of <em class="parameter"><code>writer</code></em>
+ and frees it afterwards.
+It closes all open elements, appends an optional comment and
+releases all resources allocated by <em class="parameter"><code>writer</code></em>
+. You must not access
+the <em class="parameter"><code>writer</code></em>
+ afterwards.</p>
+<div class="refsect3">
+<a name="gimp-config-writer-finish.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>writer</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libgimpconfig-GimpConfigWriter.html#GimpConfigWriter" title="GimpConfigWriter"><span class="type">GimpConfigWriter</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>footer</p></td>
+<td class="parameter_description"><p>text to include as comment at the bottom of the file</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>return location for possible errors</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-config-writer-finish.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if everything could be successfully written,
+<a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimpconfig-GimpConfigWriter.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpConfigWriter"></a><h3>GimpConfigWriter</h3>
+<pre class="programlisting">typedef struct _GimpConfigWriter GimpConfigWriter;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

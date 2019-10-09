@@ -1,0 +1,930 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpunit: GIMP Base Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Base Library Reference Manual">
+<link rel="up" href="libgimpbase.html" title="Part I. GIMP Base Library">
+<link rel="prev" href="libgimpbase-gimpsignal.html" title="gimpsignal">
+<link rel="next" href="libgimpbase-gimputils.html" title="gimputils">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimpbase-gimpunit.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimpbase.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimpbase-gimpsignal.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimpbase-gimputils.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimpbase-gimpunit"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimpbase-gimpunit.top_of_page"></a>gimpunit</span></h2>
+<p>gimpunit — Provides a collection of predefined units and
+                    functions for creating user-defined units.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimpbase-gimpunit.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-unit-get-number-of-units" title="gimp_unit_get_number_of_units ()">gimp_unit_get_number_of_units</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-unit-get-number-of-built-in-units" title="gimp_unit_get_number_of_built_in_units ()">gimp_unit_get_number_of_built_in_units</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="returnvalue">GimpUnit</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-unit-new" title="gimp_unit_new ()">gimp_unit_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-unit-get-deletion-flag" title="gimp_unit_get_deletion_flag ()">gimp_unit_get_deletion_flag</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-unit-set-deletion-flag" title="gimp_unit_set_deletion_flag ()">gimp_unit_set_deletion_flag</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-unit-get-factor" title="gimp_unit_get_factor ()">gimp_unit_get_factor</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-unit-get-digits" title="gimp_unit_get_digits ()">gimp_unit_get_digits</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-unit-get-identifier" title="gimp_unit_get_identifier ()">gimp_unit_get_identifier</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-unit-get-symbol" title="gimp_unit_get_symbol ()">gimp_unit_get_symbol</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-unit-get-abbreviation" title="gimp_unit_get_abbreviation ()">gimp_unit_get_abbreviation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-unit-get-singular" title="gimp_unit_get_singular ()">gimp_unit_get_singular</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-unit-get-plural" title="gimp_unit_get_plural ()">gimp_unit_get_plural</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-unit-format-string" title="gimp_unit_format_string ()">gimp_unit_format_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-pixels-to-units" title="gimp_pixels_to_units ()">gimp_pixels_to_units</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-units-to-pixels" title="gimp_units_to_pixels ()">gimp_units_to_pixels</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-units-to-points" title="gimp_units_to_points ()">gimp_units_to_points</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#GIMP-IS-PARAM-SPEC-UNIT:CAPS" title="GIMP_IS_PARAM_SPEC_UNIT()">GIMP_IS_PARAM_SPEC_UNIT</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gobjectgobject-GParamSpec.html#GParamSpec"><span class="returnvalue">GParamSpec</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#gimp-param-spec-unit" title="gimp_param_spec_unit ()">gimp_param_spec_unit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpunit.html#GIMP-VALUE-HOLDS-UNIT:CAPS" title="GIMP_VALUE_HOLDS_UNIT()">GIMP_VALUE_HOLDS_UNIT</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-gimpunit.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit">GimpUnit</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgimpbase-gimpunit.html#GIMP-TYPE-UNIT:CAPS" title="GIMP_TYPE_UNIT">GIMP_TYPE_UNIT</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgimpbase-gimpunit.html#GIMP-TYPE-PARAM-UNIT:CAPS" title="GIMP_TYPE_PARAM_UNIT">GIMP_TYPE_PARAM_UNIT</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-gimpunit.description"></a><h2>Description</h2>
+<p>Provides a collection of predefined units and functions for
+creating user-defined units.</p>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-gimpunit.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-unit-get-number-of-units"></a><h3>gimp_unit_get_number_of_units ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gimp_unit_get_number_of_units (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns the number of units which are known to the <a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> system.</p>
+<div class="refsect3">
+<a name="gimp-unit-get-number-of-units.returns"></a><h4>Returns</h4>
+<p> The number of defined units.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-unit-get-number-of-built-in-units"></a><h3>gimp_unit_get_number_of_built_in_units ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gimp_unit_get_number_of_built_in_units
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns the number of <a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a>'s which are hardcoded in the unit system
+(UNIT_INCH, UNIT_MM, UNIT_POINT, UNIT_PICA and the two "pseudo unit"
+ UNIT_PIXEL).</p>
+<div class="refsect3">
+<a name="gimp-unit-get-number-of-built-in-units.returns"></a><h4>Returns</h4>
+<p> The number of built-in units.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-unit-new"></a><h3>gimp_unit_new ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="returnvalue">GimpUnit</span></a>
+gimp_unit_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *identifier</code></em>,
+               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> factor</code></em>,
+               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> digits</code></em>,
+               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *symbol</code></em>,
+               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *abbreviation</code></em>,
+               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *singular</code></em>,
+               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *plural</code></em>);</pre>
+<p>Returns the integer ID of the new <a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a>.</p>
+<p>Note that a new unit is always created with it's deletion flag
+set to <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>. You will have to set it to <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> with
+<a class="link" href="libgimpbase-gimpunit.html#gimp-unit-set-deletion-flag" title="gimp_unit_set_deletion_flag ()"><code class="function">gimp_unit_set_deletion_flag()</code></a> to make the unit definition persistent.</p>
+<div class="refsect3">
+<a name="gimp-unit-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>identifier</p></td>
+<td class="parameter_description"><p>The unit's identifier string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>factor</p></td>
+<td class="parameter_description"><p>The unit's factor (how many units are in one inch).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>digits</p></td>
+<td class="parameter_description"><p>The unit's suggested number of digits (see <a class="link" href="libgimpbase-gimpunit.html#gimp-unit-get-digits" title="gimp_unit_get_digits ()"><code class="function">gimp_unit_get_digits()</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>symbol</p></td>
+<td class="parameter_description"><p>The symbol of the unit (e.g. "''" for inch).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>abbreviation</p></td>
+<td class="parameter_description"><p>The abbreviation of the unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>singular</p></td>
+<td class="parameter_description"><p>The singular form of the unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>plural</p></td>
+<td class="parameter_description"><p>The plural form of the unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-unit-new.returns"></a><h4>Returns</h4>
+<p> The ID of the new unit.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-unit-get-deletion-flag"></a><h3>gimp_unit_get_deletion_flag ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_unit_get_deletion_flag (<em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> unit</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-unit-get-deletion-flag.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>The unit you want to know the <em class="parameter"><code>deletion_flag</code></em>
+of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-unit-get-deletion-flag.returns"></a><h4>Returns</h4>
+<p> The unit's <em class="parameter"><code>deletion_flag</code></em>
+.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-unit-set-deletion-flag"></a><h3>gimp_unit_set_deletion_flag ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_unit_set_deletion_flag (<em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> unit</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> deletion_flag</code></em>);</pre>
+<p>Sets a <a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a>'s <em class="parameter"><code>deletion_flag</code></em>
+. If the <em class="parameter"><code>deletion_flag</code></em>
+ of a unit is
+<a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> when GIMP exits, this unit will not be saved in the users's
+"unitrc" file.</p>
+<p>Trying to change the <em class="parameter"><code>deletion_flag</code></em>
+ of a built-in unit will be silently
+ignored.</p>
+<div class="refsect3">
+<a name="gimp-unit-set-deletion-flag.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>The unit you want to set the <em class="parameter"><code>deletion_flag</code></em>
+for.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>deletion_flag</p></td>
+<td class="parameter_description"><p>The new deletion_flag.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-unit-get-factor"></a><h3>gimp_unit_get_factor ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_unit_get_factor (<em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> unit</code></em>);</pre>
+<p>A <a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a>'s <em class="parameter"><code>factor</code></em>
+ is defined to be:</p>
+<p>distance_in_units == (<em class="parameter"><code>factor</code></em>
+ * distance_in_inches)</p>
+<p>Returns 0 for <em class="parameter"><code>unit</code></em>
+ == GIMP_UNIT_PIXEL.</p>
+<div class="refsect3">
+<a name="gimp-unit-get-factor.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>The unit you want to know the factor of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-unit-get-factor.returns"></a><h4>Returns</h4>
+<p> The unit's factor.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-unit-get-digits"></a><h3>gimp_unit_get_digits ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gimp_unit_get_digits (<em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> unit</code></em>);</pre>
+<p>Returns the number of digits an entry field should provide to get
+approximately the same accuracy as an inch input field with two digits.</p>
+<p>Returns 0 for <em class="parameter"><code>unit</code></em>
+ == GIMP_UNIT_PIXEL.</p>
+<div class="refsect3">
+<a name="gimp-unit-get-digits.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>The unit you want to know the digits.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-unit-get-digits.returns"></a><h4>Returns</h4>
+<p> The suggested number of digits.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-unit-get-identifier"></a><h3>gimp_unit_get_identifier ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_unit_get_identifier (<em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> unit</code></em>);</pre>
+<p>This is an unstranslated string and must not be changed or freed.</p>
+<div class="refsect3">
+<a name="gimp-unit-get-identifier.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>The unit you want to know the identifier of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-unit-get-identifier.returns"></a><h4>Returns</h4>
+<p> The unit's identifier.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-unit-get-symbol"></a><h3>gimp_unit_get_symbol ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_unit_get_symbol (<em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> unit</code></em>);</pre>
+<p>This is e.g. "''" for UNIT_INCH.</p>
+<p>NOTE: This string must not be changed or freed.</p>
+<div class="refsect3">
+<a name="gimp-unit-get-symbol.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>The unit you want to know the symbol of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-unit-get-symbol.returns"></a><h4>Returns</h4>
+<p> The unit's symbol.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-unit-get-abbreviation"></a><h3>gimp_unit_get_abbreviation ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_unit_get_abbreviation (<em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> unit</code></em>);</pre>
+<p>For built-in units, this function returns the translated abbreviation
+of the unit.</p>
+<p>NOTE: This string must not be changed or freed.</p>
+<div class="refsect3">
+<a name="gimp-unit-get-abbreviation.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>The unit you want to know the abbreviation of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-unit-get-abbreviation.returns"></a><h4>Returns</h4>
+<p> The unit's abbreviation.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-unit-get-singular"></a><h3>gimp_unit_get_singular ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_unit_get_singular (<em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> unit</code></em>);</pre>
+<p>For built-in units, this function returns the translated singular form
+of the unit's name.</p>
+<p>NOTE: This string must not be changed or freed.</p>
+<div class="refsect3">
+<a name="gimp-unit-get-singular.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>The unit you want to know the singular form of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-unit-get-singular.returns"></a><h4>Returns</h4>
+<p> The unit's singular form.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-unit-get-plural"></a><h3>gimp_unit_get_plural ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_unit_get_plural (<em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> unit</code></em>);</pre>
+<p>For built-in units, this function returns the translated plural form
+of the unit's name.</p>
+<p>NOTE: This string must not be changed or freed.</p>
+<div class="refsect3">
+<a name="gimp-unit-get-plural.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>The unit you want to know the plural form of.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-unit-get-plural.returns"></a><h4>Returns</h4>
+<p> The unit's plural form.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-unit-format-string"></a><h3>gimp_unit_format_string ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_unit_format_string (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *format</code></em>,
+                         <em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> unit</code></em>);</pre>
+<p>The <em class="parameter"><code>format</code></em>
+ string supports the following percent expansions:</p>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td>% f</td>
+<td>Factor (how many units make up an inch)</td>
+</tr>
+<tr>
+<td>% y</td>
+<td>Symbol (e.g. "''" for GIMP_UNIT_INCH)</td>
+</tr>
+<tr>
+<td>% a</td>
+<td>Abbreviation</td>
+</tr>
+<tr>
+<td>% s</td>
+<td>Singular</td>
+</tr>
+<tr>
+<td>% p</td>
+<td>Plural</td>
+</tr>
+<tr>
+<td>%%</td>
+<td>Literal percent</td>
+</tr>
+</tbody>
+</table></div>
+<div class="refsect3">
+<a name="gimp-unit-format-string.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>format</p></td>
+<td class="parameter_description"><p>A printf-like format string which is used to create the unit
+string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>A unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-unit-format-string.returns"></a><h4>Returns</h4>
+<p> A newly allocated string with above percent expressions
+replaced with the resp. strings for <em class="parameter"><code>unit</code></em>
+.</p>
+</div>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-pixels-to-units"></a><h3>gimp_pixels_to_units ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_pixels_to_units (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> pixels</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> unit</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> resolution</code></em>);</pre>
+<p>Converts a <em class="parameter"><code>value</code></em>
+ specified in pixels to <em class="parameter"><code>unit</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-pixels-to-units.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>pixels</p></td>
+<td class="parameter_description"><p>value in pixels</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>unit to convert to</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>resolution</p></td>
+<td class="parameter_description"><p>resloution in DPI</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-pixels-to-units.returns"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>pixels</code></em>
+converted to units.</p>
+</div>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-units-to-pixels"></a><h3>gimp_units_to_pixels ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_units_to_pixels (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> value</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> unit</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> resolution</code></em>);</pre>
+<p>Converts a <em class="parameter"><code>value</code></em>
+ specified in <em class="parameter"><code>unit</code></em>
+ to pixels.</p>
+<div class="refsect3">
+<a name="gimp-units-to-pixels.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>value in units</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>unit of <em class="parameter"><code>value</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>resolution</p></td>
+<td class="parameter_description"><p>resloution in DPI</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-units-to-pixels.returns"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>value</code></em>
+converted to pixels.</p>
+</div>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-units-to-points"></a><h3>gimp_units_to_points ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_units_to_points (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> value</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> unit</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> resolution</code></em>);</pre>
+<p>Converts a <em class="parameter"><code>value</code></em>
+ specified in <em class="parameter"><code>unit</code></em>
+ to points.</p>
+<div class="refsect3">
+<a name="gimp-units-to-points.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>value in units</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>unit</p></td>
+<td class="parameter_description"><p>unit of <em class="parameter"><code>value</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>resolution</p></td>
+<td class="parameter_description"><p>resloution in DPI</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-units-to-points.returns"></a><h4>Returns</h4>
+<p> <em class="parameter"><code>value</code></em>
+converted to points.</p>
+</div>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GIMP-IS-PARAM-SPEC-UNIT:CAPS"></a><h3>GIMP_IS_PARAM_SPEC_UNIT()</h3>
+<pre class="programlisting">#define GIMP_IS_PARAM_SPEC_UNIT(pspec)    (G_TYPE_CHECK_INSTANCE_TYPE ((pspec), GIMP_TYPE_PARAM_UNIT))
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-param-spec-unit"></a><h3>gimp_param_spec_unit ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gobjectgobject-GParamSpec.html#GParamSpec"><span class="returnvalue">GParamSpec</span></a> *
+gimp_param_spec_unit (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *nick</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *blurb</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> allow_pixels</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> allow_percent</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgimpbase-gimpunit.html#GimpUnit" title="enum GimpUnit"><span class="type">GimpUnit</span></a> default_value</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobjectgobject-GParamSpec.html#GParamFlags"><span class="type">GParamFlags</span></a> flags</code></em>);</pre>
+<p>Creates a param spec to hold a units param.
+See <a href="/usr/share/gtk-doc/html/gobjectgobject-GParamSpec.html#g-param-spec-internal"><code class="function">g_param_spec_internal()</code></a> for more information.</p>
+<div class="refsect3">
+<a name="gimp-param-spec-unit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Canonical name of the param</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nick</p></td>
+<td class="parameter_description"><p>Nickname of the param</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>blurb</p></td>
+<td class="parameter_description"><p>Brief desciption of param.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>allow_pixels</p></td>
+<td class="parameter_description"><p>Whether "pixels" is an allowed unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>allow_percent</p></td>
+<td class="parameter_description"><p>Whether "perecent" is an allowed unit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p>Unit to use if none is assigned.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>a combination of <a href="/usr/share/gtk-doc/html/gobjectgobject-GParamSpec.html#GParamFlags"><span class="type">GParamFlags</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-param-spec-unit.returns"></a><h4>Returns</h4>
+<p> a newly allocated <a href="/usr/share/gtk-doc/html/gobjectgobject-GParamSpec.html#GParamSpec"><span class="type">GParamSpec</span></a> instance</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GIMP-VALUE-HOLDS-UNIT:CAPS"></a><h3>GIMP_VALUE_HOLDS_UNIT()</h3>
+<pre class="programlisting">#define GIMP_VALUE_HOLDS_UNIT(value) (G_TYPE_CHECK_VALUE_TYPE ((value), GIMP_TYPE_UNIT))
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-gimpunit.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpUnit"></a><h3>enum GimpUnit</h3>
+<div class="refsect3">
+<a name="GimpUnit.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-UNIT-PIXEL:CAPS"></a>GIMP_UNIT_PIXEL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-UNIT-INCH:CAPS"></a>GIMP_UNIT_INCH</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-UNIT-MM:CAPS"></a>GIMP_UNIT_MM</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-UNIT-POINT:CAPS"></a>GIMP_UNIT_POINT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-UNIT-PICA:CAPS"></a>GIMP_UNIT_PICA</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-UNIT-END:CAPS"></a>GIMP_UNIT_END</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-UNIT-PERCENT:CAPS"></a>GIMP_UNIT_PERCENT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GIMP-TYPE-UNIT:CAPS"></a><h3>GIMP_TYPE_UNIT</h3>
+<pre class="programlisting">#define GIMP_TYPE_UNIT               (gimp_unit_get_type ())
+</pre>
+<p><a class="link" href="libgimpbase-gimpunit.html#GIMP-TYPE-UNIT:CAPS" title="GIMP_TYPE_UNIT"><span class="type">GIMP_TYPE_UNIT</span></a> is a <a href="/usr/share/gtk-doc/html/gobjectgobject-Type-Information.html#GType"><span class="type">GType</span></a> derived from <a href="/usr/share/gtk-doc/html/gobjectgobject-Type-Information.html#G-TYPE-INT:CAPS"><span class="type">G_TYPE_INT</span></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GIMP-TYPE-PARAM-UNIT:CAPS"></a><h3>GIMP_TYPE_PARAM_UNIT</h3>
+<pre class="programlisting">#define GIMP_TYPE_PARAM_UNIT              (gimp_param_unit_get_type ())
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-gimpunit.see-also"></a><h2>See Also</h2>
+<p><span class="type">GimpUnitMenu</span>, <span class="type">GimpSizeEntry</span>.</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

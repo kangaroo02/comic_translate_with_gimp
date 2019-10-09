@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Object Hierarchy: GIMP Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Widgets Library Reference Manual">
+<link rel="up" href="libgimpwidgets-widgets.html" title="Part I. GIMP Widgets">
+<link rel="prev" href="libgimpwidgets-widgets.html" title="Part I. GIMP Widgets">
+<link rel="next" href="libgimpwidgets-gallery.html" title="Widget Gallery">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimpwidgets-widgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimpwidgets-widgets.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimpwidgets-gallery.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="chapter">
+<div class="titlepage"><div><div><h2 class="title">
+<a name="libgimpwidgets-hierarchy"></a>Object Hierarchy</h2></div></div></div>
+<pre class="screen">
+    <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkObject.html#GtkObject-struct">GtkObject</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkContainer.html#GtkContainer-struct">GtkContainer</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkPaned.html#GtkPaned-struct">GtkPaned</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkHPaned.html#GtkHPaned-struct">GtkHPaned</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GimpBrowser.html" title="GimpBrowser">GimpBrowser</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkBin.html#GtkBin-struct">GtkBin</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkButton.html#GtkButton-struct">GtkButton</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GimpButton.html" title="GimpButton">GimpButton</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GimpColorButton.html" title="GimpColorButton">GimpColorButton</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GimpPickButton.html" title="GimpPickButton">GimpPickButton</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkOptionMenu.html#GtkOptionMenu-struct">GtkOptionMenu</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GimpUnitMenu.html" title="GimpUnitMenu">GimpUnitMenu</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkComboBox.html#GtkComboBox-struct">GtkComboBox</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GimpColorProfileComboBox.html" title="GimpColorProfileComboBox">GimpColorProfileComboBox</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GimpIntComboBox.html" title="GimpIntComboBox">GimpIntComboBox</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GimpEnumComboBox.html" title="GimpEnumComboBox">GimpEnumComboBox</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GimpStringComboBox.html" title="GimpStringComboBox">GimpStringComboBox</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GimpUnitComboBox.html" title="GimpUnitComboBox">GimpUnitComboBox</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkWindow.html#GtkWindow-struct">GtkWindow</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkDialog.html#GtkDialog-struct">GtkDialog</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GimpDialog.html" title="GimpDialog">GimpDialog</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkFrame.html#GtkFrame-struct">GtkFrame</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GimpFrame.html" title="GimpFrame">GimpFrame</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkTable.html#GtkTable-struct">GtkTable</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GimpChainButton.html" title="GimpChainButton">GimpChainButton</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GimpSizeEntry.html" title="GimpSizeEntry">GimpSizeEntry</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkBox.html#GtkBox-struct">GtkBox</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GimpColorSelector.html" title="GimpColorSelector">GimpColorSelector</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GimpColorNotebook.html" title="GimpColorNotebook">GimpColorNotebook</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GimpColorScales.html" title="GimpColorScales">GimpColorScales</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GimpColorSelect.html" title="GimpColorSelect">GimpColorSelect</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GimpColorSelection.html" title="GimpColorSelection">GimpColorSelection</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GimpFileEntry.html" title="GimpFileEntry">GimpFileEntry</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GimpMemsizeEntry.html" title="GimpMemSizeEntry">GimpMemsizeEntry</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GimpPageSelector.html" title="GimpPageSelector">GimpPageSelector</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GimpPathEditor.html" title="GimpPathEditor">GimpPathEditor</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GimpPreview.html" title="GimpPreview">GimpPreview</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>           <span class="lineart">╰──</span> <a class="link" href="GimpScrolledPreview.html" title="GimpScrolledPreview">GimpScrolledPreview</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkDrawingArea.html#GtkDrawingArea-struct">GtkDrawingArea</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GimpColorArea.html" title="GimpColorArea">GimpColorArea</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GimpOffsetArea.html" title="GimpOffsetArea">GimpOffsetArea</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GimpPreviewArea.html" title="GimpPreviewArea">GimpPreviewArea</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkEntry.html#GtkEntry-struct">GtkEntry</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GimpColorHexEntry.html" title="GimpColorHexEntry">GimpColorHexEntry</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry">GimpNumberPairEntry</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkRange.html#GtkRange-struct">GtkRange</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkScale.html#GtkScale-struct">GtkScale</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GimpColorScale.html" title="GimpColorScale">GimpColorScale</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkMisc.html#GtkMisc-struct">GtkMisc</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkLabel.html#GtkLabel-struct">GtkLabel</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GimpEnumLabel.html" title="GimpEnumLabel">GimpEnumLabel</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkImage.html#GtkImage-struct">GtkImage</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GimpPixmap.html" title="GimpPixmap">GimpPixmap</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GimpRuler.html" title="GimpRuler">GimpRuler</a>
+    <span class="lineart">│</span>       <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkCellRenderer.html#GtkCellRenderer-struct">GtkCellRenderer</a>
+    <span class="lineart">│</span>           <span class="lineart">├──</span> <a class="link" href="GimpCellRendererColor.html" title="GimpCellRendererColor">GimpCellRendererColor</a>
+    <span class="lineart">│</span>           <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkCellRendererToggle.html#GtkCellRendererToggle-struct">GtkCellRendererToggle</a>
+    <span class="lineart">│</span>               <span class="lineart">╰──</span> <a class="link" href="GimpCellRendererToggle.html" title="GimpCellRendererToggle">GimpCellRendererToggle</a>
+    <span class="lineart">├──</span> <a class="link" href="GimpColorDisplay.html" title="GimpColorDisplay">GimpColorDisplay</a>
+    <span class="lineart">├──</span> <a class="link" href="GimpColorDisplayStack.html" title="GimpColorDisplayStack">GimpColorDisplayStack</a>
+    <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkListStore.html#GtkListStore-struct">GtkListStore</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GimpColorProfileStore.html" title="GimpColorProfileStore">GimpColorProfileStore</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GimpIntStore.html" title="GimpIntStore">GimpIntStore</a>
+    <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GimpEnumStore.html" title="GimpEnumStore">GimpEnumStore</a>
+    <span class="lineart">├──</span> <a class="link" href="GimpController.html" title="GimpController">GimpController</a>
+    <span class="lineart">├──</span> <a class="link" href="GimpUnitStore.html" title="GimpUnitStore">GimpUnitStore</a>
+    <span class="lineart">╰──</span> <a class="link" href="GimpZoomModel.html" title="GimpZoomModel">GimpZoomModel</a>
+</pre>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpundo: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manupulating Images and their Properties">
+<link rel="prev" href="libgimp-gimptransformtools.html" title="gimptransformtools">
+<link rel="next" href="libgimp-gimpvectors.html" title="gimpvectors">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpundo.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimptransformtools.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpvectors.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpundo"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpundo.top_of_page"></a>gimpundo</span></h2>
+<p>gimpundo</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpundo.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpundo.html#gimp-image-undo-group-start" title="gimp_image_undo_group_start ()">gimp_image_undo_group_start</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpundo.html#gimp-image-undo-group-end" title="gimp_image_undo_group_end ()">gimp_image_undo_group_end</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpundo.html#gimp-image-undo-is-enabled" title="gimp_image_undo_is_enabled ()">gimp_image_undo_is_enabled</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpundo.html#gimp-image-undo-disable" title="gimp_image_undo_disable ()">gimp_image_undo_disable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpundo.html#gimp-image-undo-enable" title="gimp_image_undo_enable ()">gimp_image_undo_enable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpundo.html#gimp-image-undo-freeze" title="gimp_image_undo_freeze ()">gimp_image_undo_freeze</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpundo.html#gimp-image-undo-thaw" title="gimp_image_undo_thaw ()">gimp_image_undo_thaw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpundo.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpundo.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-image-undo-group-start"></a><h3>gimp_image_undo_group_start ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_undo_group_start (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-undo-group-end"></a><h3>gimp_image_undo_group_end ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_undo_group_end (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-undo-is-enabled"></a><h3>gimp_image_undo_is_enabled ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_undo_is_enabled (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-undo-disable"></a><h3>gimp_image_undo_disable ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_undo_disable (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-undo-enable"></a><h3>gimp_image_undo_enable ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_undo_enable (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-undo-freeze"></a><h3>gimp_image_undo_freeze ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_undo_freeze (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-undo-thaw"></a><h3>gimp_image_undo_thaw ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_undo_thaw (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpundo.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

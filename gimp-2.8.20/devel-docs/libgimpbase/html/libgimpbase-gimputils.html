@@ -1,0 +1,761 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimputils: GIMP Base Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Base Library Reference Manual">
+<link rel="up" href="libgimpbase.html" title="Part I. GIMP Base Library">
+<link rel="prev" href="libgimpbase-gimpunit.html" title="gimpunit">
+<link rel="next" href="libgimpbase-index.html" title="Index">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimpbase-gimputils.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimpbase.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimpbase-gimpunit.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimpbase-index.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimpbase-gimputils"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimpbase-gimputils.top_of_page"></a>gimputils</span></h2>
+<p>gimputils — Utilities of general interest</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimpbase-gimputils.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimputils.html#gimp-any-to-utf8" title="gimp_any_to_utf8 ()">gimp_any_to_utf8</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimputils.html#gimp-filename-to-utf8" title="gimp_filename_to_utf8 ()">gimp_filename_to_utf8</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimputils.html#gimp-utf8-strtrim" title="gimp_utf8_strtrim ()">gimp_utf8_strtrim</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimputils.html#gimp-escape-uline" title="gimp_escape_uline ()">gimp_escape_uline</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimputils.html#gimp-strip-uline" title="gimp_strip_uline ()">gimp_strip_uline</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimputils.html#gimp-canonicalize-identifier" title="gimp_canonicalize_identifier ()">gimp_canonicalize_identifier</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpbase-gimpbasetypes.html#GimpEnumDesc" title="struct GimpEnumDesc"><span class="returnvalue">GimpEnumDesc</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimputils.html#gimp-enum-get-desc" title="gimp_enum_get_desc ()">gimp_enum_get_desc</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimputils.html#gimp-enum-get-value" title="gimp_enum_get_value ()">gimp_enum_get_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimputils.html#gimp-enum-value-get-desc" title="gimp_enum_value_get_desc ()">gimp_enum_value_get_desc</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimputils.html#gimp-enum-value-get-help" title="gimp_enum_value_get_help ()">gimp_enum_value_get_help</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpbase-gimpbasetypes.html#GimpFlagsDesc" title="struct GimpFlagsDesc"><span class="returnvalue">GimpFlagsDesc</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimputils.html#gimp-flags-get-first-desc" title="gimp_flags_get_first_desc ()">gimp_flags_get_first_desc</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimputils.html#gimp-flags-get-first-value" title="gimp_flags_get_first_value ()">gimp_flags_get_first_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimputils.html#gimp-flags-value-get-desc" title="gimp_flags_value_get_desc ()">gimp_flags_value_get_desc</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimputils.html#gimp-flags-value-get-help" title="gimp_flags_value_get_help ()">gimp_flags_value_get_help</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-gimputils.description"></a><h2>Description</h2>
+<p>Utilities of general interest</p>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-gimputils.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-any-to-utf8"></a><h3>gimp_any_to_utf8 ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_any_to_utf8 (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gssize"><span class="type">gssize</span></a> len</code></em>,
+                  <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *warning_format</code></em>,
+                  <em class="parameter"><code>...</code></em>);</pre>
+<p>This function takes any string (UTF-8 or not) and always returns a valid
+UTF-8 string.</p>
+<p>If <em class="parameter"><code>str</code></em>
+ is valid UTF-8, a copy of the string is returned.</p>
+<p>If UTF-8 validation fails, <a href="/usr/share/gtk-doc/html/glibglib-Character-Set-Conversion.html#g-locale-to-utf8"><code class="function">g_locale_to_utf8()</code></a> is tried and if it
+succeeds the resulting string is returned.</p>
+<p>Otherwise, the portion of <em class="parameter"><code>str</code></em>
+ that is UTF-8, concatenated
+with "(invalid UTF-8 string)" is returned. If not even the start
+of <em class="parameter"><code>str</code></em>
+ is valid UTF-8, only "(invalid UTF-8 string)" is returned.</p>
+<div class="refsect3">
+<a name="gimp-any-to-utf8.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>The string to be converted to UTF-8.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>len</p></td>
+<td class="parameter_description"><p>The length of the string, or -1 if the string
+is nul-terminated.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>warning_format</p></td>
+<td class="parameter_description"><p>The message format for the warning message if conversion
+to UTF-8 fails. See the <code class="function"><code class="function">printf()</code></code>
+documentation.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>...</p></td>
+<td class="parameter_description"><p>The parameters to insert into the format string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-any-to-utf8.returns"></a><h4>Returns</h4>
+<p> The UTF-8 string as described above.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-filename-to-utf8"></a><h3>gimp_filename_to_utf8 ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_filename_to_utf8 (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>);</pre>
+<p>Convert a filename in the filesystem's encoding to UTF-8
+temporarily.  The return value is a pointer to a string that is
+guaranteed to be valid only during the current iteration of the
+main loop or until the next call to <a class="link" href="libgimpbase-gimputils.html#gimp-filename-to-utf8" title="gimp_filename_to_utf8 ()"><code class="function">gimp_filename_to_utf8()</code></a>.</p>
+<p>The only purpose of this function is to provide an easy way to pass
+a filename in the filesystem encoding to a function that expects an
+UTF-8 encoded filename.</p>
+<div class="refsect3">
+<a name="gimp-filename-to-utf8.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>The filename to be converted to UTF-8.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-filename-to-utf8.returns"></a><h4>Returns</h4>
+<p> A temporarily valid UTF-8 representation of <em class="parameter"><code>filename</code></em>
+.
+This string must not be changed or freed.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-utf8-strtrim"></a><h3>gimp_utf8_strtrim ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_utf8_strtrim (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> max_chars</code></em>);</pre>
+<p>Creates a (possibly trimmed) copy of <em class="parameter"><code>str</code></em>
+. The string is cut if it
+exceeds <em class="parameter"><code>max_chars</code></em>
+ characters or on the first newline. The fact
+that the string was trimmed is indicated by appending an ellipsis.</p>
+<div class="refsect3">
+<a name="gimp-utf8-strtrim.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>an UTF-8 encoded string (or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_chars</p></td>
+<td class="parameter_description"><p>the maximum number of characters before the string get
+trimmed</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-utf8-strtrim.returns"></a><h4>Returns</h4>
+<p> A (possibly trimmed) copy of <em class="parameter"><code>str</code></em>
+which should be freed
+using <a href="/usr/share/gtk-doc/html/glibglib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> when it is not needed any longer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-escape-uline"></a><h3>gimp_escape_uline ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_escape_uline (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>);</pre>
+<p>This function returns a copy of <em class="parameter"><code>str</code></em>
+ with all underline converted
+to two adjacent underlines. This comes in handy when needing to display
+strings with underlines (like filenames) in a place that would convert
+them to mnemonics.</p>
+<div class="refsect3">
+<a name="gimp-escape-uline.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>Underline infested string (or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-escape-uline.returns"></a><h4>Returns</h4>
+<p> A (possibly escaped) copy of <em class="parameter"><code>str</code></em>
+which should be
+freed using <a href="/usr/share/gtk-doc/html/glibglib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> when it is not needed any longer.</p>
+</div>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-strip-uline"></a><h3>gimp_strip_uline ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_strip_uline (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>);</pre>
+<p>This function returns a copy of <em class="parameter"><code>str</code></em>
+ stripped of underline
+characters. This comes in handy when needing to strip mnemonics
+from menu paths etc.</p>
+<p>In some languages, mnemonics are handled by adding the mnemonic
+character in brackets (like "File (_F)"). This function recognizes
+this construct and removes the whole bracket construction to get
+rid of the mnemonic (see bug 157561).</p>
+<div class="refsect3">
+<a name="gimp-strip-uline.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>str</p></td>
+<td class="parameter_description"><p>underline infested string (or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-strip-uline.returns"></a><h4>Returns</h4>
+<p> A (possibly stripped) copy of <em class="parameter"><code>str</code></em>
+which should be
+freed using <a href="/usr/share/gtk-doc/html/glibglib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> when it is not needed any longer.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-canonicalize-identifier"></a><h3>gimp_canonicalize_identifier ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_canonicalize_identifier (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *identifier</code></em>);</pre>
+<p>Turns any input string into a canonicalized string.</p>
+<p>Canonical identifiers are e.g. expected by the PDB for procedure
+and parameter names. Every character of the input string that is
+not either '-', 'a-z', 'A-Z' or '0-9' will be replaced by a '-'.</p>
+<div class="refsect3">
+<a name="gimp-canonicalize-identifier.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>identifier</p></td>
+<td class="parameter_description"><p>The identifier string to canonicalize.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-canonicalize-identifier.returns"></a><h4>Returns</h4>
+<p> The canonicalized identifier. This is a newly
+allocated string that should be freed with <a href="/usr/share/gtk-doc/html/glibglib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>
+when no longer needed.</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-enum-get-desc"></a><h3>gimp_enum_get_desc ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpbase-gimpbasetypes.html#GimpEnumDesc" title="struct GimpEnumDesc"><span class="returnvalue">GimpEnumDesc</span></a> *
+gimp_enum_get_desc (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GEnumClass"><span class="type">GEnumClass</span></a> *enum_class</code></em>,
+                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> value</code></em>);</pre>
+<p>Retrieves <a class="link" href="libgimpbase-gimpbasetypes.html#GimpEnumDesc" title="struct GimpEnumDesc"><span class="type">GimpEnumDesc</span></a> associated with the given value, or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-enum-get-desc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>enum_class</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GEnumClass"><span class="type">GEnumClass</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>a value from <em class="parameter"><code>enum_class</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-enum-get-desc.returns"></a><h4>Returns</h4>
+<p> the value's <a class="link" href="libgimpbase-gimpbasetypes.html#GimpEnumDesc" title="struct GimpEnumDesc"><span class="type">GimpEnumDesc</span></a>.</p>
+</div>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-enum-get-value"></a><h3>gimp_enum_get_value ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_enum_get_value (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobjectgobject-Type-Information.html#GType"><span class="type">GType</span></a> enum_type</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> value</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **value_name</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **value_nick</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **value_desc</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **value_help</code></em>);</pre>
+<p>Checks if <em class="parameter"><code>value</code></em>
+ is valid for the enum registered as <em class="parameter"><code>enum_type</code></em>
+.
+If the value exists in that enum, its name, nick and its translated
+description and help are returned (if <em class="parameter"><code>value_name</code></em>
+, <em class="parameter"><code>value_nick</code></em>
+,
+<em class="parameter"><code>value_desc</code></em>
+ and <em class="parameter"><code>value_help</code></em>
+ are not <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p>
+<div class="refsect3">
+<a name="gimp-enum-get-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>enum_type</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/gobjectgobject-Type-Information.html#GType"><span class="type">GType</span></a> of a registered enum</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>an integer value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value_name</p></td>
+<td class="parameter_description"><p>return location for the value's name (or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value_nick</p></td>
+<td class="parameter_description"><p>return location for the value's nick (or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value_desc</p></td>
+<td class="parameter_description"><p>return location for the value's translated description (or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value_help</p></td>
+<td class="parameter_description"><p>return location for the value's translated help (or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-enum-get-value.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>value</code></em>
+is valid for the <em class="parameter"><code>enum_type</code></em>
+,
+<a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+</div>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-enum-value-get-desc"></a><h3>gimp_enum_value_get_desc ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_enum_value_get_desc (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GEnumClass"><span class="type">GEnumClass</span></a> *enum_class</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GEnumValue"><span class="type">GEnumValue</span></a> *enum_value</code></em>);</pre>
+<p>Retrieves the translated description for a given <em class="parameter"><code>enum_value</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-enum-value-get-desc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>enum_class</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GEnumClass"><span class="type">GEnumClass</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>enum_value</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GEnumValue"><span class="type">GEnumValue</span></a> from <em class="parameter"><code>enum_class</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-enum-value-get-desc.returns"></a><h4>Returns</h4>
+<p> the translated description of the enum value</p>
+</div>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-enum-value-get-help"></a><h3>gimp_enum_value_get_help ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_enum_value_get_help (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GEnumClass"><span class="type">GEnumClass</span></a> *enum_class</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GEnumValue"><span class="type">GEnumValue</span></a> *enum_value</code></em>);</pre>
+<p>Retrieves the translated help for a given <em class="parameter"><code>enum_value</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-enum-value-get-help.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>enum_class</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GEnumClass"><span class="type">GEnumClass</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>enum_value</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GEnumValue"><span class="type">GEnumValue</span></a> from <em class="parameter"><code>enum_class</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-enum-value-get-help.returns"></a><h4>Returns</h4>
+<p> the translated help of the enum value</p>
+</div>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-flags-get-first-desc"></a><h3>gimp_flags_get_first_desc ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpbase-gimpbasetypes.html#GimpFlagsDesc" title="struct GimpFlagsDesc"><span class="returnvalue">GimpFlagsDesc</span></a> *
+gimp_flags_get_first_desc (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GFlagsClass"><span class="type">GFlagsClass</span></a> *flags_class</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="type">guint</span></a> value</code></em>);</pre>
+<p>Retrieves the first <a class="link" href="libgimpbase-gimpbasetypes.html#GimpFlagsDesc" title="struct GimpFlagsDesc"><span class="type">GimpFlagsDesc</span></a> that matches the given value, or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-flags-get-first-desc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>flags_class</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GFlagsClass"><span class="type">GFlagsClass</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>a value from <em class="parameter"><code>flags_class</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-flags-get-first-desc.returns"></a><h4>Returns</h4>
+<p> the value's <a class="link" href="libgimpbase-gimpbasetypes.html#GimpFlagsDesc" title="struct GimpFlagsDesc"><span class="type">GimpFlagsDesc</span></a>.</p>
+</div>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-flags-get-first-value"></a><h3>gimp_flags_get_first_value ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_flags_get_first_value (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobjectgobject-Type-Information.html#GType"><span class="type">GType</span></a> flags_type</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="type">guint</span></a> value</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **value_name</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **value_nick</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **value_desc</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **value_help</code></em>);</pre>
+<p>Checks if <em class="parameter"><code>value</code></em>
+ is valid for the flags registered as <em class="parameter"><code>flags_type</code></em>
+.
+If the value exists in that flags, its name, nick and its
+translated description and help are returned (if <em class="parameter"><code>value_name</code></em>
+,
+<em class="parameter"><code>value_nick</code></em>
+, <em class="parameter"><code>value_desc</code></em>
+ and <em class="parameter"><code>value_help</code></em>
+ are not <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p>
+<div class="refsect3">
+<a name="gimp-flags-get-first-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>flags_type</p></td>
+<td class="parameter_description"><p>the <a href="/usr/share/gtk-doc/html/gobjectgobject-Type-Information.html#GType"><span class="type">GType</span></a> of registered flags</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>an integer value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value_name</p></td>
+<td class="parameter_description"><p>return location for the value's name (or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value_nick</p></td>
+<td class="parameter_description"><p>return location for the value's nick (or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value_desc</p></td>
+<td class="parameter_description"><p>return location for the value's translated description (or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value_help</p></td>
+<td class="parameter_description"><p>return location for the value's translated help (or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-flags-get-first-value.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>value</code></em>
+is valid for the <em class="parameter"><code>flags_type</code></em>
+,
+<a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+</div>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-flags-value-get-desc"></a><h3>gimp_flags_value_get_desc ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_flags_value_get_desc (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GFlagsClass"><span class="type">GFlagsClass</span></a> *flags_class</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GFlagsValue"><span class="type">GFlagsValue</span></a> *flags_value</code></em>);</pre>
+<p>Retrieves the translated description for a given <em class="parameter"><code>flags_value</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-flags-value-get-desc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>flags_class</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GFlagsClass"><span class="type">GFlagsClass</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags_value</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GFlagsValue"><span class="type">GFlagsValue</span></a> from <em class="parameter"><code>flags_class</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-flags-value-get-desc.returns"></a><h4>Returns</h4>
+<p> the translated description of the flags value</p>
+</div>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-flags-value-get-help"></a><h3>gimp_flags_value_get_help ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_flags_value_get_help (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GFlagsClass"><span class="type">GFlagsClass</span></a> *flags_class</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GFlagsValue"><span class="type">GFlagsValue</span></a> *flags_value</code></em>);</pre>
+<p>Retrieves the translated help for a given <em class="parameter"><code>flags_value</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-flags-value-get-help.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>flags_class</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GFlagsClass"><span class="type">GFlagsClass</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags_value</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gobjectgobject-Enumeration-and-Flag-Types.html#GFlagsValue"><span class="type">GFlagsValue</span></a> from <em class="parameter"><code>flags_class</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-flags-value-get-help.returns"></a><h4>Returns</h4>
+<p> the translated help of the flags value</p>
+</div>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-gimputils.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GimpIntStore: GIMP Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Widgets Library Reference Manual">
+<link rel="up" href="libgimpwidgets-widgets.html" title="Part I. GIMP Widgets">
+<link rel="prev" href="GimpIntComboBox.html" title="GimpIntComboBox">
+<link rel="next" href="GimpMemsizeEntry.html" title="GimpMemSizeEntry">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GimpIntStore.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GimpIntStore.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GimpIntStore.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GimpIntStore.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimpwidgets-widgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GimpIntComboBox.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GimpMemsizeEntry.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GimpIntStore"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GimpIntStore.top_of_page"></a>GimpIntStore</span></h2>
+<p>GimpIntStore — A model for integer based name-value pairs
+                    (e.g. enums)</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GimpIntStore.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk2GtkListStore.html#GtkListStore-struct"><span class="returnvalue">GtkListStore</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpIntStore.html#gimp-int-store-new" title="gimp_int_store_new ()">gimp_int_store_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GimpIntStore.html#gimp-int-store-lookup-by-value" title="gimp_int_store_lookup_by_value ()">gimp_int_store_lookup_by_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpIntStore.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gobjectgobject-Type-Information.html#GType"><span class="type">GType</span></a> *</td>
+<td class="property_name"><a class="link" href="GimpIntStore.html#GimpIntStore--user-data-type" title="The “user-data-type” property">user-data-type</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpIntStore.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GimpIntStore.html#GimpIntStore-struct" title="GimpIntStore">GimpIntStore</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GimpIntStore.html#GimpIntStoreColumns" title="enum GimpIntStoreColumns">GimpIntStoreColumns</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpIntStore.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkListStore.html#GtkListStore-struct">GtkListStore</a>
+        <span class="lineart">╰──</span> GimpIntStore
+            <span class="lineart">╰──</span> <a class="link" href="GimpEnumStore.html" title="GimpEnumStore">GimpEnumStore</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="GimpIntStore.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GimpIntStore implements
+ <a href="/usr/share/gtk-doc/html/gtk2GtkTreeModel.html#GtkTreeModel-struct">GtkTreeModel</a>,  <a href="/usr/share/gtk-doc/html/gtk2gtk2-GtkTreeView-drag-and-drop.html#GtkTreeDragSource-struct">GtkTreeDragSource</a>,  <a href="/usr/share/gtk-doc/html/gtk2gtk2-GtkTreeView-drag-and-drop.html#GtkTreeDragDest-struct">GtkTreeDragDest</a>,  <a href="/usr/share/gtk-doc/html/gtk2GtkTreeSortable.html#GtkTreeSortable-struct">GtkTreeSortable</a> and  <a href="/usr/share/gtk-doc/html/gtk2GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GimpIntStore.description"></a><h2>Description</h2>
+<p>A model for integer based name-value pairs (e.g. enums)</p>
+</div>
+<div class="refsect1">
+<a name="GimpIntStore.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-int-store-new"></a><h3>gimp_int_store_new ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk2GtkListStore.html#GtkListStore-struct"><span class="returnvalue">GtkListStore</span></a> *
+gimp_int_store_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a <a href="/usr/share/gtk-doc/html/gtk2GtkListStore.html#GtkListStore-struct"><span class="type">GtkListStore</span></a> with a number of useful columns.
+<a class="link" href="GimpIntStore.html" title="GimpIntStore"><span class="type">GimpIntStore</span></a> is especially useful if the items you want to store
+are identified using an integer value.</p>
+<div class="refsect3">
+<a name="gimp-int-store-new.returns"></a><h4>Returns</h4>
+<p> a new <a class="link" href="GimpIntStore.html" title="GimpIntStore"><span class="type">GimpIntStore</span></a>.</p>
+</div>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-int-store-lookup-by-value"></a><h3>gimp_int_store_lookup_by_value ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_int_store_lookup_by_value (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk2GtkTreeModel.html#GtkTreeModel-struct"><span class="type">GtkTreeModel</span></a> *model</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> value</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gtk2GtkTreeModel.html#GtkTreeIter-struct"><span class="type">GtkTreeIter</span></a> *iter</code></em>);</pre>
+<p>Iterate over the <em class="parameter"><code>model</code></em>
+ looking for <em class="parameter"><code>value</code></em>
+.</p>
+<div class="refsect3">
+<a name="gimp-int-store-lookup-by-value.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>model</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GimpIntStore.html" title="GimpIntStore"><span class="type">GimpIntStore</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>an integer value to lookup in the <em class="parameter"><code>model</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iter</p></td>
+<td class="parameter_description"><p>return location for the iter of the given <em class="parameter"><code>value</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-int-store-lookup-by-value.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the value has been located and <em class="parameter"><code>iter</code></em>
+is
+valid, <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+</div>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpIntStore.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpIntStore-struct"></a><h3>GimpIntStore</h3>
+<pre class="programlisting">typedef struct _GimpIntStore GimpIntStore;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpIntStoreColumns"></a><h3>enum GimpIntStoreColumns</h3>
+<p>The column types of <a class="link" href="GimpIntStore.html" title="GimpIntStore"><span class="type">GimpIntStore</span></a>.</p>
+<div class="refsect3">
+<a name="GimpIntStoreColumns.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-INT-STORE-VALUE:CAPS"></a>GIMP_INT_STORE_VALUE</p></td>
+<td class="enum_member_description">
+<p>the integer value</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-INT-STORE-LABEL:CAPS"></a>GIMP_INT_STORE_LABEL</p></td>
+<td class="enum_member_description">
+<p>a human-readable label</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-INT-STORE-STOCK-ID:CAPS"></a>GIMP_INT_STORE_STOCK_ID</p></td>
+<td class="enum_member_description">
+<p>a stock ID</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-INT-STORE-PIXBUF:CAPS"></a>GIMP_INT_STORE_PIXBUF</p></td>
+<td class="enum_member_description">
+<p>a <a href="/usr/share/gtk-doc/html/gdk-pixbufgdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a></p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-INT-STORE-USER-DATA:CAPS"></a>GIMP_INT_STORE_USER_DATA</p></td>
+<td class="enum_member_description">
+<p>arbitrary user data</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-INT-STORE-NUM-COLUMNS:CAPS"></a>GIMP_INT_STORE_NUM_COLUMNS</p></td>
+<td class="enum_member_description">
+<p>the number of columns</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpIntStore.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GimpIntStore--user-data-type"></a><h3>The <code class="literal">“user-data-type”</code> property</h3>
+<pre class="programlisting">  “user-data-type”           <a href="/usr/share/gtk-doc/html/gobjectgobject-Type-Information.html#GType"><span class="type">GType</span></a> *</pre>
+<p>Allows to set the <a href="/usr/share/gtk-doc/html/gobjectgobject-Type-Information.html#GType"><span class="type">GType</span></a> for the GIMP_INT_STORE_USER_DATA column.</p>
+<p>You need to set this property when constructing the store if you want
+to use the GIMP_INT_STORE_USER_DATA column and want to have the store
+handle ref-counting of your user data.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Allowed values: void</p>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

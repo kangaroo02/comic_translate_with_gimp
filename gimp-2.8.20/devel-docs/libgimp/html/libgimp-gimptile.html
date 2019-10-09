@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimptile: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manupulating Images and their Properties">
+<link rel="prev" href="libgimp-gimptexttool.html" title="gimptexttool">
+<link rel="next" href="libgimp-gimppainttools.html" title="gimppainttools">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimptile.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimptexttool.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimppainttools.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimptile"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimptile.top_of_page"></a>gimptile</span></h2>
+<p>gimptile</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimptile.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptile.html#gimp-tile-ref" title="gimp_tile_ref ()">gimp_tile_ref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptile.html#gimp-tile-ref-zero" title="gimp_tile_ref_zero ()">gimp_tile_ref_zero</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptile.html#gimp-tile-unref" title="gimp_tile_unref ()">gimp_tile_unref</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptile.html#gimp-tile-flush" title="gimp_tile_flush ()">gimp_tile_flush</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptile.html#gimp-tile-cache-size" title="gimp_tile_cache_size ()">gimp_tile_cache_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptile.html#gimp-tile-cache-ntiles" title="gimp_tile_cache_ntiles ()">gimp_tile_cache_ntiles</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimptile.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libgimp-gimptile.html#GimpTile" title="GimpTile">GimpTile</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimptile.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimptile.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-tile-ref"></a><h3>gimp_tile_ref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_tile_ref (<em class="parameter"><code><a class="link" href="libgimp-gimptile.html#GimpTile" title="GimpTile"><span class="type">GimpTile</span></a> *tile</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-tile-ref-zero"></a><h3>gimp_tile_ref_zero ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_tile_ref_zero (<em class="parameter"><code><a class="link" href="libgimp-gimptile.html#GimpTile" title="GimpTile"><span class="type">GimpTile</span></a> *tile</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-tile-unref"></a><h3>gimp_tile_unref ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_tile_unref (<em class="parameter"><code><a class="link" href="libgimp-gimptile.html#GimpTile" title="GimpTile"><span class="type">GimpTile</span></a> *tile</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> dirty</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-tile-flush"></a><h3>gimp_tile_flush ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_tile_flush (<em class="parameter"><code><a class="link" href="libgimp-gimptile.html#GimpTile" title="GimpTile"><span class="type">GimpTile</span></a> *tile</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-tile-cache-size"></a><h3>gimp_tile_cache_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_tile_cache_size (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gulong"><span class="type">gulong</span></a> kilobytes</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-tile-cache-ntiles"></a><h3>gimp_tile_cache_ntiles ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_tile_cache_ntiles (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gulong"><span class="type">gulong</span></a> ntiles</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimptile.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpTile"></a><h3>GimpTile</h3>
+<pre class="programlisting">typedef struct {
+  guint         ewidth;     /* the effective width of the tile */
+  guint         eheight;    /* the effective height of the tile */
+  guint         bpp;        /* the bytes per pixel (1, 2, 3 or 4 ) */
+  guint         tile_num;   /* the number of this tile within the drawable */
+  guint16       ref_count;  /* reference count for the tile */
+  guint         dirty : 1;  /* is the tile dirty? has it been modified? */
+  guint         shadow: 1;  /* is this a shadow tile */
+  guchar       *data;       /* the pixel data for the tile */
+  GimpDrawable *drawable;   /* the drawable this tile came from */
+} GimpTile;
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

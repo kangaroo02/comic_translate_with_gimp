@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpdisplay: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manupulating Images and their Properties">
+<link rel="prev" href="libgimp-gimpconvert.html" title="gimpconvert">
+<link rel="next" href="libgimp-gimpdrawable.html" title="gimpdrawable">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpdisplay.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpconvert.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpdrawable.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpdisplay"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpdisplay.top_of_page"></a>gimpdisplay</span></h2>
+<p>gimpdisplay</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpdisplay.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdisplay.html#gimp-display-new" title="gimp_display_new ()">gimp_display_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdisplay.html#gimp-display-delete" title="gimp_display_delete ()">gimp_display_delete</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdisplay.html#gimp-display-is-valid" title="gimp_display_is_valid ()">gimp_display_is_valid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdisplay.html#gimp-display-get-window-handle" title="gimp_display_get_window_handle ()">gimp_display_get_window_handle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdisplay.html#gimp-displays-flush" title="gimp_displays_flush ()">gimp_displays_flush</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpdisplay.html#gimp-displays-reconnect" title="gimp_displays_reconnect ()">gimp_displays_reconnect</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpdisplay.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpdisplay.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-display-new"></a><h3>gimp_display_new ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_display_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-display-delete"></a><h3>gimp_display_delete ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_display_delete (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> display_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-display-is-valid"></a><h3>gimp_display_is_valid ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_display_is_valid (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> display_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-display-get-window-handle"></a><h3>gimp_display_get_window_handle ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gimp_display_get_window_handle (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> display_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-displays-flush"></a><h3>gimp_displays_flush ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_displays_flush (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-displays-reconnect"></a><h3>gimp_displays_reconnect ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_displays_reconnect (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> old_image_ID</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> new_image_ID</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpdisplay.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

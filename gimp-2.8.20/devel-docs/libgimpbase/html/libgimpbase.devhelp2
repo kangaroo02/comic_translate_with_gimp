@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="GIMP Base Library Reference Manual" link="index.html" author="" name="libgimpbase" version="2" language="c">
+  <chapters>
+    <sub name="GIMP Base Library" link="libgimpbase.html">
+      <sub name="gimpbaseenums" link="libgimpbase-gimpbaseenums.html"/>
+      <sub name="gimpbasetypes" link="libgimpbase-gimpbasetypes.html"/>
+      <sub name="gimpversion" link="libgimpbase-gimpversion.html"/>
+      <sub name="gimplimits" link="libgimpbase-gimplimits.html"/>
+      <sub name="gimpparam" link="libgimpbase-gimpparam.html"/>
+      <sub name="gimpchecks" link="libgimpbase-gimpchecks.html"/>
+      <sub name="gimpcpuaccel" link="libgimpbase-gimpcpuaccel.html"/>
+      <sub name="gimpdatafiles" link="libgimpbase-gimpdatafiles.html"/>
+      <sub name="gimpenv" link="libgimpbase-gimpenv.html"/>
+      <sub name="gimpmemsize" link="libgimpbase-gimpmemsize.html"/>
+      <sub name="gimprectangle" link="libgimpbase-gimprectangle.html"/>
+      <sub name="gimpparasite" link="libgimpbase-gimpparasite.html"/>
+      <sub name="gimpparasiteio" link="libgimpbase-gimpparasiteio.html"/>
+      <sub name="gimpsignal" link="libgimpbase-gimpsignal.html"/>
+      <sub name="gimpunit" link="libgimpbase-gimpunit.html"/>
+      <sub name="gimputils" link="libgimpbase-gimputils.html"/>
+    </sub>
+    <sub name="Index" link="libgimpbase-index.html"/>
+    <sub name="Index of new symbols in GIMP 2.2" link="libgimpbase-index-new-in-2-2.html"/>
+    <sub name="Index of new symbols in GIMP 2.4" link="libgimpbase-index-new-in-2-4.html"/>
+    <sub name="Index of new symbols in GIMP 2.6" link="libgimpbase-index-new-in-2-6.html"/>
+    <sub name="Index of new symbols in GIMP 2.8" link="libgimpbase-index-new-in-2-8.html"/>
+    <sub name="Index of deprecated symbols" link="libgimpbase-index-deprecated.html"/>
+  </chapters>
+  <functions>
+    <keyword type="enum" name="enum GimpAddMaskType" link="libgimpbase-gimpbaseenums.html#GimpAddMaskType"/>
+    <keyword type="enum" name="enum GimpBlendMode" link="libgimpbase-gimpbaseenums.html#GimpBlendMode"/>
+    <keyword type="enum" name="enum GimpBucketFillMode" link="libgimpbase-gimpbaseenums.html#GimpBucketFillMode"/>
+    <keyword type="enum" name="enum GimpChannelOps" link="libgimpbase-gimpbaseenums.html#GimpChannelOps"/>
+    <keyword type="enum" name="enum GimpChannelType" link="libgimpbase-gimpbaseenums.html#GimpChannelType"/>
+    <keyword type="enum" name="enum GimpCheckSize" link="libgimpbase-gimpbaseenums.html#GimpCheckSize"/>
+    <keyword type="enum" name="enum GimpCheckType" link="libgimpbase-gimpbaseenums.html#GimpCheckType"/>
+    <keyword type="enum" name="enum GimpCloneType" link="libgimpbase-gimpbaseenums.html#GimpCloneType"/>
+    <keyword type="enum" name="enum GimpDesaturateMode" link="libgimpbase-gimpbaseenums.html#GimpDesaturateMode"/>
+    <keyword type="enum" name="enum GimpDodgeBurnType" link="libgimpbase-gimpbaseenums.html#GimpDodgeBurnType"/>
+    <keyword type="enum" name="enum GimpForegroundExtractMode" link="libgimpbase-gimpbaseenums.html#GimpForegroundExtractMode"/>
+    <keyword type="enum" name="enum GimpGradientType" link="libgimpbase-gimpbaseenums.html#GimpGradientType"/>
+    <keyword type="enum" name="enum GimpGridStyle" link="libgimpbase-gimpbaseenums.html#GimpGridStyle"/>
+    <keyword type="enum" name="enum GimpIconType" link="libgimpbase-gimpbaseenums.html#GimpIconType"/>
+    <keyword type="enum" name="enum GimpImageBaseType" link="libgimpbase-gimpbaseenums.html#GimpImageBaseType"/>
+    <keyword type="enum" name="enum GimpImageType" link="libgimpbase-gimpbaseenums.html#GimpImageType"/>
+    <keyword type="enum" name="enum GimpInterpolationType" link="libgimpbase-gimpbaseenums.html#GimpInterpolationType"/>
+    <keyword type="enum" name="enum GimpMessageHandlerType" link="libgimpbase-gimpbaseenums.html#GimpMessageHandlerType"/>
+    <keyword type="enum" name="enum GimpPaintApplicationMode" link="libgimpbase-gimpbaseenums.html#GimpPaintApplicationMode"/>
+    <keyword type="enum" name="enum GimpPDBArgType" link="libgimpbase-gimpbaseenums.html#GimpPDBArgType"/>
+    <keyword type="enum" name="enum GimpPDBErrorHandler" link="libgimpbase-gimpbaseenums.html#GimpPDBErrorHandler"/>
+    <keyword type="enum" name="enum GimpPDBProcType" link="libgimpbase-gimpbaseenums.html#GimpPDBProcType"/>
+    <keyword type="enum" name="enum GimpPDBStatusType" link="libgimpbase-gimpbaseenums.html#GimpPDBStatusType"/>
+    <keyword type="enum" name="enum GimpProgressCommand" link="libgimpbase-gimpbaseenums.html#GimpProgressCommand"/>
+    <keyword type="enum" name="enum GimpRepeatMode" link="libgimpbase-gimpbaseenums.html#GimpRepeatMode"/>
+    <keyword type="enum" name="enum GimpRunMode" link="libgimpbase-gimpbaseenums.html#GimpRunMode"/>
+    <keyword type="enum" name="enum GimpSizeType" link="libgimpbase-gimpbaseenums.html#GimpSizeType"/>
+    <keyword type="enum" name="enum GimpStackTraceMode" link="libgimpbase-gimpbaseenums.html#GimpStackTraceMode"/>
+    <keyword type="enum" name="enum GimpTextDirection" link="libgimpbase-gimpbaseenums.html#GimpTextDirection"/>
+    <keyword type="enum" name="enum GimpTextHintStyle" link="libgimpbase-gimpbaseenums.html#GimpTextHintStyle"/>
+    <keyword type="enum" name="enum GimpTextJustification" link="libgimpbase-gimpbaseenums.html#GimpTextJustification"/>
+    <keyword type="enum" name="enum GimpTransferMode" link="libgimpbase-gimpbaseenums.html#GimpTransferMode"/>
+    <keyword type="enum" name="enum GimpTransformDirection" link="libgimpbase-gimpbaseenums.html#GimpTransformDirection"/>
+    <keyword type="enum" name="enum GimpTransformResize" link="libgimpbase-gimpbaseenums.html#GimpTransformResize"/>
+    <keyword type="enum" name="enum GimpUserDirectory" link="libgimpbase-gimpbaseenums.html#GimpUserDirectory" deprecated=""/>
+    <keyword type="enum" name="enum GimpVectorsStrokeType" link="libgimpbase-gimpbaseenums.html#GimpVectorsStrokeType"/>
+    <keyword type="function" name="gimp_type_set_translation_domain ()" link="libgimpbase-gimpbasetypes.html#gimp-type-set-translation-domain" since="GIMP 2.2"/>
+    <keyword type="function" name="gimp_type_get_translation_domain ()" link="libgimpbase-gimpbasetypes.html#gimp-type-get-translation-domain" since="GIMP 2.2"/>
+    <keyword type="function" name="gimp_type_set_translation_context ()" link="libgimpbase-gimpbasetypes.html#gimp-type-set-translation-context" since="GIMP 2.8"/>
+    <keyword type="function" name="gimp_type_get_translation_context ()" link="libgimpbase-gimpbasetypes.html#gimp-type-get-translation-context" since="GIMP 2.8"/>
+    <keyword type="function" name="gimp_enum_set_value_descriptions ()" link="libgimpbase-gimpbasetypes.html#gimp-enum-set-value-descriptions" since="GIMP 2.2"/>
+    <keyword type="function" name="gimp_enum_get_value_descriptions ()" link="libgimpbase-gimpbasetypes.html#gimp-enum-get-value-descriptions" since="GIMP 2.2"/>
+    <keyword type="function" name="gimp_flags_get_value_descriptions ()" link="libgimpbase-gimpbasetypes.html#gimp-flags-get-value-descriptions" since="GIMP 2.2"/>
+    <keyword type="function" name="gimp_flags_set_value_descriptions ()" link="libgimpbase-gimpbasetypes.html#gimp-flags-set-value-descriptions" since="GIMP 2.2"/>
+    <keyword type="struct" name="struct GimpEnumDesc" link="libgimpbase-gimpbasetypes.html#GimpEnumDesc"/>
+    <keyword type="struct" name="struct GimpFlagsDesc" link="libgimpbase-gimpbasetypes.html#GimpFlagsDesc"/>
+    <keyword type="macro" name="GIMP_CHECK_VERSION()" link="libgimpbase-gimpversion.html#GIMP-CHECK-VERSION:CAPS"/>
+    <keyword type="macro" name="GIMP_MAJOR_VERSION" link="libgimpbase-gimpversion.html#GIMP-MAJOR-VERSION:CAPS"/>
+    <keyword type="macro" name="GIMP_MINOR_VERSION" link="libgimpbase-gimpversion.html#GIMP-MINOR-VERSION:CAPS"/>
+    <keyword type="macro" name="GIMP_MICRO_VERSION" link="libgimpbase-gimpversion.html#GIMP-MICRO-VERSION:CAPS"/>
+    <keyword type="macro" name="GIMP_VERSION" link="libgimpbase-gimpversion.html#GIMP-VERSION:CAPS"/>
+    <keyword type="macro" name="GIMP_API_VERSION" link="libgimpbase-gimpversion.html#GIMP-API-VERSION:CAPS" since="GIMP 2.2"/>
+    <keyword type="macro" name="GIMPVAR" link="libgimpbase-gimpversion.html#GIMPVAR:CAPS"/>
+    <keyword type="variable" name="gimp_major_version" link="libgimpbase-gimpversion.html#gimp-major-version"/>
+    <keyword type="variable" name="gimp_minor_version" link="libgimpbase-gimpversion.html#gimp-minor-version"/>
+    <keyword type="variable" name="gimp_micro_version" link="libgimpbase-gimpversion.html#gimp-micro-version"/>
+    <keyword type="macro" name="GIMP_MIN_IMAGE_SIZE" link="libgimpbase-gimplimits.html#GIMP-MIN-IMAGE-SIZE:CAPS"/>
+    <keyword type="macro" name="GIMP_MAX_IMAGE_SIZE" link="libgimpbase-gimplimits.html#GIMP-MAX-IMAGE-SIZE:CAPS"/>
+    <keyword type="macro" name="GIMP_MIN_RESOLUTION" link="libgimpbase-gimplimits.html#GIMP-MIN-RESOLUTION:CAPS"/>
+    <keyword type="macro" name="GIMP_MAX_RESOLUTION" link="libgimpbase-gimplimits.html#GIMP-MAX-RESOLUTION:CAPS"/>
+    <keyword type="macro" name="GIMP_MAX_MEMSIZE" link="libgimpbase-gimplimits.html#GIMP-MAX-MEMSIZE:CAPS"/>
+    <keyword type="macro" name="GIMP_PARAM_STATIC_STRINGS" link="libgimpbase-gimpparam.html#GIMP-PARAM-STATIC-STRINGS:CAPS" since="GIMP 2.4"/>
+    <keyword type="macro" name="GIMP_PARAM_READABLE" link="libgimpbase-gimpparam.html#GIMP-PARAM-READABLE:CAPS" since="GIMP 2.4"/>
+    <keyword type="macro" name="GIMP_PARAM_WRITABLE" link="libgimpbase-gimpparam.html#GIMP-PARAM-WRITABLE:CAPS" since="GIMP 2.4"/>
+    <keyword type="macro" name="GIMP_PARAM_READWRITE" link="libgimpbase-gimpparam.html#GIMP-PARAM-READWRITE:CAPS" since="GIMP 2.4"/>
+    <keyword type="function" name="gimp_checks_get_shades ()" link="libgimpbase-gimpchecks.html#gimp-checks-get-shades" since="GIMP 2.2"/>
+    <keyword type="macro" name="GIMP_CHECK_SIZE" link="libgimpbase-gimpchecks.html#GIMP-CHECK-SIZE:CAPS"/>
+    <keyword type="macro" name="GIMP_CHECK_SIZE_SM" link="libgimpbase-gimpchecks.html#GIMP-CHECK-SIZE-SM:CAPS"/>
+    <keyword type="macro" name="GIMP_CHECK_DARK" link="libgimpbase-gimpchecks.html#GIMP-CHECK-DARK:CAPS"/>
+    <keyword type="macro" name="GIMP_CHECK_LIGHT" link="libgimpbase-gimpchecks.html#GIMP-CHECK-LIGHT:CAPS"/>
+    <keyword type="function" name="gimp_cpu_accel_get_support ()" link="libgimpbase-gimpcpuaccel.html#gimp-cpu-accel-get-support" since="GIMP 2.4"/>
+    <keyword type="function" name="gimp_cpu_accel_set_use ()" link="libgimpbase-gimpcpuaccel.html#gimp-cpu-accel-set-use" since="GIMP 2.4"/>
+    <keyword type="enum" name="enum GimpCpuAccelFlags" link="libgimpbase-gimpcpuaccel.html#GimpCpuAccelFlags"/>
+    <keyword type="function" name="GimpDatafileLoaderFunc ()" link="libgimpbase-gimpdatafiles.html#GimpDatafileLoaderFunc"/>
+    <keyword type="function" name="gimp_datafiles_check_extension ()" link="libgimpbase-gimpdatafiles.html#gimp-datafiles-check-extension"/>
+    <keyword type="function" name="gimp_datafiles_read_directories ()" link="libgimpbase-gimpdatafiles.html#gimp-datafiles-read-directories"/>
+    <keyword type="struct" name="GimpDatafileData" link="libgimpbase-gimpdatafiles.html#GimpDatafileData"/>
+    <keyword type="function" name="gimp_env_init ()" link="libgimpbase-gimpenv.html#gimp-env-init" since="GIMP 2.4"/>
+    <keyword type="function" name="gimp_directory ()" link="libgimpbase-gimpenv.html#gimp-directory"/>
+    <keyword type="function" name="gimp_data_directory ()" link="libgimpbase-gimpenv.html#gimp-data-directory"/>
+    <keyword type="function" name="gimp_locale_directory ()" link="libgimpbase-gimpenv.html#gimp-locale-directory"/>
+    <keyword type="function" name="gimp_plug_in_directory ()" link="libgimpbase-gimpenv.html#gimp-plug-in-directory"/>
+    <keyword type="function" name="gimp_sysconf_directory ()" link="libgimpbase-gimpenv.html#gimp-sysconf-directory"/>
+    <keyword type="function" name="gimp_user_directory ()" link="libgimpbase-gimpenv.html#gimp-user-directory" deprecated="" since="GIMP 2.4"/>
+    <keyword type="function" name="gimp_personal_rc_file ()" link="libgimpbase-gimpenv.html#gimp-personal-rc-file"/>
+    <keyword type="function" name="gimp_gtkrc ()" link="libgimpbase-gimpenv.html#gimp-gtkrc" deprecated=""/>
+    <keyword type="function" name="gimp_path_parse ()" link="libgimpbase-gimpenv.html#gimp-path-parse"/>
+    <keyword type="function" name="gimp_path_to_str ()" link="libgimpbase-gimpenv.html#gimp-path-to-str"/>
+    <keyword type="function" name="gimp_path_free ()" link="libgimpbase-gimpenv.html#gimp-path-free"/>
+    <keyword type="function" name="gimp_path_get_user_writable_dir ()" link="libgimpbase-gimpenv.html#gimp-path-get-user-writable-dir"/>
+    <keyword type="function" name="gimp_memsize_serialize ()" link="libgimpbase-gimpmemsize.html#gimp-memsize-serialize" since="GIMP 2.2"/>
+    <keyword type="function" name="gimp_memsize_deserialize ()" link="libgimpbase-gimpmemsize.html#gimp-memsize-deserialize" since="GIMP 2.2"/>
+    <keyword type="function" name="gimp_memsize_to_string ()" link="libgimpbase-gimpmemsize.html#gimp-memsize-to-string" deprecated=""/>
+    <keyword type="macro" name="GIMP_IS_PARAM_SPEC_MEMSIZE()" link="libgimpbase-gimpmemsize.html#GIMP-IS-PARAM-SPEC-MEMSIZE:CAPS"/>
+    <keyword type="function" name="gimp_param_spec_memsize ()" link="libgimpbase-gimpmemsize.html#gimp-param-spec-memsize" since="GIMP 2.4"/>
+    <keyword type="macro" name="GIMP_VALUE_HOLDS_MEMSIZE()" link="libgimpbase-gimpmemsize.html#GIMP-VALUE-HOLDS-MEMSIZE:CAPS"/>
+    <keyword type="macro" name="GIMP_TYPE_MEMSIZE" link="libgimpbase-gimpmemsize.html#GIMP-TYPE-MEMSIZE:CAPS"/>
+    <keyword type="macro" name="GIMP_TYPE_PARAM_MEMSIZE" link="libgimpbase-gimpmemsize.html#GIMP-TYPE-PARAM-MEMSIZE:CAPS" deprecated=""/>
+    <keyword type="function" name="gimp_rectangle_intersect ()" link="libgimpbase-gimprectangle.html#gimp-rectangle-intersect" since="GIMP 2.4"/>
+    <keyword type="function" name="gimp_rectangle_union ()" link="libgimpbase-gimprectangle.html#gimp-rectangle-union" since="GIMP 2.8"/>
+    <keyword type="function" name="gimp_parasite_new ()" link="libgimpbase-gimpparasite.html#gimp-parasite-new"/>
+    <keyword type="function" name="gimp_parasite_free ()" link="libgimpbase-gimpparasite.html#gimp-parasite-free"/>
+    <keyword type="function" name="gimp_parasite_copy ()" link="libgimpbase-gimpparasite.html#gimp-parasite-copy"/>
+    <keyword type="function" name="gimp_parasite_compare ()" link="libgimpbase-gimpparasite.html#gimp-parasite-compare"/>
+    <keyword type="function" name="gimp_parasite_is_type ()" link="libgimpbase-gimpparasite.html#gimp-parasite-is-type"/>
+    <keyword type="function" name="gimp_parasite_is_persistent ()" link="libgimpbase-gimpparasite.html#gimp-parasite-is-persistent"/>
+    <keyword type="function" name="gimp_parasite_is_undoable ()" link="libgimpbase-gimpparasite.html#gimp-parasite-is-undoable"/>
+    <keyword type="function" name="gimp_parasite_has_flag ()" link="libgimpbase-gimpparasite.html#gimp-parasite-has-flag"/>
+    <keyword type="function" name="gimp_parasite_flags ()" link="libgimpbase-gimpparasite.html#gimp-parasite-flags"/>
+    <keyword type="function" name="gimp_parasite_name ()" link="libgimpbase-gimpparasite.html#gimp-parasite-name"/>
+    <keyword type="function" name="gimp_parasite_data ()" link="libgimpbase-gimpparasite.html#gimp-parasite-data"/>
+    <keyword type="function" name="gimp_parasite_data_size ()" link="libgimpbase-gimpparasite.html#gimp-parasite-data-size"/>
+    <keyword type="macro" name="GIMP_IS_PARAM_SPEC_PARASITE()" link="libgimpbase-gimpparasite.html#GIMP-IS-PARAM-SPEC-PARASITE:CAPS"/>
+    <keyword type="function" name="gimp_param_spec_parasite ()" link="libgimpbase-gimpparasite.html#gimp-param-spec-parasite"/>
+    <keyword type="macro" name="GIMP_VALUE_HOLDS_PARASITE()" link="libgimpbase-gimpparasite.html#GIMP-VALUE-HOLDS-PARASITE:CAPS"/>
+    <keyword type="struct" name="GimpParasite" link="libgimpbase-gimpparasite.html#GimpParasite"/>
+    <keyword type="macro" name="GIMP_PARASITE_PERSISTENT" link="libgimpbase-gimpparasite.html#GIMP-PARASITE-PERSISTENT:CAPS"/>
+    <keyword type="macro" name="GIMP_PARASITE_UNDOABLE" link="libgimpbase-gimpparasite.html#GIMP-PARASITE-UNDOABLE:CAPS"/>
+    <keyword type="macro" name="GIMP_PARASITE_ATTACH_PARENT" link="libgimpbase-gimpparasite.html#GIMP-PARASITE-ATTACH-PARENT:CAPS"/>
+    <keyword type="macro" name="GIMP_PARASITE_PARENT_PERSISTENT" link="libgimpbase-gimpparasite.html#GIMP-PARASITE-PARENT-PERSISTENT:CAPS"/>
+    <keyword type="macro" name="GIMP_PARASITE_PARENT_UNDOABLE" link="libgimpbase-gimpparasite.html#GIMP-PARASITE-PARENT-UNDOABLE:CAPS"/>
+    <keyword type="macro" name="GIMP_PARASITE_ATTACH_GRANDPARENT" link="libgimpbase-gimpparasite.html#GIMP-PARASITE-ATTACH-GRANDPARENT:CAPS"/>
+    <keyword type="macro" name="GIMP_PARASITE_GRANDPARENT_PERSISTENT" link="libgimpbase-gimpparasite.html#GIMP-PARASITE-GRANDPARENT-PERSISTENT:CAPS"/>
+    <keyword type="macro" name="GIMP_PARASITE_GRANDPARENT_UNDOABLE" link="libgimpbase-gimpparasite.html#GIMP-PARASITE-GRANDPARENT-UNDOABLE:CAPS"/>
+    <keyword type="macro" name="GIMP_TYPE_PARASITE" link="libgimpbase-gimpparasite.html#GIMP-TYPE-PARASITE:CAPS"/>
+    <keyword type="macro" name="GIMP_TYPE_PARAM_PARASITE" link="libgimpbase-gimpparasite.html#GIMP-TYPE-PARAM-PARASITE:CAPS"/>
+    <keyword type="function" name="gimp_pixpipe_params_init ()" link="libgimpbase-gimpparasiteio.html#gimp-pixpipe-params-init"/>
+    <keyword type="function" name="gimp_pixpipe_params_parse ()" link="libgimpbase-gimpparasiteio.html#gimp-pixpipe-params-parse"/>
+    <keyword type="function" name="gimp_pixpipe_params_build ()" link="libgimpbase-gimpparasiteio.html#gimp-pixpipe-params-build"/>
+    <keyword type="macro" name="GIMP_PIXPIPE_MAXDIM" link="libgimpbase-gimpparasiteio.html#GIMP-PIXPIPE-MAXDIM:CAPS"/>
+    <keyword type="struct" name="struct GimpPixPipeParams" link="libgimpbase-gimpparasiteio.html#GimpPixPipeParams"/>
+    <keyword type="function" name="GimpSignalHandlerFunc ()" link="libgimpbase-gimpsignal.html#GimpSignalHandlerFunc"/>
+    <keyword type="function" name="gimp_signal_private ()" link="libgimpbase-gimpsignal.html#gimp-signal-private"/>
+    <keyword type="function" name="gimp_unit_get_number_of_units ()" link="libgimpbase-gimpunit.html#gimp-unit-get-number-of-units"/>
+    <keyword type="function" name="gimp_unit_get_number_of_built_in_units ()" link="libgimpbase-gimpunit.html#gimp-unit-get-number-of-built-in-units"/>
+    <keyword type="function" name="gimp_unit_new ()" link="libgimpbase-gimpunit.html#gimp-unit-new"/>
+    <keyword type="function" name="gimp_unit_get_deletion_flag ()" link="libgimpbase-gimpunit.html#gimp-unit-get-deletion-flag"/>
+    <keyword type="function" name="gimp_unit_set_deletion_flag ()" link="libgimpbase-gimpunit.html#gimp-unit-set-deletion-flag"/>
+    <keyword type="function" name="gimp_unit_get_factor ()" link="libgimpbase-gimpunit.html#gimp-unit-get-factor"/>
+    <keyword type="function" name="gimp_unit_get_digits ()" link="libgimpbase-gimpunit.html#gimp-unit-get-digits"/>
+    <keyword type="function" name="gimp_unit_get_identifier ()" link="libgimpbase-gimpunit.html#gimp-unit-get-identifier"/>
+    <keyword type="function" name="gimp_unit_get_symbol ()" link="libgimpbase-gimpunit.html#gimp-unit-get-symbol"/>
+    <keyword type="function" name="gimp_unit_get_abbreviation ()" link="libgimpbase-gimpunit.html#gimp-unit-get-abbreviation"/>
+    <keyword type="function" name="gimp_unit_get_singular ()" link="libgimpbase-gimpunit.html#gimp-unit-get-singular"/>
+    <keyword type="function" name="gimp_unit_get_plural ()" link="libgimpbase-gimpunit.html#gimp-unit-get-plural"/>
+    <keyword type="function" name="gimp_unit_format_string ()" link="libgimpbase-gimpunit.html#gimp-unit-format-string" since="GIMP 2.8"/>
+    <keyword type="function" name="gimp_pixels_to_units ()" link="libgimpbase-gimpunit.html#gimp-pixels-to-units" since="GIMP 2.8"/>
+    <keyword type="function" name="gimp_units_to_pixels ()" link="libgimpbase-gimpunit.html#gimp-units-to-pixels" since="GIMP 2.8"/>
+    <keyword type="function" name="gimp_units_to_points ()" link="libgimpbase-gimpunit.html#gimp-units-to-points" since="GIMP 2.8"/>
+    <keyword type="macro" name="GIMP_IS_PARAM_SPEC_UNIT()" link="libgimpbase-gimpunit.html#GIMP-IS-PARAM-SPEC-UNIT:CAPS"/>
+    <keyword type="function" name="gimp_param_spec_unit ()" link="libgimpbase-gimpunit.html#gimp-param-spec-unit" since="GIMP 2.4"/>
+    <keyword type="macro" name="GIMP_VALUE_HOLDS_UNIT()" link="libgimpbase-gimpunit.html#GIMP-VALUE-HOLDS-UNIT:CAPS"/>
+    <keyword type="enum" name="enum GimpUnit" link="libgimpbase-gimpunit.html#GimpUnit"/>
+    <keyword type="macro" name="GIMP_TYPE_UNIT" link="libgimpbase-gimpunit.html#GIMP-TYPE-UNIT:CAPS"/>
+    <keyword type="macro" name="GIMP_TYPE_PARAM_UNIT" link="libgimpbase-gimpunit.html#GIMP-TYPE-PARAM-UNIT:CAPS"/>
+    <keyword type="function" name="gimp_any_to_utf8 ()" link="libgimpbase-gimputils.html#gimp-any-to-utf8"/>
+    <keyword type="function" name="gimp_filename_to_utf8 ()" link="libgimpbase-gimputils.html#gimp-filename-to-utf8"/>
+    <keyword type="function" name="gimp_utf8_strtrim ()" link="libgimpbase-gimputils.html#gimp-utf8-strtrim"/>
+    <keyword type="function" name="gimp_escape_uline ()" link="libgimpbase-gimputils.html#gimp-escape-uline" since="GIMP 2.2"/>
+    <keyword type="function" name="gimp_strip_uline ()" link="libgimpbase-gimputils.html#gimp-strip-uline"/>
+    <keyword type="function" name="gimp_canonicalize_identifier ()" link="libgimpbase-gimputils.html#gimp-canonicalize-identifier" since="GIMP 2.4"/>
+    <keyword type="function" name="gimp_enum_get_desc ()" link="libgimpbase-gimputils.html#gimp-enum-get-desc" since="GIMP 2.2"/>
+    <keyword type="function" name="gimp_enum_get_value ()" link="libgimpbase-gimputils.html#gimp-enum-get-value" since="GIMP 2.2"/>
+    <keyword type="function" name="gimp_enum_value_get_desc ()" link="libgimpbase-gimputils.html#gimp-enum-value-get-desc" since="GIMP 2.2"/>
+    <keyword type="function" name="gimp_enum_value_get_help ()" link="libgimpbase-gimputils.html#gimp-enum-value-get-help" since="GIMP 2.2"/>
+    <keyword type="function" name="gimp_flags_get_first_desc ()" link="libgimpbase-gimputils.html#gimp-flags-get-first-desc" since="GIMP 2.2"/>
+    <keyword type="function" name="gimp_flags_get_first_value ()" link="libgimpbase-gimputils.html#gimp-flags-get-first-value" since="GIMP 2.2"/>
+    <keyword type="function" name="gimp_flags_value_get_desc ()" link="libgimpbase-gimputils.html#gimp-flags-value-get-desc" since="GIMP 2.2"/>
+    <keyword type="function" name="gimp_flags_value_get_help ()" link="libgimpbase-gimputils.html#gimp-flags-value-get-help" since="GIMP 2.2"/>
+    <keyword type="constant" name="GIMP_ADD_WHITE_MASK" link="libgimpbase-gimpbaseenums.html#GIMP-ADD-WHITE-MASK:CAPS"/>
+    <keyword type="constant" name="GIMP_ADD_BLACK_MASK" link="libgimpbase-gimpbaseenums.html#GIMP-ADD-BLACK-MASK:CAPS"/>
+    <keyword type="constant" name="GIMP_ADD_ALPHA_MASK" link="libgimpbase-gimpbaseenums.html#GIMP-ADD-ALPHA-MASK:CAPS"/>
+    <keyword type="constant" name="GIMP_ADD_ALPHA_TRANSFER_MASK" link="libgimpbase-gimpbaseenums.html#GIMP-ADD-ALPHA-TRANSFER-MASK:CAPS"/>
+    <keyword type="constant" name="GIMP_ADD_SELECTION_MASK" link="libgimpbase-gimpbaseenums.html#GIMP-ADD-SELECTION-MASK:CAPS"/>
+    <keyword type="constant" name="GIMP_ADD_COPY_MASK" link="libgimpbase-gimpbaseenums.html#GIMP-ADD-COPY-MASK:CAPS"/>
+    <keyword type="constant" name="GIMP_ADD_CHANNEL_MASK" link="libgimpbase-gimpbaseenums.html#GIMP-ADD-CHANNEL-MASK:CAPS"/>
+    <keyword type="constant" name="GIMP_FG_BG_RGB_MODE" link="libgimpbase-gimpbaseenums.html#GIMP-FG-BG-RGB-MODE:CAPS"/>
+    <keyword type="constant" name="GIMP_FG_BG_HSV_MODE" link="libgimpbase-gimpbaseenums.html#GIMP-FG-BG-HSV-MODE:CAPS"/>
+    <keyword type="constant" name="GIMP_FG_TRANSPARENT_MODE" link="libgimpbase-gimpbaseenums.html#GIMP-FG-TRANSPARENT-MODE:CAPS"/>
+    <keyword type="constant" name="GIMP_CUSTOM_MODE" link="libgimpbase-gimpbaseenums.html#GIMP-CUSTOM-MODE:CAPS"/>
+    <keyword type="constant" name="GIMP_FG_BUCKET_FILL" link="libgimpbase-gimpbaseenums.html#GIMP-FG-BUCKET-FILL:CAPS"/>
+    <keyword type="constant" name="GIMP_BG_BUCKET_FILL" link="libgimpbase-gimpbaseenums.html#GIMP-BG-BUCKET-FILL:CAPS"/>
+    <keyword type="constant" name="GIMP_PATTERN_BUCKET_FILL" link="libgimpbase-gimpbaseenums.html#GIMP-PATTERN-BUCKET-FILL:CAPS"/>
+    <keyword type="constant" name="GIMP_CHANNEL_OP_ADD" link="libgimpbase-gimpbaseenums.html#GIMP-CHANNEL-OP-ADD:CAPS"/>
+    <keyword type="constant" name="GIMP_CHANNEL_OP_SUBTRACT" link="libgimpbase-gimpbaseenums.html#GIMP-CHANNEL-OP-SUBTRACT:CAPS"/>
+    <keyword type="constant" name="GIMP_CHANNEL_OP_REPLACE" link="libgimpbase-gimpbaseenums.html#GIMP-CHANNEL-OP-REPLACE:CAPS"/>
+    <keyword type="constant" name="GIMP_CHANNEL_OP_INTERSECT" link="libgimpbase-gimpbaseenums.html#GIMP-CHANNEL-OP-INTERSECT:CAPS"/>
+    <keyword type="constant" name="GIMP_RED_CHANNEL" link="libgimpbase-gimpbaseenums.html#GIMP-RED-CHANNEL:CAPS"/>
+    <keyword type="constant" name="GIMP_GREEN_CHANNEL" link="libgimpbase-gimpbaseenums.html#GIMP-GREEN-CHANNEL:CAPS"/>
+    <keyword type="constant" name="GIMP_BLUE_CHANNEL" link="libgimpbase-gimpbaseenums.html#GIMP-BLUE-CHANNEL:CAPS"/>
+    <keyword type="constant" name="GIMP_GRAY_CHANNEL" link="libgimpbase-gimpbaseenums.html#GIMP-GRAY-CHANNEL:CAPS"/>
+    <keyword type="constant" name="GIMP_INDEXED_CHANNEL" link="libgimpbase-gimpbaseenums.html#GIMP-INDEXED-CHANNEL:CAPS"/>
+    <keyword type="constant" name="GIMP_ALPHA_CHANNEL" link="libgimpbase-gimpbaseenums.html#GIMP-ALPHA-CHANNEL:CAPS"/>
+    <keyword type="constant" name="GIMP_CHECK_SIZE_SMALL_CHECKS" link="libgimpbase-gimpbaseenums.html#GIMP-CHECK-SIZE-SMALL-CHECKS:CAPS"/>
+    <keyword type="constant" name="GIMP_CHECK_SIZE_MEDIUM_CHECKS" link="libgimpbase-gimpbaseenums.html#GIMP-CHECK-SIZE-MEDIUM-CHECKS:CAPS"/>
+    <keyword type="constant" name="GIMP_CHECK_SIZE_LARGE_CHECKS" link="libgimpbase-gimpbaseenums.html#GIMP-CHECK-SIZE-LARGE-CHECKS:CAPS"/>
+    <keyword type="constant" name="GIMP_CHECK_TYPE_LIGHT_CHECKS" link="libgimpbase-gimpbaseenums.html#GIMP-CHECK-TYPE-LIGHT-CHECKS:CAPS"/>
+    <keyword type="constant" name="GIMP_CHECK_TYPE_GRAY_CHECKS" link="libgimpbase-gimpbaseenums.html#GIMP-CHECK-TYPE-GRAY-CHECKS:CAPS"/>
+    <keyword type="constant" name="GIMP_CHECK_TYPE_DARK_CHECKS" link="libgimpbase-gimpbaseenums.html#GIMP-CHECK-TYPE-DARK-CHECKS:CAPS"/>
+    <keyword type="constant" name="GIMP_CHECK_TYPE_WHITE_ONLY" link="libgimpbase-gimpbaseenums.html#GIMP-CHECK-TYPE-WHITE-ONLY:CAPS"/>
+    <keyword type="constant" name="GIMP_CHECK_TYPE_GRAY_ONLY" link="libgimpbase-gimpbaseenums.html#GIMP-CHECK-TYPE-GRAY-ONLY:CAPS"/>
+    <keyword type="constant" name="GIMP_CHECK_TYPE_BLACK_ONLY" link="libgimpbase-gimpbaseenums.html#GIMP-CHECK-TYPE-BLACK-ONLY:CAPS"/>
+    <keyword type="constant" name="GIMP_IMAGE_CLONE" link="libgimpbase-gimpbaseenums.html#GIMP-IMAGE-CLONE:CAPS"/>
+    <keyword type="constant" name="GIMP_PATTERN_CLONE" link="libgimpbase-gimpbaseenums.html#GIMP-PATTERN-CLONE:CAPS"/>
+    <keyword type="constant" name="GIMP_DESATURATE_LIGHTNESS" link="libgimpbase-gimpbaseenums.html#GIMP-DESATURATE-LIGHTNESS:CAPS"/>
+    <keyword type="constant" name="GIMP_DESATURATE_LUMINOSITY" link="libgimpbase-gimpbaseenums.html#GIMP-DESATURATE-LUMINOSITY:CAPS"/>
+    <keyword type="constant" name="GIMP_DESATURATE_AVERAGE" link="libgimpbase-gimpbaseenums.html#GIMP-DESATURATE-AVERAGE:CAPS"/>
+    <keyword type="constant" name="GIMP_DODGE" link="libgimpbase-gimpbaseenums.html#GIMP-DODGE:CAPS"/>
+    <keyword type="constant" name="GIMP_BURN" link="libgimpbase-gimpbaseenums.html#GIMP-BURN:CAPS"/>
+    <keyword type="constant" name="GIMP_FOREGROUND_EXTRACT_SIOX" link="libgimpbase-gimpbaseenums.html#GIMP-FOREGROUND-EXTRACT-SIOX:CAPS"/>
+    <keyword type="constant" name="GIMP_GRADIENT_LINEAR" link="libgimpbase-gimpbaseenums.html#GIMP-GRADIENT-LINEAR:CAPS"/>
+    <keyword type="constant" name="GIMP_GRADIENT_BILINEAR" link="libgimpbase-gimpbaseenums.html#GIMP-GRADIENT-BILINEAR:CAPS"/>
+    <keyword type="constant" name="GIMP_GRADIENT_RADIAL" link="libgimpbase-gimpbaseenums.html#GIMP-GRADIENT-RADIAL:CAPS"/>
+    <keyword type="constant" name="GIMP_GRADIENT_SQUARE" link="libgimpbase-gimpbaseenums.html#GIMP-GRADIENT-SQUARE:CAPS"/>
+    <keyword type="constant" name="GIMP_GRADIENT_CONICAL_SYMMETRIC" link="libgimpbase-gimpbaseenums.html#GIMP-GRADIENT-CONICAL-SYMMETRIC:CAPS"/>
+    <keyword type="constant" name="GIMP_GRADIENT_CONICAL_ASYMMETRIC" link="libgimpbase-gimpbaseenums.html#GIMP-GRADIENT-CONICAL-ASYMMETRIC:CAPS"/>
+    <keyword type="constant" name="GIMP_GRADIENT_SHAPEBURST_ANGULAR" link="libgimpbase-gimpbaseenums.html#GIMP-GRADIENT-SHAPEBURST-ANGULAR:CAPS"/>
+    <keyword type="constant" name="GIMP_GRADIENT_SHAPEBURST_SPHERICAL" link="libgimpbase-gimpbaseenums.html#GIMP-GRADIENT-SHAPEBURST-SPHERICAL:CAPS"/>
+    <keyword type="constant" name="GIMP_GRADIENT_SHAPEBURST_DIMPLED" link="libgimpbase-gimpbaseenums.html#GIMP-GRADIENT-SHAPEBURST-DIMPLED:CAPS"/>
+    <keyword type="constant" name="GIMP_GRADIENT_SPIRAL_CLOCKWISE" link="libgimpbase-gimpbaseenums.html#GIMP-GRADIENT-SPIRAL-CLOCKWISE:CAPS"/>
+    <keyword type="constant" name="GIMP_GRADIENT_SPIRAL_ANTICLOCKWISE" link="libgimpbase-gimpbaseenums.html#GIMP-GRADIENT-SPIRAL-ANTICLOCKWISE:CAPS"/>
+    <keyword type="constant" name="GIMP_GRID_DOTS" link="libgimpbase-gimpbaseenums.html#GIMP-GRID-DOTS:CAPS"/>
+    <keyword type="constant" name="GIMP_GRID_INTERSECTIONS" link="libgimpbase-gimpbaseenums.html#GIMP-GRID-INTERSECTIONS:CAPS"/>
+    <keyword type="constant" name="GIMP_GRID_ON_OFF_DASH" link="libgimpbase-gimpbaseenums.html#GIMP-GRID-ON-OFF-DASH:CAPS"/>
+    <keyword type="constant" name="GIMP_GRID_DOUBLE_DASH" link="libgimpbase-gimpbaseenums.html#GIMP-GRID-DOUBLE-DASH:CAPS"/>
+    <keyword type="constant" name="GIMP_GRID_SOLID" link="libgimpbase-gimpbaseenums.html#GIMP-GRID-SOLID:CAPS"/>
+    <keyword type="constant" name="GIMP_ICON_TYPE_STOCK_ID" link="libgimpbase-gimpbaseenums.html#GIMP-ICON-TYPE-STOCK-ID:CAPS"/>
+    <keyword type="constant" name="GIMP_ICON_TYPE_INLINE_PIXBUF" link="libgimpbase-gimpbaseenums.html#GIMP-ICON-TYPE-INLINE-PIXBUF:CAPS"/>
+    <keyword type="constant" name="GIMP_ICON_TYPE_IMAGE_FILE" link="libgimpbase-gimpbaseenums.html#GIMP-ICON-TYPE-IMAGE-FILE:CAPS"/>
+    <keyword type="constant" name="GIMP_RGB" link="libgimpbase-gimpbaseenums.html#GIMP-RGB:CAPS"/>
+    <keyword type="constant" name="GIMP_GRAY" link="libgimpbase-gimpbaseenums.html#GIMP-GRAY:CAPS"/>
+    <keyword type="constant" name="GIMP_INDEXED" link="libgimpbase-gimpbaseenums.html#GIMP-INDEXED:CAPS"/>
+    <keyword type="constant" name="GIMP_RGB_IMAGE" link="libgimpbase-gimpbaseenums.html#GIMP-RGB-IMAGE:CAPS"/>
+    <keyword type="constant" name="GIMP_RGBA_IMAGE" link="libgimpbase-gimpbaseenums.html#GIMP-RGBA-IMAGE:CAPS"/>
+    <keyword type="constant" name="GIMP_GRAY_IMAGE" link="libgimpbase-gimpbaseenums.html#GIMP-GRAY-IMAGE:CAPS"/>
+    <keyword type="constant" name="GIMP_GRAYA_IMAGE" link="libgimpbase-gimpbaseenums.html#GIMP-GRAYA-IMAGE:CAPS"/>
+    <keyword type="constant" name="GIMP_INDEXED_IMAGE" link="libgimpbase-gimpbaseenums.html#GIMP-INDEXED-IMAGE:CAPS"/>
+    <keyword type="constant" name="GIMP_INDEXEDA_IMAGE" link="libgimpbase-gimpbaseenums.html#GIMP-INDEXEDA-IMAGE:CAPS"/>
+    <keyword type="constant" name="GIMP_INTERPOLATION_NONE" link="libgimpbase-gimpbaseenums.html#GIMP-INTERPOLATION-NONE:CAPS"/>
+    <keyword type="constant" name="GIMP_INTERPOLATION_LINEAR" link="libgimpbase-gimpbaseenums.html#GIMP-INTERPOLATION-LINEAR:CAPS"/>
+    <keyword type="constant" name="GIMP_INTERPOLATION_CUBIC" link="libgimpbase-gimpbaseenums.html#GIMP-INTERPOLATION-CUBIC:CAPS"/>
+    <keyword type="constant" name="GIMP_INTERPOLATION_LANCZOS" link="libgimpbase-gimpbaseenums.html#GIMP-INTERPOLATION-LANCZOS:CAPS"/>
+    <keyword type="constant" name="GIMP_MESSAGE_BOX" link="libgimpbase-gimpbaseenums.html#GIMP-MESSAGE-BOX:CAPS"/>
+    <keyword type="constant" name="GIMP_CONSOLE" link="libgimpbase-gimpbaseenums.html#GIMP-CONSOLE:CAPS"/>
+    <keyword type="constant" name="GIMP_ERROR_CONSOLE" link="libgimpbase-gimpbaseenums.html#GIMP-ERROR-CONSOLE:CAPS"/>
+    <keyword type="constant" name="GIMP_PAINT_CONSTANT" link="libgimpbase-gimpbaseenums.html#GIMP-PAINT-CONSTANT:CAPS"/>
+    <keyword type="constant" name="GIMP_PAINT_INCREMENTAL" link="libgimpbase-gimpbaseenums.html#GIMP-PAINT-INCREMENTAL:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_INT32" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-INT32:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_INT16" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-INT16:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_INT8" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-INT8:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_FLOAT" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-FLOAT:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_STRING" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-STRING:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_INT32ARRAY" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-INT32ARRAY:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_INT16ARRAY" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-INT16ARRAY:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_INT8ARRAY" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-INT8ARRAY:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_FLOATARRAY" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-FLOATARRAY:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_STRINGARRAY" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-STRINGARRAY:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_COLOR" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-COLOR:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_ITEM" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-ITEM:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_DISPLAY" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-DISPLAY:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_IMAGE" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-IMAGE:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_LAYER" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-LAYER:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_CHANNEL" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-CHANNEL:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_DRAWABLE" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-DRAWABLE:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_SELECTION" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-SELECTION:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_COLORARRAY" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-COLORARRAY:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_VECTORS" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-VECTORS:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_PARASITE" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-PARASITE:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_STATUS" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-STATUS:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_END" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-END:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_PATH" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-PATH:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_BOUNDARY" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-BOUNDARY:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_REGION" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-REGION:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_ERROR_HANDLER_INTERNAL" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-ERROR-HANDLER-INTERNAL:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_ERROR_HANDLER_PLUGIN" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-ERROR-HANDLER-PLUGIN:CAPS"/>
+    <keyword type="constant" name="GIMP_INTERNAL" link="libgimpbase-gimpbaseenums.html#GIMP-INTERNAL:CAPS"/>
+    <keyword type="constant" name="GIMP_PLUGIN" link="libgimpbase-gimpbaseenums.html#GIMP-PLUGIN:CAPS"/>
+    <keyword type="constant" name="GIMP_EXTENSION" link="libgimpbase-gimpbaseenums.html#GIMP-EXTENSION:CAPS"/>
+    <keyword type="constant" name="GIMP_TEMPORARY" link="libgimpbase-gimpbaseenums.html#GIMP-TEMPORARY:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_EXECUTION_ERROR" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-EXECUTION-ERROR:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_CALLING_ERROR" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-CALLING-ERROR:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_PASS_THROUGH" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-PASS-THROUGH:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_SUCCESS" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-SUCCESS:CAPS"/>
+    <keyword type="constant" name="GIMP_PDB_CANCEL" link="libgimpbase-gimpbaseenums.html#GIMP-PDB-CANCEL:CAPS"/>
+    <keyword type="constant" name="GIMP_PROGRESS_COMMAND_START" link="libgimpbase-gimpbaseenums.html#GIMP-PROGRESS-COMMAND-START:CAPS"/>
+    <keyword type="constant" name="GIMP_PROGRESS_COMMAND_END" link="libgimpbase-gimpbaseenums.html#GIMP-PROGRESS-COMMAND-END:CAPS"/>
+    <keyword type="constant" name="GIMP_PROGRESS_COMMAND_SET_TEXT" link="libgimpbase-gimpbaseenums.html#GIMP-PROGRESS-COMMAND-SET-TEXT:CAPS"/>
+    <keyword type="constant" name="GIMP_PROGRESS_COMMAND_SET_VALUE" link="libgimpbase-gimpbaseenums.html#GIMP-PROGRESS-COMMAND-SET-VALUE:CAPS"/>
+    <keyword type="constant" name="GIMP_PROGRESS_COMMAND_PULSE" link="libgimpbase-gimpbaseenums.html#GIMP-PROGRESS-COMMAND-PULSE:CAPS"/>
+    <keyword type="constant" name="GIMP_PROGRESS_COMMAND_GET_WINDOW" link="libgimpbase-gimpbaseenums.html#GIMP-PROGRESS-COMMAND-GET-WINDOW:CAPS"/>
+    <keyword type="constant" name="GIMP_REPEAT_NONE" link="libgimpbase-gimpbaseenums.html#GIMP-REPEAT-NONE:CAPS"/>
+    <keyword type="constant" name="GIMP_REPEAT_SAWTOOTH" link="libgimpbase-gimpbaseenums.html#GIMP-REPEAT-SAWTOOTH:CAPS"/>
+    <keyword type="constant" name="GIMP_REPEAT_TRIANGULAR" link="libgimpbase-gimpbaseenums.html#GIMP-REPEAT-TRIANGULAR:CAPS"/>
+    <keyword type="constant" name="GIMP_RUN_INTERACTIVE" link="libgimpbase-gimpbaseenums.html#GIMP-RUN-INTERACTIVE:CAPS"/>
+    <keyword type="constant" name="GIMP_RUN_NONINTERACTIVE" link="libgimpbase-gimpbaseenums.html#GIMP-RUN-NONINTERACTIVE:CAPS"/>
+    <keyword type="constant" name="GIMP_RUN_WITH_LAST_VALS" link="libgimpbase-gimpbaseenums.html#GIMP-RUN-WITH-LAST-VALS:CAPS"/>
+    <keyword type="constant" name="GIMP_PIXELS" link="libgimpbase-gimpbaseenums.html#GIMP-PIXELS:CAPS"/>
+    <keyword type="constant" name="GIMP_POINTS" link="libgimpbase-gimpbaseenums.html#GIMP-POINTS:CAPS"/>
+    <keyword type="constant" name="GIMP_STACK_TRACE_NEVER" link="libgimpbase-gimpbaseenums.html#GIMP-STACK-TRACE-NEVER:CAPS"/>
+    <keyword type="constant" name="GIMP_STACK_TRACE_QUERY" link="libgimpbase-gimpbaseenums.html#GIMP-STACK-TRACE-QUERY:CAPS"/>
+    <keyword type="constant" name="GIMP_STACK_TRACE_ALWAYS" link="libgimpbase-gimpbaseenums.html#GIMP-STACK-TRACE-ALWAYS:CAPS"/>
+    <keyword type="constant" name="GIMP_TEXT_DIRECTION_LTR" link="libgimpbase-gimpbaseenums.html#GIMP-TEXT-DIRECTION-LTR:CAPS"/>
+    <keyword type="constant" name="GIMP_TEXT_DIRECTION_RTL" link="libgimpbase-gimpbaseenums.html#GIMP-TEXT-DIRECTION-RTL:CAPS"/>
+    <keyword type="constant" name="GIMP_TEXT_HINT_STYLE_NONE" link="libgimpbase-gimpbaseenums.html#GIMP-TEXT-HINT-STYLE-NONE:CAPS"/>
+    <keyword type="constant" name="GIMP_TEXT_HINT_STYLE_SLIGHT" link="libgimpbase-gimpbaseenums.html#GIMP-TEXT-HINT-STYLE-SLIGHT:CAPS"/>
+    <keyword type="constant" name="GIMP_TEXT_HINT_STYLE_MEDIUM" link="libgimpbase-gimpbaseenums.html#GIMP-TEXT-HINT-STYLE-MEDIUM:CAPS"/>
+    <keyword type="constant" name="GIMP_TEXT_HINT_STYLE_FULL" link="libgimpbase-gimpbaseenums.html#GIMP-TEXT-HINT-STYLE-FULL:CAPS"/>
+    <keyword type="constant" name="GIMP_TEXT_JUSTIFY_LEFT" link="libgimpbase-gimpbaseenums.html#GIMP-TEXT-JUSTIFY-LEFT:CAPS"/>
+    <keyword type="constant" name="GIMP_TEXT_JUSTIFY_RIGHT" link="libgimpbase-gimpbaseenums.html#GIMP-TEXT-JUSTIFY-RIGHT:CAPS"/>
+    <keyword type="constant" name="GIMP_TEXT_JUSTIFY_CENTER" link="libgimpbase-gimpbaseenums.html#GIMP-TEXT-JUSTIFY-CENTER:CAPS"/>
+    <keyword type="constant" name="GIMP_TEXT_JUSTIFY_FILL" link="libgimpbase-gimpbaseenums.html#GIMP-TEXT-JUSTIFY-FILL:CAPS"/>
+    <keyword type="constant" name="GIMP_SHADOWS" link="libgimpbase-gimpbaseenums.html#GIMP-SHADOWS:CAPS"/>
+    <keyword type="constant" name="GIMP_MIDTONES" link="libgimpbase-gimpbaseenums.html#GIMP-MIDTONES:CAPS"/>
+    <keyword type="constant" name="GIMP_HIGHLIGHTS" link="libgimpbase-gimpbaseenums.html#GIMP-HIGHLIGHTS:CAPS"/>
+    <keyword type="constant" name="GIMP_TRANSFORM_FORWARD" link="libgimpbase-gimpbaseenums.html#GIMP-TRANSFORM-FORWARD:CAPS"/>
+    <keyword type="constant" name="GIMP_TRANSFORM_BACKWARD" link="libgimpbase-gimpbaseenums.html#GIMP-TRANSFORM-BACKWARD:CAPS"/>
+    <keyword type="constant" name="GIMP_TRANSFORM_RESIZE_ADJUST" link="libgimpbase-gimpbaseenums.html#GIMP-TRANSFORM-RESIZE-ADJUST:CAPS"/>
+    <keyword type="constant" name="GIMP_TRANSFORM_RESIZE_CLIP" link="libgimpbase-gimpbaseenums.html#GIMP-TRANSFORM-RESIZE-CLIP:CAPS"/>
+    <keyword type="constant" name="GIMP_TRANSFORM_RESIZE_CROP" link="libgimpbase-gimpbaseenums.html#GIMP-TRANSFORM-RESIZE-CROP:CAPS"/>
+    <keyword type="constant" name="GIMP_TRANSFORM_RESIZE_CROP_WITH_ASPECT" link="libgimpbase-gimpbaseenums.html#GIMP-TRANSFORM-RESIZE-CROP-WITH-ASPECT:CAPS"/>
+    <keyword type="constant" name="GIMP_USER_DIRECTORY_DESKTOP" link="libgimpbase-gimpbaseenums.html#GIMP-USER-DIRECTORY-DESKTOP:CAPS"/>
+    <keyword type="constant" name="GIMP_USER_DIRECTORY_DOCUMENTS" link="libgimpbase-gimpbaseenums.html#GIMP-USER-DIRECTORY-DOCUMENTS:CAPS"/>
+    <keyword type="constant" name="GIMP_USER_DIRECTORY_DOWNLOAD" link="libgimpbase-gimpbaseenums.html#GIMP-USER-DIRECTORY-DOWNLOAD:CAPS"/>
+    <keyword type="constant" name="GIMP_USER_DIRECTORY_MUSIC" link="libgimpbase-gimpbaseenums.html#GIMP-USER-DIRECTORY-MUSIC:CAPS"/>
+    <keyword type="constant" name="GIMP_USER_DIRECTORY_PICTURES" link="libgimpbase-gimpbaseenums.html#GIMP-USER-DIRECTORY-PICTURES:CAPS"/>
+    <keyword type="constant" name="GIMP_USER_DIRECTORY_PUBLIC_SHARE" link="libgimpbase-gimpbaseenums.html#GIMP-USER-DIRECTORY-PUBLIC-SHARE:CAPS"/>
+    <keyword type="constant" name="GIMP_USER_DIRECTORY_TEMPLATES" link="libgimpbase-gimpbaseenums.html#GIMP-USER-DIRECTORY-TEMPLATES:CAPS"/>
+    <keyword type="constant" name="GIMP_USER_DIRECTORY_VIDEOS" link="libgimpbase-gimpbaseenums.html#GIMP-USER-DIRECTORY-VIDEOS:CAPS"/>
+    <keyword type="constant" name="GIMP_VECTORS_STROKE_TYPE_BEZIER" link="libgimpbase-gimpbaseenums.html#GIMP-VECTORS-STROKE-TYPE-BEZIER:CAPS"/>
+    <keyword type="constant" name="GIMP_CPU_ACCEL_NONE" link="libgimpbase-gimpcpuaccel.html#GIMP-CPU-ACCEL-NONE:CAPS"/>
+    <keyword type="constant" name="GIMP_CPU_ACCEL_X86_MMX" link="libgimpbase-gimpcpuaccel.html#GIMP-CPU-ACCEL-X86-MMX:CAPS"/>
+    <keyword type="constant" name="GIMP_CPU_ACCEL_X86_3DNOW" link="libgimpbase-gimpcpuaccel.html#GIMP-CPU-ACCEL-X86-3DNOW:CAPS"/>
+    <keyword type="constant" name="GIMP_CPU_ACCEL_X86_MMXEXT" link="libgimpbase-gimpcpuaccel.html#GIMP-CPU-ACCEL-X86-MMXEXT:CAPS"/>
+    <keyword type="constant" name="GIMP_CPU_ACCEL_X86_SSE" link="libgimpbase-gimpcpuaccel.html#GIMP-CPU-ACCEL-X86-SSE:CAPS"/>
+    <keyword type="constant" name="GIMP_CPU_ACCEL_X86_SSE2" link="libgimpbase-gimpcpuaccel.html#GIMP-CPU-ACCEL-X86-SSE2:CAPS"/>
+    <keyword type="constant" name="GIMP_CPU_ACCEL_X86_SSE3" link="libgimpbase-gimpcpuaccel.html#GIMP-CPU-ACCEL-X86-SSE3:CAPS"/>
+    <keyword type="constant" name="GIMP_CPU_ACCEL_PPC_ALTIVEC" link="libgimpbase-gimpcpuaccel.html#GIMP-CPU-ACCEL-PPC-ALTIVEC:CAPS"/>
+    <keyword type="constant" name="GIMP_UNIT_PIXEL" link="libgimpbase-gimpunit.html#GIMP-UNIT-PIXEL:CAPS"/>
+    <keyword type="constant" name="GIMP_UNIT_INCH" link="libgimpbase-gimpunit.html#GIMP-UNIT-INCH:CAPS"/>
+    <keyword type="constant" name="GIMP_UNIT_MM" link="libgimpbase-gimpunit.html#GIMP-UNIT-MM:CAPS"/>
+    <keyword type="constant" name="GIMP_UNIT_POINT" link="libgimpbase-gimpunit.html#GIMP-UNIT-POINT:CAPS"/>
+    <keyword type="constant" name="GIMP_UNIT_PICA" link="libgimpbase-gimpunit.html#GIMP-UNIT-PICA:CAPS"/>
+    <keyword type="constant" name="GIMP_UNIT_END" link="libgimpbase-gimpunit.html#GIMP-UNIT-END:CAPS"/>
+    <keyword type="constant" name="GIMP_UNIT_PERCENT" link="libgimpbase-gimpunit.html#GIMP-UNIT-PERCENT:CAPS"/>
+    <keyword type="member" name="GimpEnumDesc.value" link="libgimpbase-gimpbasetypes.html#GimpEnumDesc.value"/>
+    <keyword type="member" name="GimpEnumDesc.value-desc" link="libgimpbase-gimpbasetypes.html#GimpEnumDesc.value-desc"/>
+    <keyword type="member" name="GimpEnumDesc.value-help" link="libgimpbase-gimpbasetypes.html#GimpEnumDesc.value-help"/>
+    <keyword type="member" name="GimpFlagsDesc.value" link="libgimpbase-gimpbasetypes.html#GimpFlagsDesc.value"/>
+    <keyword type="member" name="GimpFlagsDesc.value-desc" link="libgimpbase-gimpbasetypes.html#GimpFlagsDesc.value-desc"/>
+    <keyword type="member" name="GimpFlagsDesc.value-help" link="libgimpbase-gimpbasetypes.html#GimpFlagsDesc.value-help"/>
+    <keyword type="member" name="GimpDatafileData.filename" link="libgimpbase-gimpdatafiles.html#GimpDatafileData.filename"/>
+    <keyword type="member" name="GimpDatafileData.dirname" link="libgimpbase-gimpdatafiles.html#GimpDatafileData.dirname"/>
+    <keyword type="member" name="GimpDatafileData.basename" link="libgimpbase-gimpdatafiles.html#GimpDatafileData.basename"/>
+    <keyword type="member" name="GimpDatafileData.atime" link="libgimpbase-gimpdatafiles.html#GimpDatafileData.atime"/>
+    <keyword type="member" name="GimpDatafileData.mtime" link="libgimpbase-gimpdatafiles.html#GimpDatafileData.mtime"/>
+    <keyword type="member" name="GimpDatafileData.ctime" link="libgimpbase-gimpdatafiles.html#GimpDatafileData.ctime"/>
+  </functions>
+</book>

@@ -1,0 +1,78 @@
+## Makefile.am for gimp/menus
+
+menudatadir = $(gimpdatadir)/menus
+
+menudata_in_files = \
+	dockable-menu.xml.in	\
+	image-menu.xml.in
+
+menudata_built_files = $(menudata_in_files:.xml.in=.xml)
+
+menudata_DATA = \
+	$(menudata_built_files)		\
+	brush-editor-menu.xml		\
+	brushes-menu.xml		\
+	buffers-menu.xml		\
+	channels-menu.xml		\
+	colormap-menu.xml		\
+	cursor-info-menu.xml		\
+	documents-menu.xml		\
+	dynamics-editor-menu.xml	\
+	dynamics-menu.xml		\
+	error-console-menu.xml		\
+	fonts-menu.xml			\
+	gradient-editor-menu.xml	\
+	gradients-menu.xml		\
+	images-menu.xml			\
+	layers-menu.xml			\
+	palette-editor-menu.xml		\
+	palettes-menu.xml		\
+	patterns-menu.xml		\
+	tool-preset-editor-menu.xml	\
+	tool-presets-menu.xml		\
+	quick-mask-menu.xml		\
+	sample-points-menu.xml		\
+	selection-menu.xml		\
+	templates-menu.xml		\
+	text-editor-toolbar.xml		\
+	text-tool-menu.xml		\
+	tool-options-menu.xml		\
+	undo-menu.xml			\
+	vectors-menu.xml
+
+EXTRA_DIST = \
+	$(menudata_DATA)		\
+	$(menudata_in_files)		\
+	dialogs-menuitems.xml		\
+	gtkuimanager.dtd		\
+	menus.xsl
+
+MAINTAINERCLEANFILES = $(menudata_built_files)
+
+
+if GIMP_UNSTABLE
+UNSTABLE_MENU_PARAMS = --stringparam unstable-menus yes
+endif
+
+SUFFIXES = .xml.in .xml
+
+.xml.in.xml:
+if HAVE_XSLTPROC
+	$(XSLTPROC) --xinclude $(UNSTABLE_MENU_PARAMS) $(srcdir)/menus.xsl $< > $(@) || rm -f $(@)
+else
+	@echo "*** xsltproc is required to build the menus XML files ***"; exit 1;
+endif
+
+# Specifying dependencies in the implicit rule above does not work, so
+# specify them here instead
+dockable-menu.xml image-menu.xml: $(top_srcdir)/configure.ac $(srcdir)/menus.xsl dialogs-menuitems.xml
+
+validate: $(menudata_DATA)
+if HAVE_XMLLINT
+	@for menu in $^; do \
+	   $(XMLLINT) --noout --path $(srcdir) --valid $$menu || \
+	   ( echo "*** $$menu INVALID ***"; exit 1; ) ; \
+	done
+endif
+
+dist-hook: validate

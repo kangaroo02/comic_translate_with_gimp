@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GimpPreview: GIMP Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Widgets Library Reference Manual">
+<link rel="up" href="libgimpwidgets-widgets.html" title="Part I. GIMP Widgets">
+<link rel="prev" href="GimpPreviewArea.html" title="GimpPreviewArea">
+<link rel="next" href="GimpRuler.html" title="GimpRuler">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GimpPreview.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GimpPreview.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GimpPreview.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GimpPreview.properties" class="shortcut">Properties</a></span><span id="nav_style_properties">  <span class="dim">|</span> 
+                  <a href="#GimpPreview.style-properties" class="shortcut">Style Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GimpPreview.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimpwidgets-widgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GimpPreviewArea.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GimpRuler.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GimpPreview"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GimpPreview.top_of_page"></a>GimpPreview</span></h2>
+<p>GimpPreview</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GimpPreview.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GimpPreview.html#gimp-preview-get-update" title="gimp_preview_get_update ()">gimp_preview_get_update</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpPreview.html#gimp-preview-set-update" title="gimp_preview_set_update ()">gimp_preview_set_update</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpPreview.html#gimp-preview-set-bounds" title="gimp_preview_set_bounds ()">gimp_preview_set_bounds</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpPreview.html#gimp-preview-get-size" title="gimp_preview_get_size ()">gimp_preview_get_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpPreview.html#gimp-preview-get-position" title="gimp_preview_get_position ()">gimp_preview_get_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpPreview.html#gimp-preview-transform" title="gimp_preview_transform ()">gimp_preview_transform</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpPreview.html#gimp-preview-untransform" title="gimp_preview_untransform ()">gimp_preview_untransform</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk2GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpPreview.html#gimp-preview-get-area" title="gimp_preview_get_area ()">gimp_preview_get_area</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpPreview.html#gimp-preview-draw" title="gimp_preview_draw ()">gimp_preview_draw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpPreview.html#gimp-preview-draw-buffer" title="gimp_preview_draw_buffer ()">gimp_preview_draw_buffer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpPreview.html#gimp-preview-invalidate" title="gimp_preview_invalidate ()">gimp_preview_invalidate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpPreview.html#gimp-preview-set-default-cursor" title="gimp_preview_set_default_cursor ()">gimp_preview_set_default_cursor</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk2GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpPreview.html#gimp-preview-get-controls" title="gimp_preview_get_controls ()">gimp_preview_get_controls</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpPreview.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GimpPreview.html#GimpPreview--update" title="The “update” property">update</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpPreview.style-properties"></a><h2>Style Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="style_properties_type">
+<col width="300px" class="style_properties_name">
+<col width="200px" class="style_properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="GimpPreview.html#GimpPreview--s-size" title="The “size” style property">size</a></td>
+<td class="property_flags">Read</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpPreview.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GimpPreview.html#GimpPreview-invalidated" title="The “invalidated” signal">invalidated</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobjectgobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpPreview.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GimpPreview.html#GimpPreview-struct" title="GimpPreview">GimpPreview</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpPreview.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkObject.html#GtkObject-struct">GtkObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkContainer.html#GtkContainer-struct">GtkContainer</a>
+                    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkBox.html#GtkBox-struct">GtkBox</a>
+                        <span class="lineart">╰──</span> GimpPreview
+                            <span class="lineart">╰──</span> <a class="link" href="GimpScrolledPreview.html" title="GimpScrolledPreview">GimpScrolledPreview</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="GimpPreview.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GimpPreview implements
+ AtkImplementorIface,  <a href="/usr/share/gtk-doc/html/gtk2GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a> and  <a href="/usr/share/gtk-doc/html/gtk2gtk2-Orientable.html#GtkOrientable-struct">GtkOrientable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GimpPreview.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="GimpPreview.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-preview-get-update"></a><h3>gimp_preview_get_update ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_preview_get_update (<em class="parameter"><code><a class="link" href="GimpPreview.html" title="GimpPreview"><span class="type">GimpPreview</span></a> *preview</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-preview-set-update"></a><h3>gimp_preview_set_update ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_preview_set_update (<em class="parameter"><code><a class="link" href="GimpPreview.html" title="GimpPreview"><span class="type">GimpPreview</span></a> *preview</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> update</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-preview-set-bounds"></a><h3>gimp_preview_set_bounds ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_preview_set_bounds (<em class="parameter"><code><a class="link" href="GimpPreview.html" title="GimpPreview"><span class="type">GimpPreview</span></a> *preview</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> xmin</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> ymin</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> xmax</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> ymax</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-preview-get-size"></a><h3>gimp_preview_get_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_preview_get_size (<em class="parameter"><code><a class="link" href="GimpPreview.html" title="GimpPreview"><span class="type">GimpPreview</span></a> *preview</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *width</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *height</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-preview-get-position"></a><h3>gimp_preview_get_position ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_preview_get_position (<em class="parameter"><code><a class="link" href="GimpPreview.html" title="GimpPreview"><span class="type">GimpPreview</span></a> *preview</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *x</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *y</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-preview-transform"></a><h3>gimp_preview_transform ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_preview_transform (<em class="parameter"><code><a class="link" href="GimpPreview.html" title="GimpPreview"><span class="type">GimpPreview</span></a> *preview</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> src_x</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> src_y</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *dest_x</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *dest_y</code></em>);</pre>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-preview-untransform"></a><h3>gimp_preview_untransform ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_preview_untransform (<em class="parameter"><code><a class="link" href="GimpPreview.html" title="GimpPreview"><span class="type">GimpPreview</span></a> *preview</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> src_x</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> src_y</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *dest_x</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *dest_y</code></em>);</pre>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-preview-get-area"></a><h3>gimp_preview_get_area ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk2GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gimp_preview_get_area (<em class="parameter"><code><a class="link" href="GimpPreview.html" title="GimpPreview"><span class="type">GimpPreview</span></a> *preview</code></em>);</pre>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-preview-draw"></a><h3>gimp_preview_draw ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_preview_draw (<em class="parameter"><code><a class="link" href="GimpPreview.html" title="GimpPreview"><span class="type">GimpPreview</span></a> *preview</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-preview-draw-buffer"></a><h3>gimp_preview_draw_buffer ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_preview_draw_buffer (<em class="parameter"><code><a class="link" href="GimpPreview.html" title="GimpPreview"><span class="type">GimpPreview</span></a> *preview</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buffer</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> rowstride</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-preview-invalidate"></a><h3>gimp_preview_invalidate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_preview_invalidate (<em class="parameter"><code><a class="link" href="GimpPreview.html" title="GimpPreview"><span class="type">GimpPreview</span></a> *preview</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-preview-set-default-cursor"></a><h3>gimp_preview_set_default_cursor ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_preview_set_default_cursor (<em class="parameter"><code><a class="link" href="GimpPreview.html" title="GimpPreview"><span class="type">GimpPreview</span></a> *preview</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gdk2gdk2-Cursors.html#GdkCursor"><span class="type">GdkCursor</span></a> *cursor</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-preview-get-controls"></a><h3>gimp_preview_get_controls ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk2GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gimp_preview_get_controls (<em class="parameter"><code><a class="link" href="GimpPreview.html" title="GimpPreview"><span class="type">GimpPreview</span></a> *preview</code></em>);</pre>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpPreview.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpPreview-struct"></a><h3>GimpPreview</h3>
+<pre class="programlisting">typedef struct _GimpPreview GimpPreview;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpPreview.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GimpPreview--update"></a><h3>The <code class="literal">“update”</code> property</h3>
+<pre class="programlisting">  “update”                   <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpPreview.style-property-details"></a><h2>Style Property Details</h2>
+<div class="refsect2">
+<a name="GimpPreview--s-size"></a><h3>The <code class="literal">“size”</code> style property</h3>
+<pre class="programlisting">  “size”                     <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Flags: Read</p>
+<p>Allowed values: [1,1024]</p>
+<p>Default value: 200</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpPreview.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GimpPreview-invalidated"></a><h3>The <code class="literal">“invalidated”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GimpPreview.html" title="GimpPreview"><span class="type">GimpPreview</span></a> *gimppreview,
+               <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>     user_data)</pre>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobjectgobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

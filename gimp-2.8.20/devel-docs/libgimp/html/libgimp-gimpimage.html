@@ -1,0 +1,1729 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpimage: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manupulating Images and their Properties">
+<link rel="prev" href="libgimp-gimpguides.html" title="gimpguides">
+<link rel="next" href="libgimp-gimpimageselect.html" title="gimpimageselect">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpimage.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpguides.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpimageselect.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpimage"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpimage.top_of_page"></a>gimpimage</span></h2>
+<p>gimpimage</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpimage.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-list" title="gimp_image_list ()">gimp_image_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-new" title="gimp_image_new ()">gimp_image_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-uri" title="gimp_image_get_uri ()">gimp_image_get_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-xcf-uri" title="gimp_image_get_xcf_uri ()">gimp_image_get_xcf_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-exported-uri" title="gimp_image_get_exported_uri ()">gimp_image_get_exported_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-imported-uri" title="gimp_image_get_imported_uri ()">gimp_image_get_imported_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-duplicate" title="gimp_image_duplicate ()">gimp_image_duplicate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-delete" title="gimp_image_delete ()">gimp_image_delete</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-is-valid" title="gimp_image_is_valid ()">gimp_image_is_valid</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpImageBaseType"><span class="returnvalue">GimpImageBaseType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-base-type" title="gimp_image_base_type ()">gimp_image_base_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-width" title="gimp_image_width ()">gimp_image_width</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-height" title="gimp_image_height ()">gimp_image_height</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-free-shadow" title="gimp_image_free_shadow ()">gimp_image_free_shadow</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-flip" title="gimp_image_flip ()">gimp_image_flip</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-rotate" title="gimp_image_rotate ()">gimp_image_rotate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-resize" title="gimp_image_resize ()">gimp_image_resize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-resize-to-layers" title="gimp_image_resize_to_layers ()">gimp_image_resize_to_layers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-scale" title="gimp_image_scale ()">gimp_image_scale</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-scale-full" title="gimp_image_scale_full ()">gimp_image_scale_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-crop" title="gimp_image_crop ()">gimp_image_crop</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-layers" title="gimp_image_get_layers ()">gimp_image_get_layers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-channels" title="gimp_image_get_channels ()">gimp_image_get_channels</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-active-drawable" title="gimp_image_get_active_drawable ()">gimp_image_get_active_drawable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-floating-sel" title="gimp_image_get_floating_sel ()">gimp_image_get_floating_sel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-floating-sel-attached-to" title="gimp_image_floating_sel_attached_to ()">gimp_image_floating_sel_attached_to</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-pick-color" title="gimp_image_pick_color ()">gimp_image_pick_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-pick-correlate-layer" title="gimp_image_pick_correlate_layer ()">gimp_image_pick_correlate_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-item-position" title="gimp_image_get_item_position ()">gimp_image_get_item_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-reorder-item" title="gimp_image_reorder_item ()">gimp_image_reorder_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-raise-item" title="gimp_image_raise_item ()">gimp_image_raise_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-lower-item" title="gimp_image_lower_item ()">gimp_image_lower_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-raise-item-to-top" title="gimp_image_raise_item_to_top ()">gimp_image_raise_item_to_top</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-lower-item-to-bottom" title="gimp_image_lower_item_to_bottom ()">gimp_image_lower_item_to_bottom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-add-layer" title="gimp_image_add_layer ()">gimp_image_add_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-insert-layer" title="gimp_image_insert_layer ()">gimp_image_insert_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-remove-layer" title="gimp_image_remove_layer ()">gimp_image_remove_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-raise-layer" title="gimp_image_raise_layer ()">gimp_image_raise_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-lower-layer" title="gimp_image_lower_layer ()">gimp_image_lower_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-raise-layer-to-top" title="gimp_image_raise_layer_to_top ()">gimp_image_raise_layer_to_top</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-lower-layer-to-bottom" title="gimp_image_lower_layer_to_bottom ()">gimp_image_lower_layer_to_bottom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-layer-position" title="gimp_image_get_layer_position ()">gimp_image_get_layer_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-add-channel" title="gimp_image_add_channel ()">gimp_image_add_channel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-insert-channel" title="gimp_image_insert_channel ()">gimp_image_insert_channel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-remove-channel" title="gimp_image_remove_channel ()">gimp_image_remove_channel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-raise-channel" title="gimp_image_raise_channel ()">gimp_image_raise_channel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-lower-channel" title="gimp_image_lower_channel ()">gimp_image_lower_channel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-channel-position" title="gimp_image_get_channel_position ()">gimp_image_get_channel_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-flatten" title="gimp_image_flatten ()">gimp_image_flatten</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-merge-visible-layers" title="gimp_image_merge_visible_layers ()">gimp_image_merge_visible_layers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-merge-down" title="gimp_image_merge_down ()">gimp_image_merge_down</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-clean-all" title="gimp_image_clean_all ()">gimp_image_clean_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-is-dirty" title="gimp_image_is_dirty ()">gimp_image_is_dirty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-active-layer" title="gimp_image_get_active_layer ()">gimp_image_get_active_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-set-active-layer" title="gimp_image_set_active_layer ()">gimp_image_set_active_layer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-active-channel" title="gimp_image_get_active_channel ()">gimp_image_get_active_channel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-set-active-channel" title="gimp_image_set_active_channel ()">gimp_image_set_active_channel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-unset-active-channel" title="gimp_image_unset_active_channel ()">gimp_image_unset_active_channel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-selection" title="gimp_image_get_selection ()">gimp_image_get_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-component-active" title="gimp_image_get_component_active ()">gimp_image_get_component_active</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-set-component-active" title="gimp_image_set_component_active ()">gimp_image_set_component_active</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-component-visible" title="gimp_image_get_component_visible ()">gimp_image_get_component_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-set-component-visible" title="gimp_image_set_component_visible ()">gimp_image_set_component_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-filename" title="gimp_image_get_filename ()">gimp_image_get_filename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-set-filename" title="gimp_image_set_filename ()">gimp_image_set_filename</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-name" title="gimp_image_get_name ()">gimp_image_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-resolution" title="gimp_image_get_resolution ()">gimp_image_get_resolution</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-set-resolution" title="gimp_image_set_resolution ()">gimp_image_set_resolution</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpunit.html#GimpUnit"><span class="returnvalue">GimpUnit</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-unit" title="gimp_image_get_unit ()">gimp_image_get_unit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-set-unit" title="gimp_image_set_unit ()">gimp_image_set_unit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-set-tattoo-state" title="gimp_image_set_tattoo_state ()">gimp_image_set_tattoo_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-tattoo-state" title="gimp_image_get_tattoo_state ()">gimp_image_get_tattoo_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-layer-by-tattoo" title="gimp_image_get_layer_by_tattoo ()">gimp_image_get_layer_by_tattoo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-channel-by-tattoo" title="gimp_image_get_channel_by_tattoo ()">gimp_image_get_channel_by_tattoo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-vectors-by-tattoo" title="gimp_image_get_vectors_by_tattoo ()">gimp_image_get_vectors_by_tattoo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-layer-by-name" title="gimp_image_get_layer_by_name ()">gimp_image_get_layer_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-channel-by-name" title="gimp_image_get_channel_by_name ()">gimp_image_get_channel_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-vectors-by-name" title="gimp_image_get_vectors_by_name ()">gimp_image_get_vectors_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-cmap" title="gimp_image_get_cmap ()">gimp_image_get_cmap</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-set-cmap" title="gimp_image_set_cmap ()">gimp_image_set_cmap</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-colormap" title="gimp_image_get_colormap ()">gimp_image_get_colormap</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-set-colormap" title="gimp_image_set_colormap ()">gimp_image_set_colormap</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-vectors" title="gimp_image_get_vectors ()">gimp_image_get_vectors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-thumbnail-data" title="gimp_image_get_thumbnail_data ()">gimp_image_get_thumbnail_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-attach-parasite" title="gimp_image_attach_parasite ()">gimp_image_attach_parasite</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-detach-parasite" title="gimp_image_detach_parasite ()">gimp_image_detach_parasite</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpparasite.html#GimpParasite"><span class="returnvalue">GimpParasite</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-parasite" title="gimp_image_get_parasite ()">gimp_image_get_parasite</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-parasite-list" title="gimp_image_get_parasite_list ()">gimp_image_get_parasite_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpparasite.html#GimpParasite"><span class="returnvalue">GimpParasite</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-parasite-find" title="gimp_image_parasite_find ()">gimp_image_parasite_find</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-parasite-list" title="gimp_image_parasite_list ()">gimp_image_parasite_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-parasite-attach" title="gimp_image_parasite_attach ()">gimp_image_parasite_attach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-parasite-detach" title="gimp_image_parasite_detach ()">gimp_image_parasite_detach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-attach-new-parasite" title="gimp_image_attach_new_parasite ()">gimp_image_attach_new_parasite</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-add-vectors" title="gimp_image_add_vectors ()">gimp_image_add_vectors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-insert-vectors" title="gimp_image_insert_vectors ()">gimp_image_insert_vectors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-remove-vectors" title="gimp_image_remove_vectors ()">gimp_image_remove_vectors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-active-vectors" title="gimp_image_get_active_vectors ()">gimp_image_get_active_vectors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-set-active-vectors" title="gimp_image_set_active_vectors ()">gimp_image_set_active_vectors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-lower-vectors" title="gimp_image_lower_vectors ()">gimp_image_lower_vectors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-raise-vectors" title="gimp_image_raise_vectors ()">gimp_image_raise_vectors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-lower-vectors-to-bottom" title="gimp_image_lower_vectors_to_bottom ()">gimp_image_lower_vectors_to_bottom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-raise-vectors-to-top" title="gimp_image_raise_vectors_to_top ()">gimp_image_raise_vectors_to_top</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpimage.html#gimp-image-get-vectors-position" title="gimp_image_get_vectors_position ()">gimp_image_get_vectors_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpimage.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpimage.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-image-list"></a><h3>gimp_image_list ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+gimp_image_list (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *num_images</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-new"></a><h3>gimp_image_new ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpImageBaseType"><span class="type">GimpImageBaseType</span></a> type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-uri"></a><h3>gimp_image_get_uri ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_image_get_uri (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-xcf-uri"></a><h3>gimp_image_get_xcf_uri ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_image_get_xcf_uri (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-exported-uri"></a><h3>gimp_image_get_exported_uri ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_image_get_exported_uri (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-imported-uri"></a><h3>gimp_image_get_imported_uri ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_image_get_imported_uri (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-duplicate"></a><h3>gimp_image_duplicate ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_duplicate (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-delete"></a><h3>gimp_image_delete ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_delete (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-is-valid"></a><h3>gimp_image_is_valid ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_is_valid (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-base-type"></a><h3>gimp_image_base_type ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpImageBaseType"><span class="returnvalue">GimpImageBaseType</span></a>
+gimp_image_base_type (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-width"></a><h3>gimp_image_width ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gimp_image_width (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-height"></a><h3>gimp_image_height ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gimp_image_height (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-free-shadow"></a><h3>gimp_image_free_shadow ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_free_shadow (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_free_shadow</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpdrawable.html#gimp-drawable-free-shadow" title="gimp_drawable_free_shadow ()"><code class="function">gimp_drawable_free_shadow()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-flip"></a><h3>gimp_image_flip ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_flip (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                 <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpOrientationType" title="enum GimpOrientationType"><span class="type">GimpOrientationType</span></a> flip_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-rotate"></a><h3>gimp_image_rotate ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_rotate (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                   <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpRotationType" title="enum GimpRotationType"><span class="type">GimpRotationType</span></a> rotate_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-resize"></a><h3>gimp_image_resize ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_resize (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> new_width</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> new_height</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> offx</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> offy</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_image_resize</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-resize-to-layers"></a><h3>gimp_image_resize_to_layers ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_resize_to_layers (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-scale"></a><h3>gimp_image_scale ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_scale (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> new_width</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> new_height</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-scale-full"></a><h3>gimp_image_scale_full ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_scale_full (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> new_width</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> new_height</code></em>,
+                       <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpInterpolationType"><span class="type">GimpInterpolationType</span></a> interpolation</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_scale_full</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-scale" title="gimp_image_scale ()"><code class="function">gimp_image_scale()</code></a> instead.</p>
+</div>
+<p class="since">Since: GIMP 2.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-crop"></a><h3>gimp_image_crop ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_crop (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> new_width</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> new_height</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> offx</code></em>,
+                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> offy</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_image_crop</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-layers"></a><h3>gimp_image_get_layers ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+gimp_image_get_layers (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *num_layers</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-channels"></a><h3>gimp_image_get_channels ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+gimp_image_get_channels (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *num_channels</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-active-drawable"></a><h3>gimp_image_get_active_drawable ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_get_active_drawable (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-floating-sel"></a><h3>gimp_image_get_floating_sel ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_get_floating_sel (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-floating-sel-attached-to"></a><h3>gimp_image_floating_sel_attached_to ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_floating_sel_attached_to (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-pick-color"></a><h3>gimp_image_pick_color ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_pick_color (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> drawable_ID</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> sample_merged</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> sample_average</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> average_radius</code></em>,
+                       <em class="parameter"><code><a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *color</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-pick-correlate-layer"></a><h3>gimp_image_pick_correlate_layer ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_pick_correlate_layer (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-item-position"></a><h3>gimp_image_get_item_position ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gimp_image_get_item_position (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> item_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-reorder-item"></a><h3>gimp_image_reorder_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_reorder_item (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> item_ID</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> parent_ID</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-raise-item"></a><h3>gimp_image_raise_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_raise_item (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> item_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-lower-item"></a><h3>gimp_image_lower_item ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_lower_item (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> item_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-raise-item-to-top"></a><h3>gimp_image_raise_item_to_top ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_raise_item_to_top (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> item_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-lower-item-to-bottom"></a><h3>gimp_image_lower_item_to_bottom ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_lower_item_to_bottom (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> item_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-add-layer"></a><h3>gimp_image_add_layer ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_add_layer (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_add_layer</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-insert-layer" title="gimp_image_insert_layer ()"><code class="function">gimp_image_insert_layer()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-insert-layer"></a><h3>gimp_image_insert_layer ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_insert_layer (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> parent_ID</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_image_insert_layer</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-remove-layer"></a><h3>gimp_image_remove_layer ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_remove_layer (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-raise-layer"></a><h3>gimp_image_raise_layer ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_raise_layer (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_raise_layer</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-raise-item" title="gimp_image_raise_item ()"><code class="function">gimp_image_raise_item()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-lower-layer"></a><h3>gimp_image_lower_layer ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_lower_layer (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_lower_layer</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-lower-item" title="gimp_image_lower_item ()"><code class="function">gimp_image_lower_item()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-raise-layer-to-top"></a><h3>gimp_image_raise_layer_to_top ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_raise_layer_to_top (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_raise_layer_to_top</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-raise-item-to-top" title="gimp_image_raise_item_to_top ()"><code class="function">gimp_image_raise_item_to_top()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-lower-layer-to-bottom"></a><h3>gimp_image_lower_layer_to_bottom ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_lower_layer_to_bottom (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_lower_layer_to_bottom</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-lower-item-to-bottom" title="gimp_image_lower_item_to_bottom ()"><code class="function">gimp_image_lower_item_to_bottom()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-layer-position"></a><h3>gimp_image_get_layer_position ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gimp_image_get_layer_position (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_get_layer_position</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-get-item-position" title="gimp_image_get_item_position ()"><code class="function">gimp_image_get_item_position()</code></a> instead.</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-add-channel"></a><h3>gimp_image_add_channel ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_add_channel (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> channel_ID</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_add_channel</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-insert-channel" title="gimp_image_insert_channel ()"><code class="function">gimp_image_insert_channel()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-insert-channel"></a><h3>gimp_image_insert_channel ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_insert_channel (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> channel_ID</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> parent_ID</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_image_insert_channel</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-remove-channel"></a><h3>gimp_image_remove_channel ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_remove_channel (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> channel_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-raise-channel"></a><h3>gimp_image_raise_channel ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_raise_channel (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> channel_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_raise_channel</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-raise-item" title="gimp_image_raise_item ()"><code class="function">gimp_image_raise_item()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-lower-channel"></a><h3>gimp_image_lower_channel ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_lower_channel (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> channel_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_lower_channel</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-lower-item" title="gimp_image_lower_item ()"><code class="function">gimp_image_lower_item()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-channel-position"></a><h3>gimp_image_get_channel_position ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gimp_image_get_channel_position (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> channel_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_get_channel_position</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-get-item-position" title="gimp_image_get_item_position ()"><code class="function">gimp_image_get_item_position()</code></a> instead.</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-flatten"></a><h3>gimp_image_flatten ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_flatten (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-merge-visible-layers"></a><h3>gimp_image_merge_visible_layers ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_merge_visible_layers (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                 <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpMergeType" title="enum GimpMergeType"><span class="type">GimpMergeType</span></a> merge_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-merge-down"></a><h3>gimp_image_merge_down ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_merge_down (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> merge_layer_ID</code></em>,
+                       <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpMergeType" title="enum GimpMergeType"><span class="type">GimpMergeType</span></a> merge_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-clean-all"></a><h3>gimp_image_clean_all ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_clean_all (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-is-dirty"></a><h3>gimp_image_is_dirty ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_is_dirty (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-active-layer"></a><h3>gimp_image_get_active_layer ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_get_active_layer (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-set-active-layer"></a><h3>gimp_image_set_active_layer ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_set_active_layer (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> active_layer_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-active-channel"></a><h3>gimp_image_get_active_channel ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_get_active_channel (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-set-active-channel"></a><h3>gimp_image_set_active_channel ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_set_active_channel (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> active_channel_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-unset-active-channel"></a><h3>gimp_image_unset_active_channel ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_unset_active_channel (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-selection"></a><h3>gimp_image_get_selection ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_get_selection (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-component-active"></a><h3>gimp_image_get_component_active ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_get_component_active (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                 <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpChannelType"><span class="type">GimpChannelType</span></a> component</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-set-component-active"></a><h3>gimp_image_set_component_active ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_set_component_active (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                 <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpChannelType"><span class="type">GimpChannelType</span></a> component</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> active</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-component-visible"></a><h3>gimp_image_get_component_visible ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_get_component_visible (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                  <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpChannelType"><span class="type">GimpChannelType</span></a> component</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-set-component-visible"></a><h3>gimp_image_set_component_visible ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_set_component_visible (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                  <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpChannelType"><span class="type">GimpChannelType</span></a> component</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> visible</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-filename"></a><h3>gimp_image_get_filename ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_image_get_filename (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-set-filename"></a><h3>gimp_image_set_filename ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_set_filename (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-name"></a><h3>gimp_image_get_name ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_image_get_name (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-resolution"></a><h3>gimp_image_get_resolution ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_get_resolution (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *xresolution</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *yresolution</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-set-resolution"></a><h3>gimp_image_set_resolution ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_set_resolution (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> xresolution</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> yresolution</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-unit"></a><h3>gimp_image_get_unit ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpunit.html#GimpUnit"><span class="returnvalue">GimpUnit</span></a>
+gimp_image_get_unit (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-set-unit"></a><h3>gimp_image_set_unit ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_set_unit (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                     <em class="parameter"><code><a href="../html/libgimpbase-gimpunit.html#GimpUnit"><span class="type">GimpUnit</span></a> unit</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-set-tattoo-state"></a><h3>gimp_image_set_tattoo_state ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_set_tattoo_state (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> tattoo_state</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-tattoo-state"></a><h3>gimp_image_get_tattoo_state ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gimp_image_get_tattoo_state (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-layer-by-tattoo"></a><h3>gimp_image_get_layer_by_tattoo ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_get_layer_by_tattoo (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> tattoo</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-channel-by-tattoo"></a><h3>gimp_image_get_channel_by_tattoo ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_get_channel_by_tattoo (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> tattoo</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-vectors-by-tattoo"></a><h3>gimp_image_get_vectors_by_tattoo ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_get_vectors_by_tattoo (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> tattoo</code></em>);</pre>
+<p class="since">Since: GIMP 2.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-layer-by-name"></a><h3>gimp_image_get_layer_by_name ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_get_layer_by_name (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                              <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-channel-by-name"></a><h3>gimp_image_get_channel_by_name ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_get_channel_by_name (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-vectors-by-name"></a><h3>gimp_image_get_vectors_by_name ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_get_vectors_by_name (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-cmap"></a><h3>gimp_image_get_cmap ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a> *
+gimp_image_get_cmap (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *num_colors</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_image_get_cmap</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-set-cmap"></a><h3>gimp_image_set_cmap ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_set_cmap (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *cmap</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> num_colors</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_image_set_cmap</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-colormap"></a><h3>gimp_image_get_colormap ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a> *
+gimp_image_get_colormap (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *num_colors</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-set-colormap"></a><h3>gimp_image_set_colormap ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_set_colormap (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *colormap</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> num_colors</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-vectors"></a><h3>gimp_image_get_vectors ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a> *
+gimp_image_get_vectors (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *num_vectors</code></em>);</pre>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-thumbnail-data"></a><h3>gimp_image_get_thumbnail_data ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guchar"><span class="returnvalue">guchar</span></a> *
+gimp_image_get_thumbnail_data (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *width</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *height</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *bpp</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-attach-parasite"></a><h3>gimp_image_attach_parasite ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_attach_parasite (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                            <em class="parameter"><code>const <a href="../html/libgimpbase-gimpparasite.html#GimpParasite"><span class="type">GimpParasite</span></a> *parasite</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-detach-parasite"></a><h3>gimp_image_detach_parasite ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_detach_parasite (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-parasite"></a><h3>gimp_image_get_parasite ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpparasite.html#GimpParasite"><span class="returnvalue">GimpParasite</span></a> *
+gimp_image_get_parasite (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-parasite-list"></a><h3>gimp_image_get_parasite_list ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+gimp_image_get_parasite_list (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *num_parasites</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-parasite-find"></a><h3>gimp_image_parasite_find ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpparasite.html#GimpParasite"><span class="returnvalue">GimpParasite</span></a> *
+gimp_image_parasite_find (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                          <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_parasite_find</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-get-parasite" title="gimp_image_get_parasite ()"><code class="function">gimp_image_get_parasite()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-parasite-list"></a><h3>gimp_image_parasite_list ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_parasite_list (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *num_parasites</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> ***parasites</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_parasite_list</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-get-parasite-list" title="gimp_image_get_parasite_list ()"><code class="function">gimp_image_get_parasite_list()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-parasite-attach"></a><h3>gimp_image_parasite_attach ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_parasite_attach (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                            <em class="parameter"><code>const <a href="../html/libgimpbase-gimpparasite.html#GimpParasite"><span class="type">GimpParasite</span></a> *parasite</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_parasite_attach</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-attach-parasite" title="gimp_image_attach_parasite ()"><code class="function">gimp_image_attach_parasite()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-parasite-detach"></a><h3>gimp_image_parasite_detach ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_parasite_detach (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_parasite_detach</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-detach-parasite" title="gimp_image_detach_parasite ()"><code class="function">gimp_image_detach_parasite()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-attach-new-parasite"></a><h3>gimp_image_attach_new_parasite ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_attach_new_parasite (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> flags</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gconstpointer"><span class="type">gconstpointer</span></a> data</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_attach_new_parasite</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-attach-parasite" title="gimp_image_attach_parasite ()"><code class="function">gimp_image_attach_parasite()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-add-vectors"></a><h3>gimp_image_add_vectors ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_add_vectors (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> vectors_ID</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_add_vectors</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-insert-vectors" title="gimp_image_insert_vectors ()"><code class="function">gimp_image_insert_vectors()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-insert-vectors"></a><h3>gimp_image_insert_vectors ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_insert_vectors (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> vectors_ID</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> parent_ID</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> position</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_image_insert_vectors</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-remove-vectors"></a><h3>gimp_image_remove_vectors ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_remove_vectors (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> vectors_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-active-vectors"></a><h3>gimp_image_get_active_vectors ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_image_get_active_vectors (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-set-active-vectors"></a><h3>gimp_image_set_active_vectors ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_set_active_vectors (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> active_vectors_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-lower-vectors"></a><h3>gimp_image_lower_vectors ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_lower_vectors (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> vectors_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_lower_vectors</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-lower-item" title="gimp_image_lower_item ()"><code class="function">gimp_image_lower_item()</code></a> instead.</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-raise-vectors"></a><h3>gimp_image_raise_vectors ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_raise_vectors (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> vectors_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_raise_vectors</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-raise-item" title="gimp_image_raise_item ()"><code class="function">gimp_image_raise_item()</code></a> instead.</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-lower-vectors-to-bottom"></a><h3>gimp_image_lower_vectors_to_bottom ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_lower_vectors_to_bottom (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                    <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> vectors_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_lower_vectors_to_bottom</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-lower-item-to-bottom" title="gimp_image_lower_item_to_bottom ()"><code class="function">gimp_image_lower_item_to_bottom()</code></a> instead.</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-raise-vectors-to-top"></a><h3>gimp_image_raise_vectors_to_top ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_image_raise_vectors_to_top (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> vectors_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_raise_vectors_to_top</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-raise-item-to-top" title="gimp_image_raise_item_to_top ()"><code class="function">gimp_image_raise_item_to_top()</code></a> instead.</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-image-get-vectors-position"></a><h3>gimp_image_get_vectors_position ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gimp_image_get_vectors_position (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> vectors_ID</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_image_get_vectors_position</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpimage.html#gimp-image-get-item-position" title="gimp_image_get_item_position ()"><code class="function">gimp_image_get_item_position()</code></a> instead.</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpimage.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

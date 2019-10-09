@@ -1,0 +1,605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimplayer: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manupulating Images and their Properties">
+<link rel="prev" href="libgimp-gimpitemtransform.html" title="gimpitemtransform">
+<link rel="next" href="libgimp-gimppaths.html" title="gimppaths">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimplayer.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpitemtransform.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimppaths.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimplayer"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimplayer.top_of_page"></a>gimplayer</span></h2>
+<p>gimplayer</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimplayer.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-new" title="gimp_layer_new ()">gimp_layer_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-new-from-drawable" title="gimp_layer_new_from_drawable ()">gimp_layer_new_from_drawable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-new-from-visible" title="gimp_layer_new_from_visible ()">gimp_layer_new_from_visible</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-new-from-pixbuf" title="gimp_layer_new_from_pixbuf ()">gimp_layer_new_from_pixbuf</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-new-from-surface" title="gimp_layer_new_from_surface ()">gimp_layer_new_from_surface</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-group-new" title="gimp_layer_group_new ()">gimp_layer_group_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-copy" title="gimp_layer_copy ()">gimp_layer_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-scale" title="gimp_layer_scale ()">gimp_layer_scale</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-scale-full" title="gimp_layer_scale_full ()">gimp_layer_scale_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-resize" title="gimp_layer_resize ()">gimp_layer_resize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-resize-to-image-size" title="gimp_layer_resize_to_image_size ()">gimp_layer_resize_to_image_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-translate" title="gimp_layer_translate ()">gimp_layer_translate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-add-alpha" title="gimp_layer_add_alpha ()">gimp_layer_add_alpha</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-flatten" title="gimp_layer_flatten ()">gimp_layer_flatten</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-offsets" title="gimp_layer_set_offsets ()">gimp_layer_set_offsets</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-create-mask" title="gimp_layer_create_mask ()">gimp_layer_create_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-from-mask" title="gimp_layer_from_mask ()">gimp_layer_from_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-mask" title="gimp_layer_get_mask ()">gimp_layer_get_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-add-mask" title="gimp_layer_add_mask ()">gimp_layer_add_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-remove-mask" title="gimp_layer_remove_mask ()">gimp_layer_remove_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-lock-alpha" title="gimp_layer_get_lock_alpha ()">gimp_layer_get_lock_alpha</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-lock-alpha" title="gimp_layer_set_lock_alpha ()">gimp_layer_set_lock_alpha</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-preserve-trans" title="gimp_layer_get_preserve_trans ()">gimp_layer_get_preserve_trans</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-preserve-trans" title="gimp_layer_set_preserve_trans ()">gimp_layer_set_preserve_trans</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-apply-mask" title="gimp_layer_get_apply_mask ()">gimp_layer_get_apply_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-apply-mask" title="gimp_layer_set_apply_mask ()">gimp_layer_set_apply_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-show-mask" title="gimp_layer_get_show_mask ()">gimp_layer_get_show_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-show-mask" title="gimp_layer_set_show_mask ()">gimp_layer_set_show_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-edit-mask" title="gimp_layer_get_edit_mask ()">gimp_layer_get_edit_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-edit-mask" title="gimp_layer_set_edit_mask ()">gimp_layer_set_edit_mask</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-opacity" title="gimp_layer_get_opacity ()">gimp_layer_get_opacity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-opacity" title="gimp_layer_set_opacity ()">gimp_layer_set_opacity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimp-gimpenums.html#GimpLayerModeEffects" title="enum GimpLayerModeEffects"><span class="returnvalue">GimpLayerModeEffects</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-get-mode" title="gimp_layer_get_mode ()">gimp_layer_get_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-set-mode" title="gimp_layer_set_mode ()">gimp_layer_set_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimplayer.html#gimp-layer-is-floating-sel" title="gimp_layer_is_floating_sel ()">gimp_layer_is_floating_sel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimplayer.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimplayer.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-layer-new"></a><h3>gimp_layer_new ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_layer_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpImageType"><span class="type">GimpImageType</span></a> type</code></em>,
+                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> opacity</code></em>,
+                <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpLayerModeEffects" title="enum GimpLayerModeEffects"><span class="type">GimpLayerModeEffects</span></a> mode</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-new-from-drawable"></a><h3>gimp_layer_new_from_drawable ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_layer_new_from_drawable (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> drawable_ID</code></em>,
+                              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> dest_image_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-new-from-visible"></a><h3>gimp_layer_new_from_visible ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_layer_new_from_visible (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> dest_image_ID</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p class="since">Since: GIMP 2.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-new-from-pixbuf"></a><h3>gimp_layer_new_from_pixbuf ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_layer_new_from_pixbuf (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                            <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/gdk-pixbufgdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf-struct"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> opacity</code></em>,
+                            <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpLayerModeEffects" title="enum GimpLayerModeEffects"><span class="type">GimpLayerModeEffects</span></a> mode</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> progress_start</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> progress_end</code></em>);</pre>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-new-from-surface"></a><h3>gimp_layer_new_from_surface ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_layer_new_from_surface (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>,
+                             <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                             <em class="parameter"><code><span class="type">cairo_surface_t</span> *surface</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> progress_start</code></em>,
+                             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> progress_end</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-group-new"></a><h3>gimp_layer_group_new ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_layer_group_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> image_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-copy"></a><h3>gimp_layer_copy ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_layer_copy (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-scale"></a><h3>gimp_layer_scale ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_scale (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> new_width</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> new_height</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> local_origin</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-scale-full"></a><h3>gimp_layer_scale_full ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_scale_full (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> new_width</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> new_height</code></em>,
+                       <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> local_origin</code></em>,
+                       <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpInterpolationType"><span class="type">GimpInterpolationType</span></a> interpolation</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_layer_scale_full</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimplayer.html#gimp-layer-scale" title="gimp_layer_scale ()"><code class="function">gimp_layer_scale()</code></a> instead.</p>
+</div>
+<p class="since">Since: GIMP 2.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-resize"></a><h3>gimp_layer_resize ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_resize (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> new_width</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> new_height</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> offx</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> offy</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_layer_resize</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-resize-to-image-size"></a><h3>gimp_layer_resize_to_image_size ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_resize_to_image_size (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-translate"></a><h3>gimp_layer_translate ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_translate (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> offx</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> offy</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-add-alpha"></a><h3>gimp_layer_add_alpha ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_add_alpha (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-flatten"></a><h3>gimp_layer_flatten ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_flatten (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-offsets"></a><h3>gimp_layer_set_offsets ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_set_offsets (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> offx</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> offy</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-create-mask"></a><h3>gimp_layer_create_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_layer_create_mask (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                        <em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpAddMaskType"><span class="type">GimpAddMaskType</span></a> mask_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-from-mask"></a><h3>gimp_layer_from_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_layer_from_mask (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> mask_ID</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-mask"></a><h3>gimp_layer_get_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_layer_get_mask (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-add-mask"></a><h3>gimp_layer_add_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_add_mask (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> mask_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-remove-mask"></a><h3>gimp_layer_remove_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_remove_mask (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                        <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpMaskApplyMode" title="enum GimpMaskApplyMode"><span class="type">GimpMaskApplyMode</span></a> mode</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-lock-alpha"></a><h3>gimp_layer_get_lock_alpha ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_get_lock_alpha (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-lock-alpha"></a><h3>gimp_layer_set_lock_alpha ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_set_lock_alpha (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> lock_alpha</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-preserve-trans"></a><h3>gimp_layer_get_preserve_trans ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_get_preserve_trans (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_layer_get_preserve_trans</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-preserve-trans"></a><h3>gimp_layer_set_preserve_trans ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_set_preserve_trans (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> preserve_trans</code></em>);</pre>
+<div class="warning"><p><code class="literal">gimp_layer_set_preserve_trans</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-apply-mask"></a><h3>gimp_layer_get_apply_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_get_apply_mask (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-apply-mask"></a><h3>gimp_layer_set_apply_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_set_apply_mask (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> apply_mask</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-show-mask"></a><h3>gimp_layer_get_show_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_get_show_mask (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-show-mask"></a><h3>gimp_layer_set_show_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_set_show_mask (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> show_mask</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-edit-mask"></a><h3>gimp_layer_get_edit_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_get_edit_mask (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-edit-mask"></a><h3>gimp_layer_set_edit_mask ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_set_edit_mask (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                          <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> edit_mask</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-opacity"></a><h3>gimp_layer_get_opacity ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_layer_get_opacity (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-opacity"></a><h3>gimp_layer_set_opacity ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_set_opacity (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> opacity</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-get-mode"></a><h3>gimp_layer_get_mode ()</h3>
+<pre class="programlisting"><a class="link" href="libgimp-gimpenums.html#GimpLayerModeEffects" title="enum GimpLayerModeEffects"><span class="returnvalue">GimpLayerModeEffects</span></a>
+gimp_layer_get_mode (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-set-mode"></a><h3>gimp_layer_set_mode ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_set_mode (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>,
+                     <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpLayerModeEffects" title="enum GimpLayerModeEffects"><span class="type">GimpLayerModeEffects</span></a> mode</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-layer-is-floating-sel"></a><h3>gimp_layer_is_floating_sel ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_layer_is_floating_sel (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> layer_ID</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimplayer.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

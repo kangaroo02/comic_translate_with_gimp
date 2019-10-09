@@ -1,0 +1,1189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpcontext: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-general.html" title="Functions not Related to Specific Images">
+<link rel="prev" href="libgimp-gimpbuffer.html" title="gimpbuffer">
+<link rel="next" href="libgimp-gimpgimprc.html" title="gimpgimprc">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpcontext.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-general.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpbuffer.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpgimprc.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpcontext"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpcontext.top_of_page"></a>gimpcontext</span></h2>
+<p>gimpcontext</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpcontext.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-push" title="gimp_context_push ()">gimp_context_push</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-pop" title="gimp_context_pop ()">gimp_context_pop</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-defaults" title="gimp_context_set_defaults ()">gimp_context_set_defaults</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-foreground" title="gimp_context_get_foreground ()">gimp_context_get_foreground</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-foreground" title="gimp_context_set_foreground ()">gimp_context_set_foreground</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-background" title="gimp_context_get_background ()">gimp_context_get_background</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-background" title="gimp_context_set_background ()">gimp_context_set_background</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-default-colors" title="gimp_context_set_default_colors ()">gimp_context_set_default_colors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-swap-colors" title="gimp_context_swap_colors ()">gimp_context_swap_colors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-opacity" title="gimp_context_get_opacity ()">gimp_context_get_opacity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-opacity" title="gimp_context_set_opacity ()">gimp_context_set_opacity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimp-gimpenums.html#GimpLayerModeEffects" title="enum GimpLayerModeEffects"><span class="returnvalue">GimpLayerModeEffects</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-paint-mode" title="gimp_context_get_paint_mode ()">gimp_context_get_paint_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-paint-mode" title="gimp_context_set_paint_mode ()">gimp_context_set_paint_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-brush" title="gimp_context_get_brush ()">gimp_context_get_brush</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush" title="gimp_context_set_brush ()">gimp_context_set_brush</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-brush-angle" title="gimp_context_get_brush_angle ()">gimp_context_get_brush_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush-angle" title="gimp_context_set_brush_angle ()">gimp_context_set_brush_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-brush-aspect-ratio" title="gimp_context_get_brush_aspect_ratio ()">gimp_context_get_brush_aspect_ratio</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush-aspect-ratio" title="gimp_context_set_brush_aspect_ratio ()">gimp_context_set_brush_aspect_ratio</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-brush-size" title="gimp_context_get_brush_size ()">gimp_context_get_brush_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush-size" title="gimp_context_set_brush_size ()">gimp_context_set_brush_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-brush-default-size" title="gimp_context_set_brush_default_size ()">gimp_context_set_brush_default_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-dynamics" title="gimp_context_get_dynamics ()">gimp_context_get_dynamics</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-dynamics" title="gimp_context_set_dynamics ()">gimp_context_set_dynamics</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-pattern" title="gimp_context_get_pattern ()">gimp_context_get_pattern</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-pattern" title="gimp_context_set_pattern ()">gimp_context_set_pattern</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-gradient" title="gimp_context_get_gradient ()">gimp_context_get_gradient</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-gradient" title="gimp_context_set_gradient ()">gimp_context_set_gradient</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-palette" title="gimp_context_get_palette ()">gimp_context_get_palette</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-palette" title="gimp_context_set_palette ()">gimp_context_set_palette</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-font" title="gimp_context_get_font ()">gimp_context_get_font</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-font" title="gimp_context_set_font ()">gimp_context_set_font</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-paint-method" title="gimp_context_get_paint_method ()">gimp_context_get_paint_method</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-paint-method" title="gimp_context_set_paint_method ()">gimp_context_set_paint_method</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-list-paint-methods" title="gimp_context_list_paint_methods ()">gimp_context_list_paint_methods</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-antialias" title="gimp_context_get_antialias ()">gimp_context_get_antialias</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-antialias" title="gimp_context_set_antialias ()">gimp_context_set_antialias</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-feather" title="gimp_context_get_feather ()">gimp_context_get_feather</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-feather" title="gimp_context_set_feather ()">gimp_context_set_feather</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-feather-radius" title="gimp_context_get_feather_radius ()">gimp_context_get_feather_radius</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-feather-radius" title="gimp_context_set_feather_radius ()">gimp_context_set_feather_radius</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-sample-merged" title="gimp_context_get_sample_merged ()">gimp_context_get_sample_merged</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-sample-merged" title="gimp_context_set_sample_merged ()">gimp_context_set_sample_merged</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimp-gimpenums.html#GimpSelectCriterion" title="enum GimpSelectCriterion"><span class="returnvalue">GimpSelectCriterion</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-sample-criterion" title="gimp_context_get_sample_criterion ()">gimp_context_get_sample_criterion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-sample-criterion" title="gimp_context_set_sample_criterion ()">gimp_context_set_sample_criterion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-sample-threshold" title="gimp_context_get_sample_threshold ()">gimp_context_get_sample_threshold</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-sample-threshold" title="gimp_context_set_sample_threshold ()">gimp_context_set_sample_threshold</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-sample-threshold-int" title="gimp_context_get_sample_threshold_int ()">gimp_context_get_sample_threshold_int</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-sample-threshold-int" title="gimp_context_set_sample_threshold_int ()">gimp_context_set_sample_threshold_int</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-sample-transparent" title="gimp_context_get_sample_transparent ()">gimp_context_get_sample_transparent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-sample-transparent" title="gimp_context_set_sample_transparent ()">gimp_context_set_sample_transparent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpInterpolationType"><span class="returnvalue">GimpInterpolationType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-interpolation" title="gimp_context_get_interpolation ()">gimp_context_get_interpolation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-interpolation" title="gimp_context_set_interpolation ()">gimp_context_set_interpolation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpTransformDirection"><span class="returnvalue">GimpTransformDirection</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-transform-direction" title="gimp_context_get_transform_direction ()">gimp_context_get_transform_direction</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-direction" title="gimp_context_set_transform_direction ()">gimp_context_set_transform_direction</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../html/libgimpbase-gimpbaseenums.html#GimpTransformResize"><span class="returnvalue">GimpTransformResize</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-transform-resize" title="gimp_context_get_transform_resize ()">gimp_context_get_transform_resize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-resize" title="gimp_context_set_transform_resize ()">gimp_context_set_transform_resize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-transform-recursion" title="gimp_context_get_transform_recursion ()">gimp_context_get_transform_recursion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-transform-recursion" title="gimp_context_set_transform_recursion ()">gimp_context_set_transform_recursion</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-angle" title="gimp_context_get_ink_angle ()">gimp_context_get_ink_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-angle" title="gimp_context_set_ink_angle ()">gimp_context_set_ink_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-blob-angle" title="gimp_context_get_ink_blob_angle ()">gimp_context_get_ink_blob_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-blob-angle" title="gimp_context_set_ink_blob_angle ()">gimp_context_set_ink_blob_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-blob-aspect-ratio" title="gimp_context_get_ink_blob_aspect_ratio ()">gimp_context_get_ink_blob_aspect_ratio</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-blob-aspect-ratio" title="gimp_context_set_ink_blob_aspect_ratio ()">gimp_context_set_ink_blob_aspect_ratio</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimp-gimpenums.html#GimpInkBlobType" title="enum GimpInkBlobType"><span class="returnvalue">GimpInkBlobType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-blob-type" title="gimp_context_get_ink_blob_type ()">gimp_context_get_ink_blob_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-blob-type" title="gimp_context_set_ink_blob_type ()">gimp_context_set_ink_blob_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-size" title="gimp_context_get_ink_size ()">gimp_context_get_ink_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-size" title="gimp_context_set_ink_size ()">gimp_context_set_ink_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-size-sensitivity" title="gimp_context_get_ink_size_sensitivity ()">gimp_context_get_ink_size_sensitivity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-size-sensitivity" title="gimp_context_set_ink_size_sensitivity ()">gimp_context_set_ink_size_sensitivity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-speed-sensitivity" title="gimp_context_get_ink_speed_sensitivity ()">gimp_context_get_ink_speed_sensitivity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-speed-sensitivity" title="gimp_context_set_ink_speed_sensitivity ()">gimp_context_set_ink_speed_sensitivity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-get-ink-tilt-sensitivity" title="gimp_context_get_ink_tilt_sensitivity ()">gimp_context_get_ink_tilt_sensitivity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpcontext.html#gimp-context-set-ink-tilt-sensitivity" title="gimp_context_set_ink_tilt_sensitivity ()">gimp_context_set_ink_tilt_sensitivity</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpcontext.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpcontext.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-context-push"></a><h3>gimp_context_push ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_push (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-pop"></a><h3>gimp_context_pop ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_pop (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-defaults"></a><h3>gimp_context_set_defaults ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_defaults (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-foreground"></a><h3>gimp_context_get_foreground ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_get_foreground (<em class="parameter"><code><a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *foreground</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-foreground"></a><h3>gimp_context_set_foreground ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_foreground (<em class="parameter"><code>const <a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *foreground</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-background"></a><h3>gimp_context_get_background ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_get_background (<em class="parameter"><code><a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *background</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-background"></a><h3>gimp_context_set_background ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_background (<em class="parameter"><code>const <a href="../html/libgimpcolor-GimpRGB.html#GimpRGB"><span class="type">GimpRGB</span></a> *background</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-default-colors"></a><h3>gimp_context_set_default_colors ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_default_colors (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-swap-colors"></a><h3>gimp_context_swap_colors ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_swap_colors (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-opacity"></a><h3>gimp_context_get_opacity ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_context_get_opacity (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-opacity"></a><h3>gimp_context_set_opacity ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_opacity (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> opacity</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-paint-mode"></a><h3>gimp_context_get_paint_mode ()</h3>
+<pre class="programlisting"><a class="link" href="libgimp-gimpenums.html#GimpLayerModeEffects" title="enum GimpLayerModeEffects"><span class="returnvalue">GimpLayerModeEffects</span></a>
+gimp_context_get_paint_mode (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-paint-mode"></a><h3>gimp_context_set_paint_mode ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_paint_mode (<em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpLayerModeEffects" title="enum GimpLayerModeEffects"><span class="type">GimpLayerModeEffects</span></a> paint_mode</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-brush"></a><h3>gimp_context_get_brush ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_context_get_brush (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-brush"></a><h3>gimp_context_set_brush ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_brush (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-brush-angle"></a><h3>gimp_context_get_brush_angle ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_context_get_brush_angle (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-brush-angle"></a><h3>gimp_context_set_brush_angle ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_brush_angle (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> angle</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-brush-aspect-ratio"></a><h3>gimp_context_get_brush_aspect_ratio ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_context_get_brush_aspect_ratio (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-brush-aspect-ratio"></a><h3>gimp_context_set_brush_aspect_ratio ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_brush_aspect_ratio (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> aspect</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-brush-size"></a><h3>gimp_context_get_brush_size ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_context_get_brush_size (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-brush-size"></a><h3>gimp_context_set_brush_size ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_brush_size (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> size</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-brush-default-size"></a><h3>gimp_context_set_brush_default_size ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_brush_default_size (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-dynamics"></a><h3>gimp_context_get_dynamics ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_context_get_dynamics (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-dynamics"></a><h3>gimp_context_set_dynamics ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_dynamics (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-pattern"></a><h3>gimp_context_get_pattern ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_context_get_pattern (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-pattern"></a><h3>gimp_context_set_pattern ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_pattern (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-gradient"></a><h3>gimp_context_get_gradient ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_context_get_gradient (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-gradient"></a><h3>gimp_context_set_gradient ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_gradient (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-palette"></a><h3>gimp_context_get_palette ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_context_get_palette (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-palette"></a><h3>gimp_context_set_palette ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_palette (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-font"></a><h3>gimp_context_get_font ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_context_get_font (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-font"></a><h3>gimp_context_set_font ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_font (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p class="since">Since: GIMP 2.2</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-paint-method"></a><h3>gimp_context_get_paint_method ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_context_get_paint_method (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-paint-method"></a><h3>gimp_context_set_paint_method ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_paint_method (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-list-paint-methods"></a><h3>gimp_context_list_paint_methods ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_list_paint_methods (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *num_paint_methods</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> ***paint_methods</code></em>);</pre>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-antialias"></a><h3>gimp_context_get_antialias ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_get_antialias (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-antialias"></a><h3>gimp_context_set_antialias ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_antialias (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> antialias</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-feather"></a><h3>gimp_context_get_feather ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_get_feather (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-feather"></a><h3>gimp_context_set_feather ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_feather (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> feather</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-feather-radius"></a><h3>gimp_context_get_feather_radius ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_get_feather_radius (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *feather_radius_x</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *feather_radius_y</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-feather-radius"></a><h3>gimp_context_set_feather_radius ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_feather_radius (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> feather_radius_x</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> feather_radius_y</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-sample-merged"></a><h3>gimp_context_get_sample_merged ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_get_sample_merged (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-sample-merged"></a><h3>gimp_context_set_sample_merged ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_sample_merged (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> sample_merged</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-sample-criterion"></a><h3>gimp_context_get_sample_criterion ()</h3>
+<pre class="programlisting"><a class="link" href="libgimp-gimpenums.html#GimpSelectCriterion" title="enum GimpSelectCriterion"><span class="returnvalue">GimpSelectCriterion</span></a>
+gimp_context_get_sample_criterion (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-sample-criterion"></a><h3>gimp_context_set_sample_criterion ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_sample_criterion (<em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpSelectCriterion" title="enum GimpSelectCriterion"><span class="type">GimpSelectCriterion</span></a> sample_criterion</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-sample-threshold"></a><h3>gimp_context_get_sample_threshold ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_context_get_sample_threshold (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-sample-threshold"></a><h3>gimp_context_set_sample_threshold ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_sample_threshold (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> sample_threshold</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-sample-threshold-int"></a><h3>gimp_context_get_sample_threshold_int ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gimp_context_get_sample_threshold_int (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-sample-threshold-int"></a><h3>gimp_context_set_sample_threshold_int ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_sample_threshold_int (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> sample_threshold</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-sample-transparent"></a><h3>gimp_context_get_sample_transparent ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_get_sample_transparent (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-sample-transparent"></a><h3>gimp_context_set_sample_transparent ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_sample_transparent (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> sample_transparent</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-interpolation"></a><h3>gimp_context_get_interpolation ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpInterpolationType"><span class="returnvalue">GimpInterpolationType</span></a>
+gimp_context_get_interpolation (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-interpolation"></a><h3>gimp_context_set_interpolation ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_interpolation (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpInterpolationType"><span class="type">GimpInterpolationType</span></a> interpolation</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-transform-direction"></a><h3>gimp_context_get_transform_direction ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpTransformDirection"><span class="returnvalue">GimpTransformDirection</span></a>
+gimp_context_get_transform_direction (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-transform-direction"></a><h3>gimp_context_set_transform_direction ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_transform_direction (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpTransformDirection"><span class="type">GimpTransformDirection</span></a> transform_direction</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-transform-resize"></a><h3>gimp_context_get_transform_resize ()</h3>
+<pre class="programlisting"><a href="../html/libgimpbase-gimpbaseenums.html#GimpTransformResize"><span class="returnvalue">GimpTransformResize</span></a>
+gimp_context_get_transform_resize (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-transform-resize"></a><h3>gimp_context_set_transform_resize ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_transform_resize (<em class="parameter"><code><a href="../html/libgimpbase-gimpbaseenums.html#GimpTransformResize"><span class="type">GimpTransformResize</span></a> transform_resize</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-transform-recursion"></a><h3>gimp_context_get_transform_recursion ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gimp_context_get_transform_recursion (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-transform-recursion"></a><h3>gimp_context_set_transform_recursion ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_transform_recursion (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> transform_recursion</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-angle"></a><h3>gimp_context_get_ink_angle ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_context_get_ink_angle (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-angle"></a><h3>gimp_context_set_ink_angle ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_ink_angle (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> angle</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-blob-angle"></a><h3>gimp_context_get_ink_blob_angle ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_context_get_ink_blob_angle (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-blob-angle"></a><h3>gimp_context_set_ink_blob_angle ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_ink_blob_angle (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> angle</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-blob-aspect-ratio"></a><h3>gimp_context_get_ink_blob_aspect_ratio ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_context_get_ink_blob_aspect_ratio
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-blob-aspect-ratio"></a><h3>gimp_context_set_ink_blob_aspect_ratio ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_ink_blob_aspect_ratio
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> aspect</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-blob-type"></a><h3>gimp_context_get_ink_blob_type ()</h3>
+<pre class="programlisting"><a class="link" href="libgimp-gimpenums.html#GimpInkBlobType" title="enum GimpInkBlobType"><span class="returnvalue">GimpInkBlobType</span></a>
+gimp_context_get_ink_blob_type (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-blob-type"></a><h3>gimp_context_set_ink_blob_type ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_ink_blob_type (<em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpInkBlobType" title="enum GimpInkBlobType"><span class="type">GimpInkBlobType</span></a> type</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-size"></a><h3>gimp_context_get_ink_size ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_context_get_ink_size (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-size"></a><h3>gimp_context_set_ink_size ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_ink_size (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> size</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-size-sensitivity"></a><h3>gimp_context_get_ink_size_sensitivity ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_context_get_ink_size_sensitivity (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-size-sensitivity"></a><h3>gimp_context_set_ink_size_sensitivity ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_ink_size_sensitivity (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> size</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-speed-sensitivity"></a><h3>gimp_context_get_ink_speed_sensitivity ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_context_get_ink_speed_sensitivity
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-speed-sensitivity"></a><h3>gimp_context_set_ink_speed_sensitivity ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_ink_speed_sensitivity
+                               (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> speed</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-get-ink-tilt-sensitivity"></a><h3>gimp_context_get_ink_tilt_sensitivity ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_context_get_ink_tilt_sensitivity (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-context-set-ink-tilt-sensitivity"></a><h3>gimp_context_set_ink_tilt_sensitivity ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_context_set_ink_tilt_sensitivity (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> tilt</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpcontext.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

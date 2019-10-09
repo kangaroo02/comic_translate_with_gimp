@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpfontselect: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-selectors.html" title="Controlling the Core's Selection Dialogs">
+<link rel="prev" href="libgimp-gimpbrushselect.html" title="gimpbrushselect">
+<link rel="next" href="libgimp-gimpgradientselect.html" title="gimpgradientselect">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimpfontselect.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-selectors.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpbrushselect.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpgradientselect.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimpfontselect"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimpfontselect.top_of_page"></a>gimpfontselect</span></h2>
+<p>gimpfontselect</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimpfontselect.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgimp-gimpfontselect.html#GimpRunFontCallback" title="GimpRunFontCallback ()">*GimpRunFontCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfontselect.html#gimp-font-select-new" title="gimp_font_select_new ()">gimp_font_select_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfontselect.html#gimp-font-select-destroy" title="gimp_font_select_destroy ()">gimp_font_select_destroy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfontselect.html#gimp-fonts-popup" title="gimp_fonts_popup ()">gimp_fonts_popup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfontselect.html#gimp-fonts-close-popup" title="gimp_fonts_close_popup ()">gimp_fonts_close_popup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimpfontselect.html#gimp-fonts-set-popup" title="gimp_fonts_set_popup ()">gimp_fonts_set_popup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpfontselect.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpfontselect.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GimpRunFontCallback"></a><h3>GimpRunFontCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GimpRunFontCallback<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *font_name</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> dialog_closing</code></em>,
+                        <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-font-select-new"></a><h3>gimp_font_select_new ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_font_select_new (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *font_name</code></em>,
+                      <em class="parameter"><code><a class="link" href="libgimp-gimpfontselect.html#GimpRunFontCallback" title="GimpRunFontCallback ()"><span class="type">GimpRunFontCallback</span></a> callback</code></em>,
+                      <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-font-select-destroy"></a><h3>gimp_font_select_destroy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_font_select_destroy (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *font_callback</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-fonts-popup"></a><h3>gimp_fonts_popup ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_fonts_popup (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *font_callback</code></em>,
+                  <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *popup_title</code></em>,
+                  <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *initial_font</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-fonts-close-popup"></a><h3>gimp_fonts_close_popup ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_fonts_close_popup (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *font_callback</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-fonts-set-popup"></a><h3>gimp_fonts_set_popup ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_fonts_set_popup (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *font_callback</code></em>,
+                      <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *font_name</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimpfontselect.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

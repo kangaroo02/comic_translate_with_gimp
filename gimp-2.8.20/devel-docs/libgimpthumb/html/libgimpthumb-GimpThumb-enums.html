@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GimpThumb-enums: GIMP Thumbnail Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Thumbnail Library Reference Manual">
+<link rel="up" href="libgimpthumb.html" title="Part I. GIMP Thumbnail Library">
+<link rel="prev" href="libgimpthumb-GimpThumb-utils.html" title="GimpThumb-utils">
+<link rel="next" href="libgimpthumb-GimpThumb-error.html" title="GimpThumb-error">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimpthumb-GimpThumb-enums.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimpthumb.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimpthumb-GimpThumb-utils.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimpthumb-GimpThumb-error.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimpthumb-GimpThumb-enums"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimpthumb-GimpThumb-enums.top_of_page"></a>GimpThumb-enums</span></h2>
+<p>GimpThumb-enums — Enumerations used by libgimpthumb</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimpthumb-GimpThumb-enums.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgimpthumb-GimpThumb-enums.html#GimpThumbFileType" title="enum GimpThumbFileType">GimpThumbFileType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgimpthumb-GimpThumb-enums.html#GimpThumbSize" title="enum GimpThumbSize">GimpThumbSize</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgimpthumb-GimpThumb-enums.html#GimpThumbState" title="enum GimpThumbState">GimpThumbState</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpthumb-GimpThumb-enums.description"></a><h2>Description</h2>
+<p>Enumerations used by libgimpthumb</p>
+</div>
+<div class="refsect1">
+<a name="libgimpthumb-GimpThumb-enums.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="libgimpthumb-GimpThumb-enums.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpThumbFileType"></a><h3>enum GimpThumbFileType</h3>
+<p>File types as returned by <a class="link" href="libgimpthumb-GimpThumb-utils.html#gimp-thumb-file-test" title="gimp_thumb_file_test ()"><code class="function">gimp_thumb_file_test()</code></a>.</p>
+<div class="refsect3">
+<a name="GimpThumbFileType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-FILE-TYPE-NONE:CAPS"></a>GIMP_THUMB_FILE_TYPE_NONE</p></td>
+<td class="enum_member_description">
+<p>file does not exist</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-FILE-TYPE-REGULAR:CAPS"></a>GIMP_THUMB_FILE_TYPE_REGULAR</p></td>
+<td class="enum_member_description">
+<p>a regular file</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-FILE-TYPE-FOLDER:CAPS"></a>GIMP_THUMB_FILE_TYPE_FOLDER</p></td>
+<td class="enum_member_description">
+<p>a directory</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-FILE-TYPE-SPECIAL:CAPS"></a>GIMP_THUMB_FILE_TYPE_SPECIAL</p></td>
+<td class="enum_member_description">
+<p>a special file (device node, fifo, socket, ...)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpThumbSize"></a><h3>enum GimpThumbSize</h3>
+<p>Possible thumbnail sizes as defined by the Thumbnail Managaging
+Standard.</p>
+<div class="refsect3">
+<a name="GimpThumbSize.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-SIZE-FAIL:CAPS"></a>GIMP_THUMB_SIZE_FAIL</p></td>
+<td class="enum_member_description">
+<p>special size used to indicate a thumbnail
+                         creation failure</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-SIZE-NORMAL:CAPS"></a>GIMP_THUMB_SIZE_NORMAL</p></td>
+<td class="enum_member_description">
+<p>normal thumbnail size (128 pixels)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-SIZE-LARGE:CAPS"></a>GIMP_THUMB_SIZE_LARGE</p></td>
+<td class="enum_member_description">
+<p>large thumbnail size (256 pixels)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpThumbState"></a><h3>enum GimpThumbState</h3>
+<p>Possible image and thumbnail file states used by libgimpthumb.</p>
+<div class="refsect3">
+<a name="GimpThumbState.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-STATE-UNKNOWN:CAPS"></a>GIMP_THUMB_STATE_UNKNOWN</p></td>
+<td class="enum_member_description">
+<p>nothing is known about the file/thumbnail</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-STATE-REMOTE:CAPS"></a>GIMP_THUMB_STATE_REMOTE</p></td>
+<td class="enum_member_description">
+<p>the file is on a remote file system</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-STATE-FOLDER:CAPS"></a>GIMP_THUMB_STATE_FOLDER</p></td>
+<td class="enum_member_description">
+<p>the file is a directory</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-STATE-SPECIAL:CAPS"></a>GIMP_THUMB_STATE_SPECIAL</p></td>
+<td class="enum_member_description">
+<p>the file is a special file</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-STATE-NOT-FOUND:CAPS"></a>GIMP_THUMB_STATE_NOT_FOUND</p></td>
+<td class="enum_member_description">
+<p>the file/thumbnail doesn't exist</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-STATE-EXISTS:CAPS"></a>GIMP_THUMB_STATE_EXISTS</p></td>
+<td class="enum_member_description">
+<p>the file/thumbnail exists</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-STATE-OLD:CAPS"></a>GIMP_THUMB_STATE_OLD</p></td>
+<td class="enum_member_description">
+<p>the thumbnail may be outdated</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-STATE-FAILED:CAPS"></a>GIMP_THUMB_STATE_FAILED</p></td>
+<td class="enum_member_description">
+<p>the thumbnail couldn't be created</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-STATE-OK:CAPS"></a>GIMP_THUMB_STATE_OK</p></td>
+<td class="enum_member_description">
+<p>the thumbnail exists and matches the image</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

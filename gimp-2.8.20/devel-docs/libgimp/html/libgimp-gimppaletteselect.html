@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimppaletteselect: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-selectors.html" title="Controlling the Core's Selection Dialogs">
+<link rel="prev" href="libgimp-gimpgradientselect.html" title="gimpgradientselect">
+<link rel="next" href="libgimp-gimppatternselect.html" title="gimppatternselect">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimppaletteselect.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-selectors.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpgradientselect.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimppatternselect.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimppaletteselect"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimppaletteselect.top_of_page"></a>gimppaletteselect</span></h2>
+<p>gimppaletteselect</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimppaletteselect.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgimp-gimppaletteselect.html#GimpRunPaletteCallback" title="GimpRunPaletteCallback ()">*GimpRunPaletteCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimppaletteselect.html#gimp-palette-select-new" title="gimp_palette_select_new ()">gimp_palette_select_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimppaletteselect.html#gimp-palette-select-destroy" title="gimp_palette_select_destroy ()">gimp_palette_select_destroy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimppaletteselect.html#gimp-palettes-popup" title="gimp_palettes_popup ()">gimp_palettes_popup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimppaletteselect.html#gimp-palettes-close-popup" title="gimp_palettes_close_popup ()">gimp_palettes_close_popup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimppaletteselect.html#gimp-palettes-set-popup" title="gimp_palettes_set_popup ()">gimp_palettes_set_popup</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimppaletteselect.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimppaletteselect.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GimpRunPaletteCallback"></a><h3>GimpRunPaletteCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GimpRunPaletteCallback<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *palette_name</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> dialog_closing</code></em>,
+                           <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-palette-select-new"></a><h3>gimp_palette_select_new ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_palette_select_new (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *palette_name</code></em>,
+                         <em class="parameter"><code><a class="link" href="libgimp-gimppaletteselect.html#GimpRunPaletteCallback" title="GimpRunPaletteCallback ()"><span class="type">GimpRunPaletteCallback</span></a> callback</code></em>,
+                         <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-palette-select-destroy"></a><h3>gimp_palette_select_destroy ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_palette_select_destroy (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *palette_callback</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-palettes-popup"></a><h3>gimp_palettes_popup ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_palettes_popup (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *palette_callback</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *popup_title</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *initial_palette</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-palettes-close-popup"></a><h3>gimp_palettes_close_popup ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_palettes_close_popup (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *palette_callback</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-palettes-set-popup"></a><h3>gimp_palettes_set_popup ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_palettes_set_popup (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *palette_callback</code></em>,
+                         <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *palette_name</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimppaletteselect.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GimpModuleDB: GIMP Module Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Module Library Reference Manual">
+<link rel="up" href="libgimpmodule.html" title="Part I. GIMP Module Library">
+<link rel="prev" href="GimpModule.html" title="GimpModule">
+<link rel="next" href="libgimpmodule-index.html" title="Index">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GimpModuleDB.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GimpModuleDB.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GimpModuleDB.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimpmodule.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GimpModule.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimpmodule-index.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GimpModuleDB"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GimpModuleDB.top_of_page"></a>GimpModuleDB</span></h2>
+<p>GimpModuleDB — Keeps a list of <a class="link" href="GimpModule.html" title="GimpModule"><span class="type">GimpModule</span></a>'s found in a given
+                    searchpath.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GimpModuleDB.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GimpModuleDB.html" title="GimpModuleDB"><span class="returnvalue">GimpModuleDB</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpModuleDB.html#gimp-module-db-new" title="gimp_module_db_new ()">gimp_module_db_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpModuleDB.html#gimp-module-db-set-load-inhibit" title="gimp_module_db_set_load_inhibit ()">gimp_module_db_set_load_inhibit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpModuleDB.html#gimp-module-db-get-load-inhibit" title="gimp_module_db_get_load_inhibit ()">gimp_module_db_get_load_inhibit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpModuleDB.html#gimp-module-db-load" title="gimp_module_db_load ()">gimp_module_db_load</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpModuleDB.html#gimp-module-db-refresh" title="gimp_module_db_refresh ()">gimp_module_db_refresh</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpModuleDB.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GimpModuleDB.html#GimpModuleDB-add" title="The “add” signal">add</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobjectgobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GimpModuleDB.html#GimpModuleDB-module-modified" title="The “module-modified” signal">module-modified</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobjectgobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GimpModuleDB.html#GimpModuleDB-remove" title="The “remove” signal">remove</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobjectgobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpModuleDB.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GimpModuleDB.html#GimpModuleDB-struct" title="GimpModuleDB">GimpModuleDB</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpModuleDB.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> GimpModuleDB
+</pre>
+</div>
+<div class="refsect1">
+<a name="GimpModuleDB.description"></a><h2>Description</h2>
+<p>Keeps a list of <a class="link" href="GimpModule.html" title="GimpModule"><span class="type">GimpModule</span></a>'s found in a given searchpath.</p>
+</div>
+<div class="refsect1">
+<a name="GimpModuleDB.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-module-db-new"></a><h3>gimp_module_db_new ()</h3>
+<pre class="programlisting"><a class="link" href="GimpModuleDB.html" title="GimpModuleDB"><span class="returnvalue">GimpModuleDB</span></a> *
+gimp_module_db_new (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> verbose</code></em>);</pre>
+<p>Creates a new <a class="link" href="GimpModuleDB.html" title="GimpModuleDB"><span class="type">GimpModuleDB</span></a> instance. The <em class="parameter"><code>verbose</code></em>
+ parameter will be
+passed to the created <a class="link" href="GimpModule.html" title="GimpModule"><span class="type">GimpModule</span></a> instances using <a class="link" href="GimpModule.html#gimp-module-new" title="gimp_module_new ()"><code class="function">gimp_module_new()</code></a>.</p>
+<div class="refsect3">
+<a name="gimp-module-db-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>verbose</p></td>
+<td class="parameter_description"><p>Pass <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to enable debugging output.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-module-db-new.returns"></a><h4>Returns</h4>
+<p> The new <a class="link" href="GimpModuleDB.html" title="GimpModuleDB"><span class="type">GimpModuleDB</span></a> instance.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-module-db-set-load-inhibit"></a><h3>gimp_module_db_set_load_inhibit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_module_db_set_load_inhibit (<em class="parameter"><code><a class="link" href="GimpModuleDB.html" title="GimpModuleDB"><span class="type">GimpModuleDB</span></a> *db</code></em>,
+                                 <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *load_inhibit</code></em>);</pre>
+<p>Sets the <em class="parameter"><code>load_inhibit</code></em>
+ flag for all <a class="link" href="GimpModule.html" title="GimpModule"><span class="type">GimpModule</span></a>'s which are kept
+by <em class="parameter"><code>db</code></em>
+ (using <a class="link" href="GimpModule.html#gimp-module-set-load-inhibit" title="gimp_module_set_load_inhibit ()"><code class="function">gimp_module_set_load_inhibit()</code></a>).</p>
+<div class="refsect3">
+<a name="gimp-module-db-set-load-inhibit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>db</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpModuleDB.html" title="GimpModuleDB"><span class="type">GimpModuleDB</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>load_inhibit</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#G-SEARCHPATH-SEPARATOR:CAPS"><span class="type">G_SEARCHPATH_SEPARATOR</span></a> delimited list of module
+filenames to exclude from auto-loading.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-module-db-get-load-inhibit"></a><h3>gimp_module_db_get_load_inhibit ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_module_db_get_load_inhibit (<em class="parameter"><code><a class="link" href="GimpModuleDB.html" title="GimpModuleDB"><span class="type">GimpModuleDB</span></a> *db</code></em>);</pre>
+<p>Return the <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#G-SEARCHPATH-SEPARATOR:CAPS"><span class="type">G_SEARCHPATH_SEPARATOR</span></a> selimited list of module filenames
+which are excluded from auto-loading.</p>
+<div class="refsect3">
+<a name="gimp-module-db-get-load-inhibit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>db</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpModuleDB.html" title="GimpModuleDB"><span class="type">GimpModuleDB</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-module-db-get-load-inhibit.returns"></a><h4>Returns</h4>
+<p> the <em class="parameter"><code>db</code></em>
+'s <em class="parameter"><code>load_inhibit</code></em>
+string.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-module-db-load"></a><h3>gimp_module_db_load ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_module_db_load (<em class="parameter"><code><a class="link" href="GimpModuleDB.html" title="GimpModuleDB"><span class="type">GimpModuleDB</span></a> *db</code></em>,
+                     <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_path</code></em>);</pre>
+<p>Scans the directories contained in <em class="parameter"><code>module_path</code></em>
+ using
+<code class="function">gimp_datafiles_read_directories()</code> and creates a <a class="link" href="GimpModule.html" title="GimpModule"><span class="type">GimpModule</span></a>
+instance for every loadable module contained in the directories.</p>
+<div class="refsect3">
+<a name="gimp-module-db-load.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>db</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpModuleDB.html" title="GimpModuleDB"><span class="type">GimpModuleDB</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_path</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#G-SEARCHPATH-SEPARATOR:CAPS"><span class="type">G_SEARCHPATH_SEPARATOR</span></a> delimited list of directories
+to load modules from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-module-db-refresh"></a><h3>gimp_module_db_refresh ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_module_db_refresh (<em class="parameter"><code><a class="link" href="GimpModuleDB.html" title="GimpModuleDB"><span class="type">GimpModuleDB</span></a> *db</code></em>,
+                        <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *module_path</code></em>);</pre>
+<p>Does the same as <a class="link" href="GimpModuleDB.html#gimp-module-db-load" title="gimp_module_db_load ()"><code class="function">gimp_module_db_load()</code></a>, plus removes all <a class="link" href="GimpModule.html" title="GimpModule"><span class="type">GimpModule</span></a>
+instances whose modules have been deleted from disk.</p>
+<p>Note that the <a class="link" href="GimpModule.html" title="GimpModule"><span class="type">GimpModule</span></a>'s will just be removed from the internal
+list and not freed as this is not possible with <a href="/usr/share/gtk-doc/html/gobjectGTypeModule.html#GTypeModule-struct"><span class="type">GTypeModule</span></a>
+instances which actually implement types.</p>
+<div class="refsect3">
+<a name="gimp-module-db-refresh.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>db</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpModuleDB.html" title="GimpModuleDB"><span class="type">GimpModuleDB</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>module_path</p></td>
+<td class="parameter_description"><p>A <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#G-SEARCHPATH-SEPARATOR:CAPS"><span class="type">G_SEARCHPATH_SEPARATOR</span></a> delimited list of directories
+to load modules from.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpModuleDB.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpModuleDB-struct"></a><h3>GimpModuleDB</h3>
+<pre class="programlisting">typedef struct _GimpModuleDB GimpModuleDB;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpModuleDB.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GimpModuleDB-add"></a><h3>The <code class="literal">“add”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GimpModuleDB.html" title="GimpModuleDB"><span class="type">GimpModuleDB</span></a> *gimpmoduledb,
+               <a class="link" href="GimpModule.html" title="GimpModule"><span class="type">GimpModule</span></a>   *arg1,
+               <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobjectgobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpModuleDB-module-modified"></a><h3>The <code class="literal">“module-modified”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GimpModuleDB.html" title="GimpModuleDB"><span class="type">GimpModuleDB</span></a> *gimpmoduledb,
+               <a class="link" href="GimpModule.html" title="GimpModule"><span class="type">GimpModule</span></a>   *arg1,
+               <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobjectgobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpModuleDB-remove"></a><h3>The <code class="literal">“remove”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GimpModuleDB.html" title="GimpModuleDB"><span class="type">GimpModuleDB</span></a> *gimpmoduledb,
+               <a class="link" href="GimpModule.html" title="GimpModule"><span class="type">GimpModule</span></a>   *arg1,
+               <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobjectgobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

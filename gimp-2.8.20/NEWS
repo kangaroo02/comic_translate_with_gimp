@@ -1,0 +1,475 @@
+                   ------------------------------
+                   GNU Image Manipulation Program
+                          2.8 Stable Branch
+                   ------------------------------
+
+This is the stable branch of GIMP. No new features are being added
+here, just bug-fixes.
+
+
+Overview of Changes from GIMP 2.8.18 to GIMP 2.8.20
+===================================================
+
+
+Core:
+
+ - Avoid D-Bus error message when built without D-Bus support
+ - fix OS X min required conditional in gimpimagewindow.c
+ - Saving to existing .xcf.bz and .xcf.gz files didn't truncate them
+   and could lead to unnecessarily large files
+ - Text layer created by gimp-text-fontname doesn't respect border
+   when resized
+ - avoid seeking when saving XCF files to prevent corruption with
+   file network shares (fixed since 2014, but not mentioned in NEWS yet)
+
+
+GUI:
+
+ - Flow on Paint Dynamics editor dialog: the 'y' axis is indicating
+   'Rate' instead 'Flow'
+ - Vertical ruler shows artifacts if the status bar isn't showing
+ - Tablet stylus misbehaves when crossing the edge of a dock in
+   multi-window-mode
+ - Disable the new "automatic window tabbing" feature introduced on macOS
+   Sierra
+ - Improve the visiblity of slider handles with dark themes
+ - Make it harder to switch to renaming if selecting already selected
+   items in resource lists
+
+
+Tools:
+
+ - make toggling to color picker mode of paint tools more robust
+
+
+Libgimp:
+
+ - call gimp_file_entry_set_filename() with filename encoding
+
+
+Windows Installer:
+
+ - Reduce the memory requirement when running the installer (has
+   already been shipped in a 2.8.18 installer-only update)
+ - Ship an updated libcairo to fix GTK+ UI rendering problems, like
+   missing palette border/bevel and shadowa under tab labels
+
+
+macOS DMG:
+
+ - Ship the Tango icon theme with the DMG for a complete set of icons
+ - fix the way mime data is copied into the bundle
+ - no longer copy Pango modules into the bundle
+ - prevent a crash caused by drag&drop on OSX by patching the included
+   GTK+
+ - ship a patch for gettext to make sure the preferred UI language
+   will be used
+
+
+Plug-ins:
+
+ - Prevent the Python console from closing by the Escape key
+ - Help browser does not launch on OS X
+ - Filter 'Edge Detect/Difference of Gaussians' returns empty image
+ - only use -xobjective-c for compile commands
+ - mkgen.pl: fix calls to write_file() routine to write to current
+   directory
+ - When printing, the images are composed onto a white background to
+   prevent printing a black box instead of a transaprent image
+ - Fix color visison deficiency display filters to apply gamma
+   correction directly
+
+
+Updated Translations:
+
+ - Catalan
+ - Czech
+ - Danish
+ - Finnish
+ - French
+ - German
+ - Greek
+ - Hungarian
+ - Icelandic
+ - Italian
+ - Polish
+ - Portuguese
+ - Slovak
+ - Slovenian
+ - Scottish Gaelic
+ - Spanish
+ - Swedish
+
+
+General:
+
+ - Bug fixes
+
+
+Overview of Changes from GIMP 2.8.16 to GIMP 2.8.18
+===================================================
+
+
+Core:
+
+ - Initialize fontconfig cache in separate thread to keep GUI
+   responsive on first startup
+ - Properly recognize layer masks as deactivated, e.g. for moving layers
+ - Create $XDG_DATA_HOME if it doesn't exist
+ - (CVE-2016-4994) Multiple Use-After-Free when parsing XCF channel
+   and layer properties
+ - Fix progress access to prevent crash on rapid sequence of commands
+ - Fix crash in gimp-gradient-segment-range-move
+
+
+GUI:
+
+ - Disable color picker buttons on OS X to prevent a GUI lockup
+ - Disable "new-style" full-screen mode on OS X to prevent a crash
+ - Pulsing progress bar in splash screen to indicate unknown durations
+ - Fix gamut warning color for lcms display filter
+ - Fix unbolding of bold font on edit
+ - Prevent accidental renaming of wrong adjacent item
+
+
+Installer:
+
+ - Change compression settings to decrease size by 20%
+ - Add Catalan, Danish, French, Dutch
+
+
+Plug-ins:
+
+ - Fix crash on sRGB JPEG image drag & drop
+ - Fix ambiguous octal-escaped output of c-source
+ - Fix KISS CEL export
+ - Fix progress bar for file-compressor
+ - Make Script-Fu regex match return proper character indexes for
+   Unicode characters
+ - Fix Script-Fu modulo for large numbers
+
+
+General:
+
+ - Documentation updates
+ - Bug fixes
+ - Translation updates
+
+
+Overview of Changes from GIMP 2.8.14 to GIMP 2.8.16
+===================================================
+
+
+Core:
+
+ - Seek much less when writing XCF
+ - Don't seek past the end of the file when writing XCF
+ - Windows: call SetDLLDirectory() for less DLL hell
+ - Fix velocity parameter on .GIH brushes
+ - Fix brokenness while transforming certain sets of linked layers
+
+
+GUI:
+
+ - Always show image tabs in single window mode
+ - Fix switching of dock tabs by DND hovering
+ - Don't make the scroll area for tags too small
+ - Fixed a crash in the save dialog
+ - Fix issue where ruler updates made things very slow on Windows
+
+
+Plug-ins:
+
+ - Fix several issues in the BMP plug-in
+ - Make Gfig work with the new brush size behavior again
+ - Fix font export in the PDF plug-in
+ - Support layer groups in OpenRaster files
+ - Fix loading of PSD files with layer groups
+
+
+General:
+
+ - OSX build system fixes
+ - Bug fixes
+ - Translation updates
+
+
+Overview of Changes from GIMP 2.8.12 to GIMP 2.8.14
+===================================================
+
+
+General:
+
+ - Fix libtool versioning (forgot to bump gimp_interface_age)
+
+
+Overview of Changes from GIMP 2.8.10 to GIMP 2.8.12
+===================================================
+
+
+Core:
+
+ - OSX: Fix migration code for old GIMP directories
+ - Fix brush sizes when used from plug-ins
+ - Windows: Allow to Explorer-open files with UTF-8 characters in the filename
+ - Make XCF loading more robust against broken files
+
+
+GUI:
+
+ - Make sure the widget direction matches the GUI language
+ - Remove the option to disable the warning when closing a modified image
+ - Fix canvas overlay widgets (like the text options) for tablets
+ - Make DND work between images in one dockable
+
+
+Libgimp:
+
+ - Make gimp_image_get_name() return the string used for the image title
+
+
+Plug-ins:
+
+ - Make script-fu-server more secure by listening to 127.0.0.1 by
+   default and add a warning about changing that IP. This breaks the
+   procedure's API, but for security reasons.
+ - Bring back proper script-fu translations
+
+
+General:
+
+ - Massively clean up and fix the OSX build and bundle
+ - Add Jenkins tutorial
+ - Documentation updates
+ - Bug fixes
+ - Translation updates
+
+
+Overview of Changes from GIMP 2.8.8 to GIMP 2.8.10
+==================================================
+
+
+Core:
+
+ - Set manifest as Windows 8 compatible
+
+
+GUI:
+
+ - Indicate if a file was exported in the Quit dialog
+ - Add shortcuts and hint labels to the close and quit dialogs
+   that make closing and quitting easier and more consistent
+ - Rename the File->Export menu labels to match Save/Save as
+ - Fix keyboard shortcuts on OSX Mavericks
+ - Don't open lots of progress popups when opening many files
+ - Correctly restore the hidden state of docks in single window mode
+
+
+Libgimp:
+
+ - Fix exporting an image consisting of a single layer group
+ - Don't attempt to pick transparent colors
+
+
+Plug-ins:
+
+ - Fix crash in LCMS plugin if RGB profile was missing
+
+
+General:
+
+ - Fix compile on NetBSD (missing -lexecinfo)
+ - Bug fixes
+ - Translation updates
+
+
+Overview of Changes from GIMP 2.8.6 to GIMP 2.8.8
+=================================================
+
+
+Core:
+
+ - Make sure indexed images always have a colormap
+ - Fix language selection via preferences on Windows
+ - Don't crash on setting a large text size
+
+
+GUI:
+
+ - Keep the same image active when switching between MWM and SWM
+ - Make sure all dockables are properly resizable (particularly shrinkable)
+ - Add links to jump directly to Save/Export from the Export/Save
+   file extension warning dialogs
+
+
+Libgimp:
+
+ - Fix GimpPickButton on OSX
+
+
+Plug-ins:
+
+ - Properly document plug-in-autocrop-layer's PDB interface
+ - Fix importing of indexed BMPs
+
+
+General:
+
+ - Fix lots of places to use GIO to get proper file sizes and times on windows
+ - Add an AppData file for GIMP
+ - Backport lcms2 support from master, because lcms1 is not getting
+   bug fixes any longer
+ - Lots of bug fixes
+ - Lots of translation updates
+
+
+Overview of Changes from GIMP 2.8.4 to GIMP 2.8.6
+=================================================
+
+
+Core:
+
+ - Fix saving to URIs, it was broken to only allow exporting, and fix
+   save/export of compressed files
+ - Fix brush spacing for drawing in any direction
+ - Increase the maximum size of clipboard brushes and patterns to 1024x1024
+ - Make sure data objects are saved when only their name was changed
+
+
+GUI:
+
+ - Don't allow single-window docks to shrink smaller than their requisition
+ - Make sure a single-window's right docks keep their size across sessions
+ - Allow to change the spacing of non-generated brushes again
+ - In single-window mode, make Escape move the focus to the canvas,
+   and beep if the focus is already there
+ - Be smarter about unavailable fonts, and don't crash
+ - Make clicking the single-window's close button quit GIMP
+ - Make view-close (Ctrl+W) only close image windows and tabs, not docks
+
+
+Libgimp:
+
+ - Add SIGNED_ROUND() which also rounds negative values correctly
+
+
+Plug-ins:
+
+ - Make GIMP_PLUGIN_DEBUG work again after GLib changed logging
+ - Fix zealous crop for transparent borders
+
+
+Installer:
+
+ - Add Hungarian translation
+
+
+Data:
+
+ - Add a default "Color from Gradient" dynamics and tool preset
+
+
+General:
+
+ - Lots of bug fixes
+ - Lots of translation updates
+
+
+Overview of Changes from GIMP 2.8.2 to GIMP 2.8.4
+=================================================
+
+
+Core:
+
+ - Move the OSX gimpdir to "~/Library/Application Support"
+
+
+GUI:
+
+ - Better names for the default filters in save and export
+ - Make tool drawing (esp. the brush outline) much more responsive
+ - Remember the "maximized" state across sessions
+ - Simplify the splash image code a lot, makes it appear immediately again
+ - Allow the text tool to start on an image without layers
+ - Various fixes for text style attribute handling
+ - Set unconfigured input devices to eraser if GTK+ says they are erasers
+ - Make language selectable in Preferences on OSX
+
+
+Libgimp:
+
+ - Make libgimp drawable combo boxes aware of layer groups
+ - Make sure plug-in windows appear on top on OSX
+ - Fix item width in GimpPageSelector (used e.g. in PDF import)
+
+
+Plug-ins:
+
+ - Better default values in the Drop Shadow script
+ - Fix a whole bunch of bugs in the BMP plug-in
+ - On OSX, use the system's screenshot utility
+
+
+Installer:
+
+ - Add Brazilian-Portuguese translation to the Windows installer
+
+
+Source and build system:
+
+ - Many improvements to the OSX bundle build system
+ - Support automake 1.13
+
+
+General:
+
+ - Lots of bug fixes
+ - Lots of translation updates
+
+
+Overview of Changes from GIMP 2.8.0 to GIMP 2.8.2
+=================================================
+
+
+Core:
+
+ - Make tag matching always case-insensitive
+ - Let the tile-cache-size default to half the physical memory
+
+
+GUI:
+
+ - Mention that the image was exported in the close warning dialog
+ - Make sure popup windows appear on top on OSX
+ - Allow file opening by dropping to the OSX dock
+ - Fix the visibility logic of the export/overwrite menu items
+ - Remove all "Use GEGL" menu items, they only add bugs and zero function
+ - Improve performance of display filters, especially color management
+ - Fix the image window title to comply with the save/export spec
+   and use the same image name everywhere, not only in the title
+ - Fix positioning of pasted/dropped stuff to be more reasonable
+
+
+Libgimp:
+
+ - Move gimpdir and thumbnails to proper locations on OSX
+ - Implement relocation on OSX
+ - Allow to use $(gimp_installation_dir) in config files
+
+
+Plug-ins:
+
+ - Fix remembering of JPEG load/save defaults
+ - Revive the page setup dialog on Windows
+
+
+Source and build system:
+
+ - Add Windows installer infrastructure
+ - Add infrastructure to build GIMP.app on OSX
+
+
+General:
+
+ - Lots of bug fixes
+ - List of translation updates

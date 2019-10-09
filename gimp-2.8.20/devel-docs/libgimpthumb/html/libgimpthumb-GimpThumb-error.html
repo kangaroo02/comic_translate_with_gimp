@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GimpThumb-error: GIMP Thumbnail Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Thumbnail Library Reference Manual">
+<link rel="up" href="libgimpthumb.html" title="Part I. GIMP Thumbnail Library">
+<link rel="prev" href="libgimpthumb-GimpThumb-enums.html" title="GimpThumb-enums">
+<link rel="next" href="libgimpthumb-index.html" title="Index">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimpthumb-GimpThumb-error.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimpthumb.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimpthumb-GimpThumb-enums.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimpthumb-index.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimpthumb-GimpThumb-error"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimpthumb-GimpThumb-error.top_of_page"></a>GimpThumb-error</span></h2>
+<p>GimpThumb-error — Error codes used by libgimpthumb</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimpthumb-GimpThumb-error.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpthumb-GimpThumb-error.html#gimp-thumb-error-quark" title="gimp_thumb_error_quark ()">gimp_thumb_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpthumb-GimpThumb-error.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libgimpthumb-GimpThumb-error.html#GimpThumbError" title="enum GimpThumbError">GimpThumbError</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgimpthumb-GimpThumb-error.html#GIMP-THUMB-ERROR:CAPS" title="GIMP_THUMB_ERROR">GIMP_THUMB_ERROR</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpthumb-GimpThumb-error.description"></a><h2>Description</h2>
+<p>Error codes used by libgimpthumb</p>
+</div>
+<div class="refsect1">
+<a name="libgimpthumb-GimpThumb-error.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-thumb-error-quark"></a><h3>gimp_thumb_error_quark ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+gimp_thumb_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>This function is never called directly. Use <a class="link" href="libgimpthumb-GimpThumb-error.html#GIMP-THUMB-ERROR:CAPS" title="GIMP_THUMB_ERROR"><code class="function">GIMP_THUMB_ERROR()</code></a> instead.</p>
+<div class="refsect3">
+<a name="gimp-thumb-error-quark.returns"></a><h4>Returns</h4>
+<p> the <a href="/usr/share/gtk-doc/html/glibglib-Quarks.html#GQuark"><span class="type">GQuark</span></a> that defines the GimpThumb error domain.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimpthumb-GimpThumb-error.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpThumbError"></a><h3>enum GimpThumbError</h3>
+<p>These are the possible error codes used when a <a href="/usr/share/gtk-doc/html/glibglib-Error-Reporting.html#GError"><span class="type">GError</span></a> is set by
+libgimpthumb.</p>
+<div class="refsect3">
+<a name="GimpThumbError.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-ERROR-OPEN:CAPS"></a>GIMP_THUMB_ERROR_OPEN</p></td>
+<td class="enum_member_description">
+<p>there was a problem opening the file</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-ERROR-OPEN-ENOENT:CAPS"></a>GIMP_THUMB_ERROR_OPEN_ENOENT</p></td>
+<td class="enum_member_description">
+<p>the file doesn't exist</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-THUMB-ERROR-MKDIR:CAPS"></a>GIMP_THUMB_ERROR_MKDIR</p></td>
+<td class="enum_member_description">
+<p>there was a problem creating a directory</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GIMP-THUMB-ERROR:CAPS"></a><h3>GIMP_THUMB_ERROR</h3>
+<pre class="programlisting">#define GIMP_THUMB_ERROR (gimp_thumb_error_quark ())
+</pre>
+<p>Identifier for the libgimpthumb error domain.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

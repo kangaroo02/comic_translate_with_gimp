@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GimpHSV: GIMP Color Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Color Library Reference Manual">
+<link rel="up" href="libgimpcolor.html" title="Part I. GIMP Color Library">
+<link rel="prev" href="libgimpcolor-GimpRGB.html" title="GimpRGB">
+<link rel="next" href="libgimpcolor-GimpCMYK.html" title="GimpCMYK">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimpcolor-GimpHSV.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimpcolor.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimpcolor-GimpRGB.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimpcolor-GimpCMYK.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimpcolor-GimpHSV"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimpcolor-GimpHSV.top_of_page"></a>GimpHSV</span></h2>
+<p>GimpHSV — Definitions and Functions relating to HSV colors.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimpcolor-GimpHSV.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpcolor-GimpHSV.html#gimp-hsv-set" title="gimp_hsv_set ()">gimp_hsv_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpcolor-GimpHSV.html#gimp-hsv-clamp" title="gimp_hsv_clamp ()">gimp_hsv_clamp</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpcolor-GimpHSV.html#gimp-hsva-set" title="gimp_hsva_set ()">gimp_hsva_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpcolor-GimpHSV.html#gimp-hsl-set" title="gimp_hsl_set ()">gimp_hsl_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpcolor-GimpHSV.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="libgimpcolor-GimpHSV.html#GimpHSV" title="struct GimpHSV">GimpHSV</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="libgimpcolor-GimpHSV.html#GimpHSL" title="struct GimpHSL">GimpHSL</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgimpcolor-GimpHSV.html#GIMP-TYPE-HSV:CAPS" title="GIMP_TYPE_HSV">GIMP_TYPE_HSV</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libgimpcolor-GimpHSV.html#GIMP-TYPE-HSL:CAPS" title="GIMP_TYPE_HSL">GIMP_TYPE_HSL</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpcolor-GimpHSV.description"></a><h2>Description</h2>
+<p>Definitions and Functions relating to HSV colors.</p>
+</div>
+<div class="refsect1">
+<a name="libgimpcolor-GimpHSV.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-hsv-set"></a><h3>gimp_hsv_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_hsv_set (<em class="parameter"><code><a class="link" href="libgimpcolor-GimpHSV.html#GimpHSV" title="struct GimpHSV"><span class="type">GimpHSV</span></a> *hsv</code></em>,
+              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> hue</code></em>,
+              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> saturation</code></em>,
+              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> value</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-hsv-clamp"></a><h3>gimp_hsv_clamp ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_hsv_clamp (<em class="parameter"><code><a class="link" href="libgimpcolor-GimpHSV.html#GimpHSV" title="struct GimpHSV"><span class="type">GimpHSV</span></a> *hsv</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-hsva-set"></a><h3>gimp_hsva_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_hsva_set (<em class="parameter"><code><a class="link" href="libgimpcolor-GimpHSV.html#GimpHSV" title="struct GimpHSV"><span class="type">GimpHSV</span></a> *hsva</code></em>,
+               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> hue</code></em>,
+               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> saturation</code></em>,
+               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> value</code></em>,
+               <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> alpha</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-hsl-set"></a><h3>gimp_hsl_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_hsl_set (<em class="parameter"><code><a class="link" href="libgimpcolor-GimpHSV.html#GimpHSL" title="struct GimpHSL"><span class="type">GimpHSL</span></a> *hsl</code></em>,
+              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> h</code></em>,
+              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> s</code></em>,
+              <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> l</code></em>);</pre>
+<p class="since">Since: GIMP 2.8</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimpcolor-GimpHSV.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpHSV"></a><h3>struct GimpHSV</h3>
+<pre class="programlisting">struct GimpHSV {
+  gdouble h, s, v, a;
+};
+</pre>
+<p>Used to keep HSV and HSVA colors. All components are in a range of
+[0.0..1.0].</p>
+<div class="refsect3">
+<a name="GimpHSV.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GimpHSV.h"></a>h</code></em>;</p></td>
+<td class="struct_member_description"><p>the hue component</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GimpHSV.s"></a>s</code></em>;</p></td>
+<td class="struct_member_description"><p>the saturation component</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GimpHSV.v"></a>v</code></em>;</p></td>
+<td class="struct_member_description"><p>the value component</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GimpHSV.a"></a>a</code></em>;</p></td>
+<td class="struct_member_description"><p>the alpha component</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpHSL"></a><h3>struct GimpHSL</h3>
+<pre class="programlisting">struct GimpHSL {
+  gdouble h, s, l, a;
+};
+</pre>
+<p>Used to keep HSL and HSLA colors. All components are in a range of
+[0.0..1.0].</p>
+<div class="refsect3">
+<a name="GimpHSL.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GimpHSL.h"></a>h</code></em>;</p></td>
+<td class="struct_member_description"><p>the hue component</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GimpHSL.s"></a>s</code></em>;</p></td>
+<td class="struct_member_description"><p>the saturation component</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GimpHSL.l"></a>l</code></em>;</p></td>
+<td class="struct_member_description"><p>the lightness component</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> <em class="structfield"><code><a name="GimpHSL.a"></a>a</code></em>;</p></td>
+<td class="struct_member_description"><p>the alpha component</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GIMP-TYPE-HSV:CAPS"></a><h3>GIMP_TYPE_HSV</h3>
+<pre class="programlisting">#define GIMP_TYPE_HSV       (gimp_hsv_get_type ())
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GIMP-TYPE-HSL:CAPS"></a><h3>GIMP_TYPE_HSL</h3>
+<pre class="programlisting">#define GIMP_TYPE_HSL       (gimp_hsl_get_type ())
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

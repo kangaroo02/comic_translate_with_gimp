@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimpsignal: GIMP Base Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Base Library Reference Manual">
+<link rel="up" href="libgimpbase.html" title="Part I. GIMP Base Library">
+<link rel="prev" href="libgimpbase-gimpparasiteio.html" title="gimpparasiteio">
+<link rel="next" href="libgimpbase-gimpunit.html" title="gimpunit">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimpbase-gimpsignal.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimpbase.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimpbase-gimpparasiteio.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimpbase-gimpunit.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimpbase-gimpsignal"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimpbase-gimpsignal.top_of_page"></a>gimpsignal</span></h2>
+<p>gimpsignal — Portable signal handling.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimpbase-gimpsignal.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libgimpbase-gimpsignal.html#GimpSignalHandlerFunc" title="GimpSignalHandlerFunc ()">*GimpSignalHandlerFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libgimpbase-gimpsignal.html#GimpSignalHandlerFunc" title="GimpSignalHandlerFunc ()"><span class="returnvalue">GimpSignalHandlerFunc</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimpbase-gimpsignal.html#gimp-signal-private" title="gimp_signal_private ()">gimp_signal_private</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-gimpsignal.description"></a><h2>Description</h2>
+<p>Portable signal handling.</p>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-gimpsignal.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="GimpSignalHandlerFunc"></a><h3>GimpSignalHandlerFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*GimpSignalHandlerFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> signum</code></em>);</pre>
+<p>A prototype for a reference to a signal handler functions. Note
+that each function which takes or returns a variable of this type
+also accepts or may return special values defined by your system's
+signal.h header file (like <em class="parameter"><code>SIG_DFL</code></em>
+ or <em class="parameter"><code>SIG_IGN</code></em>
+).</p>
+<div class="refsect3">
+<a name="GimpSignalHandlerFunc.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>signum</p></td>
+<td class="parameter_description"><p>The number of the signal. Useful if different signals are
+handled by a single handler.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-signal-private"></a><h3>gimp_signal_private ()</h3>
+<pre class="programlisting"><a class="link" href="libgimpbase-gimpsignal.html#GimpSignalHandlerFunc" title="GimpSignalHandlerFunc ()"><span class="returnvalue">GimpSignalHandlerFunc</span></a>
+gimp_signal_private (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> signum</code></em>,
+                     <em class="parameter"><code><a class="link" href="libgimpbase-gimpsignal.html#GimpSignalHandlerFunc" title="GimpSignalHandlerFunc ()"><span class="type">GimpSignalHandlerFunc</span></a> handler</code></em>,
+                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> flags</code></em>);</pre>
+<p>This function furnishes a workalike for signal(2) but
+which internally invokes sigaction(2) after certain
+sa_flags are set; these primarily to ensure restarting
+of interrupted system calls. See sigaction(2)  It is a
+aid to transition and not new development: that effort
+should employ sigaction directly. [gosgood 18.04.2000]</p>
+<p>Cause <em class="parameter"><code>handler</code></em>
+ to be run when <em class="parameter"><code>signum</code></em>
+ is delivered.  We
+use sigaction(2) rather than signal(2) so that we can control the
+signal handler's environment completely via <em class="parameter"><code>flags</code></em>
+: some signal(2)
+implementations differ in their sematics, so we need to nail down
+exactly what we want. [austin 06.04.2000]</p>
+<div class="refsect3">
+<a name="gimp-signal-private.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>signum</p></td>
+<td class="parameter_description"><p>Selects signal to be handled see man 5 signal (or man 7 signal)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>handler</p></td>
+<td class="parameter_description"><p>Handler that maps to signum. Invoked by O/S.
+Handler gets signal that caused invocation. Corresponds
+to the <em class="parameter"><code>sa_handler</code></em>
+field of the <em class="parameter"><code>sigaction</code></em>
+struct.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>Preferences. OR'ed SA_&lt;xxx&gt;. See man sigaction. Corresponds
+to the <em class="parameter"><code>sa_flags</code></em>
+field of the <em class="parameter"><code>sigaction</code></em>
+struct.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-signal-private.returns"></a><h4>Returns</h4>
+<p> A reference to the signal handling function which was
+active before the call to <a class="link" href="libgimpbase-gimpsignal.html#gimp-signal-private" title="gimp_signal_private ()"><code class="function">gimp_signal_private()</code></a>.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-gimpsignal.other_details"></a><h2>Types and Values</h2>
+</div>
+<div class="refsect1">
+<a name="libgimpbase-gimpsignal.see-also"></a><h2>See Also</h2>
+<p>signal(2), signal(5 or 7), sigaction(2).</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

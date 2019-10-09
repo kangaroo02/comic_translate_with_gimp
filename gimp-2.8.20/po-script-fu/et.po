@@ -1,0 +1,919 @@
+# Gimp'i eesti keele tõlge.
+# Estonian translation of Gimp.
+#
+# Copyright (C) 2001-2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the Gimp package.
+#
+# Olle Niit <olle@paalalinn.com>, 2005-2007.
+# Mattias Põldaru <mahfiaz@gmail.com> 2012, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gimp-script-fu\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=gimp&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2015-03-15 06:13+0000\n"
+"PO-Revision-Date: 2015-03-15 11:24+0300\n"
+"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
+"Language-Team: Estonian <gnome-et@linux.ee>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Interactive console for Script-Fu development"
+msgstr "Interaktiivne konsool Script-Fu arenduse jaoks"
+
+msgid "_Console"
+msgstr "_Konsool"
+
+msgid "Server for remote Script-Fu operation"
+msgstr "Server Script-Fu kaugoperatsioonide jaoks"
+
+msgid "_Start Server..."
+msgstr "_Käivita server..."
+
+msgid "_GIMP Online"
+msgstr "_GIMP veebis"
+
+msgid "_User Manual"
+msgstr "Kas_utamisjuhend"
+
+msgid "_Script-Fu"
+msgstr "_Script-Fu"
+
+msgid "_Test"
+msgstr "_Test"
+
+msgid "_Buttons"
+msgstr "_Nupud"
+
+msgid "_Logos"
+msgstr "_Logod"
+
+msgid "_Patterns"
+msgstr "_Mustrid"
+
+msgid "_Web Page Themes"
+msgstr "_Veebilehe teemad"
+
+msgid "_Alien Glow"
+msgstr "_Tulnukate helendus"
+
+msgid "_Beveled Pattern"
+msgstr "_Viltulõigatud muster"
+
+msgid "_Classic.Gimp.Org"
+msgstr "_Classic.Gimp.Org"
+
+msgid "Alpha to _Logo"
+msgstr "Alfa _logoks"
+
+msgid "Re-read all available Script-Fu scripts"
+msgstr "Kõikide kättesaadavate Script-Fu skriptide uuesti sisse lugemine"
+
+msgid "_Refresh Scripts"
+msgstr "_Värskenda skripte"
+
+msgid ""
+"You can not use \"Refresh Scripts\" while a Script-Fu dialog box is open.  "
+"Please close all Script-Fu windows and try again."
+msgstr ""
+"Sa ei saa kasutada \"Värskenda skripte\" kuni Script-Fu dialoogiaken on "
+"avatud. Palun sulge kõik Script-Fu aknad ja proovi uuesti."
+
+msgid "Script-Fu Console"
+msgstr "Script-Fu konsool"
+
+msgid "Welcome to TinyScheme"
+msgstr "Tere tulemas TinyScheme'i kasutama"
+
+msgid "Interactive Scheme Development"
+msgstr "Interaktiivne Scheme arendus"
+
+msgid "_Browse..."
+msgstr "_Sirvi..."
+
+msgid "Save Script-Fu Console Output"
+msgstr "Salvesta Script-Fu konsooli väljund"
+
+#, c-format
+msgid "Could not open '%s' for writing: %s"
+msgstr "Ei suutnud '%s' kirjutamiseks avada: %s"
+
+msgid "Script-Fu Procedure Browser"
+msgstr "Script-Fu protseduuride sirvija"
+
+msgid "Script-Fu evaluation mode only allows non-interactive invocation"
+msgstr "Script-Fu hinnangurežiim võimaldab ainult passiivset jälgimist"
+
+msgid "Script-Fu cannot process two scripts at the same time."
+msgstr "Script-Fu ei suuda töödelda kahte skripti samaaegselt."
+
+#, c-format
+msgid "You are already running the \"%s\" script."
+msgstr "Skript nimega \"%s\" sul juba töötab."
+
+#, c-format
+msgid "Script-Fu: %s"
+msgstr "Script-Fu: %s"
+
+#. we add a colon after the label;
+#. *  some languages want an extra space here
+#.
+#, c-format
+msgid "%s:"
+msgstr "%s:"
+
+msgid "Script-Fu Color Selection"
+msgstr "Script-Fu värvivalik"
+
+msgid "Script-Fu File Selection"
+msgstr "Script-Fu faili valik"
+
+msgid "Script-Fu Folder Selection"
+msgstr "Script-Fu kausta valik"
+
+msgid "Script-Fu Font Selection"
+msgstr "Script-Fu fondi valik"
+
+msgid "Script-Fu Palette Selection"
+msgstr "Script-Fu värvipaleti valik"
+
+msgid "Script-Fu Pattern Selection"
+msgstr "Script-fu mustri valik"
+
+msgid "Script-Fu Gradient Selection"
+msgstr "Script-Fu spektrikomplekti valik"
+
+msgid "Script-Fu Brush Selection"
+msgstr "Script-Fu pintsli valik"
+
+#, c-format
+msgid "Error while executing %s:"
+msgstr "Viga %s käivitamisel:"
+
+msgid "Too few arguments to 'script-fu-register' call"
+msgstr "'script-fu-register' päringul on liiga vähe argumente"
+
+#, c-format
+msgid "Error while loading %s:"
+msgstr "Viga %s laadimisel:"
+
+msgid "Script-Fu Server Options"
+msgstr "Script-Fu serveri võimalused"
+
+msgid "_Start Server"
+msgstr "_Käivita server"
+
+msgid "Listen on IP:"
+msgstr "Kuulamine IP-aadressil:"
+
+msgid "Server port:"
+msgstr "Serveri port:"
+
+msgid "Server logfile:"
+msgstr "Serveri logifail:"
+
+msgid ""
+"Listening on an IP address other than 127.0.0.1 (especially 0.0.0.0) can "
+"allow attackers to remotely execute arbitrary code on this machine."
+msgstr ""
+"Kuulamine mõnel muul IP-aadressil kui 127.0.0.1 (eriti 0.0.0.0) võimaldab "
+"ründajatel käivitada suvalist koodi siin masinas."
+
+msgid "Right"
+msgstr "Parem"
+
+msgid "FG-BG-RGB"
+msgstr "EP-TP-RGB"
+
+msgid "Rows"
+msgstr "Read"
+
+msgid "Even"
+msgstr "Paaris"
+
+msgid "Erase"
+msgstr "Kstuta"
+
+msgid "Black on white"
+msgstr "Must valgel"
+
+msgid "Horizontal"
+msgstr "Horisontaalne"
+
+msgid "Tile"
+msgstr "Klots"
+
+msgid "Wrap"
+msgstr "Reamurdmine"
+
+msgid "Spyrograph"
+msgstr "Spirograaf"
+
+msgid "Circle"
+msgstr "Ring"
+
+msgid "Pencil"
+msgstr "Pliiats"
+
+msgid "Solid Color"
+msgstr "Ühtlane värv"
+
+msgid "Squares"
+msgstr "Ruudud"
+
+msgid "IIR"
+msgstr "IIR"
+
+#~ msgid "_Misc"
+#~ msgstr "_Mitmesugust"
+
+#~ msgid "_Utilities"
+#~ msgstr "Üldkas_utatavad"
+
+#~ msgid "An_imation"
+#~ msgstr "An_imatsioon"
+
+#~ msgid "_Blur"
+#~ msgstr "_Udu"
+
+#~ msgid "_Decor"
+#~ msgstr "_Dekoratsioon"
+
+#, fuzzy
+#~ msgid "S_hadow"
+#~ msgstr "Vari"
+
+#~ msgid "_Render"
+#~ msgstr "_Tekita"
+
+#~ msgid "3D _Outline..."
+#~ msgstr "3D Piirj_oon..."
+
+#~ msgid "Bumpmap (alpha layer) blur radius"
+#~ msgstr "Kühmulisuse (alfakanali) udustamise raadius"
+
+#~ msgid "Default bumpmap settings"
+#~ msgstr "Vaikimisi kühmulisuse seaded"
+
+#~ msgid "Font"
+#~ msgstr "Font"
+
+#~ msgid "Font size (pixels)"
+#~ msgstr "Fondi suurus (pikslites)"
+
+#~ msgid "Outline blur radius"
+#~ msgstr "Piirjoone udu raadius"
+
+#~ msgid "Pattern"
+#~ msgstr "Muster"
+
+#~ msgid "Shadow X offset"
+#~ msgstr "Varju X nihe"
+
+#~ msgid "Shadow Y offset"
+#~ msgstr "Varju Y nihe"
+
+#~ msgid "Shadow blur radius"
+#~ msgstr "Varju udustamise raadius"
+
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#~ msgid "Background color"
+#~ msgstr "Tagapõhja värv"
+
+#~ msgid "Block size"
+#~ msgstr "Ploki suurus"
+
+#~ msgid "End blend"
+#~ msgstr "Lõpeta kokkusegamine"
+
+#~ msgid "Number of X tiles"
+#~ msgstr "X klotside arv"
+
+#~ msgid "Number of Y tiles"
+#~ msgstr "Y klotside arv"
+
+#~ msgid "Start blend"
+#~ msgstr "Alusta kokkusegamine"
+
+#~ msgid "Add B_evel..."
+#~ msgstr "_Lisa viltulõige..."
+
+#~ msgid "Work on copy"
+#~ msgstr "Tööta koopiaga"
+
+#~ msgid "Add _Border..."
+#~ msgstr "Lisa ääri_s..."
+
+#~ msgid "Border X size"
+#~ msgstr "X äärise suurus"
+
+#~ msgid "Border Y size"
+#~ msgstr "Y äärise suurus"
+
+#~ msgid "Border color"
+#~ msgstr "Äärise värv"
+
+#~ msgid "Down"
+#~ msgstr "Alumine"
+
+#~ msgid "Flatten image"
+#~ msgstr "Ühenda kõik kihid"
+
+#~ msgid "Glow color"
+#~ msgstr "Hõõguv värv"
+
+#~ msgid "Left"
+#~ msgstr "Vasak"
+
+#~ msgid "Orientation"
+#~ msgstr "Suund"
+
+#~ msgid "Size"
+#~ msgstr "Suurus"
+
+#~ msgid "Up"
+#~ msgstr "Ülemine"
+
+#~ msgid "_Arrow..."
+#~ msgstr "_Nool..."
+
+#~ msgid "Radius"
+#~ msgstr "Raadius"
+
+#~ msgid "B_utton..."
+#~ msgstr "N_upp..."
+
+#~ msgid "Padding"
+#~ msgstr "Polsterdus"
+
+#~ msgid "Text color"
+#~ msgstr "Teksti värv"
+
+#~ msgid "Pressed"
+#~ msgstr "Vajutatud"
+
+#~ msgid "Diameter"
+#~ msgstr "Läbimõõt"
+
+#~ msgid "Transparent background"
+#~ msgstr "Läbipaistev tagapõhi"
+
+#~ msgid "H_eading..."
+#~ msgstr "P_ealkiri..."
+
+#~ msgid "Height"
+#~ msgstr "Kõrgus"
+
+#~ msgid "Width"
+#~ msgstr "Laius"
+
+#~ msgid "Max. blur radius"
+#~ msgstr "Maksim. udu raadius"
+
+#~ msgid "_Blend..."
+#~ msgstr "_Sega kokku..."
+
+#~ msgid "Blen_ded..."
+#~ msgstr "Se_gatud..."
+
+#~ msgid "Blend mode"
+#~ msgstr "Kokkusegamise režiim"
+
+#~ msgid "Custom Gradient"
+#~ msgstr "Omatehtud spektrikomplekt"
+
+#~ msgid "Gradient"
+#~ msgstr "Spektrikomplekt"
+
+#~ msgid "Gradient reverse"
+#~ msgstr "Pööra ümber"
+
+#~ msgid "Offset (pixels)"
+#~ msgstr "Nihe (pikslites)"
+
+#, fuzzy
+#~ msgid "Background Color"
+#~ msgstr "Tagapõhja värv"
+
+#~ msgid "Color 1"
+#~ msgstr "Värv 1"
+
+#~ msgid "Color 2"
+#~ msgstr "Värv 2"
+
+#~ msgid "Color 3"
+#~ msgstr "Värv 3"
+
+#~ msgid "Image size"
+#~ msgstr "Pildi suurus"
+
+#~ msgid "Smooth"
+#~ msgstr "Mahenda"
+
+#, fuzzy
+#~ msgid "Background Image"
+#~ msgstr "Taustapilt"
+
+#~ msgid "Padding around text"
+#~ msgstr "Polsterdus ümber teksti"
+
+#~ msgid "Invert"
+#~ msgstr "Pööra pahupidi"
+
+#~ msgid "Blur X"
+#~ msgstr "Udu X"
+
+#~ msgid "Blur Y"
+#~ msgstr "Udu Y"
+
+#~ msgid "Depth"
+#~ msgstr "Sügavus"
+
+#~ msgid "Elevation"
+#~ msgstr "Ülestõstmine"
+
+#~ msgid "_Clothify..."
+#~ msgstr "_Riidele..."
+
+#~ msgid "_Coffee Stain..."
+#~ msgstr "_Kohviplekid..."
+
+#~ msgid "Cool _Metal..."
+#~ msgstr "Külm _metall..."
+
+#~ msgid "Effect size (pixels)"
+#~ msgstr "Effekti suurus (piksleid)"
+
+#~ msgid "Background image"
+#~ msgstr "Taustapilt"
+
+#~ msgid "Distress the selection"
+#~ msgstr "Valikujoone piinamine"
+
+#~ msgid "Smooth horizontally"
+#~ msgstr "Mahenda horisontaalselt"
+
+#~ msgid "Smooth vertically"
+#~ msgstr "Mahenda vertikaalselt"
+
+#~ msgid "_Distort..."
+#~ msgstr "_Moonuta..."
+
+#~ msgid "Blur radius"
+#~ msgstr "Udu raadius"
+
+#~ msgid "Color"
+#~ msgstr "Värv"
+
+#~ msgid "Offset X"
+#~ msgstr "Nihe X"
+
+#~ msgid "Offset Y"
+#~ msgstr "Nihe Y"
+
+#~ msgid "Opacity"
+#~ msgstr "Läbipaistmatus"
+
+#~ msgid "Columns"
+#~ msgstr "Veerud"
+
+#~ msgid "Fill with BG"
+#~ msgstr "Täida BG värviga"
+
+#~ msgid "Border size"
+#~ msgstr "Äärise suurus"
+
+#~ msgid "_Fade to Layer Mask..."
+#~ msgstr "_Kihi server läbipaistvaks..."
+
+#~ msgid "Image height"
+#~ msgstr "Pildi kõrgus"
+
+#~ msgid "Image width"
+#~ msgstr "Pildi laius"
+
+#~ msgid "Random seed"
+#~ msgstr "Juhuslikkuse seeme"
+
+#~ msgid "Scale X"
+#~ msgstr "X mõõtmed"
+
+#~ msgid "Scale Y"
+#~ msgstr "Y mõõtmed"
+
+#~ msgid "Active colors"
+#~ msgstr "Aktiivsed värvid"
+
+#~ msgid "Font _size (pixels)"
+#~ msgstr "Fondi _suurus (pikslites)"
+
+#~ msgid "Use font _name as text"
+#~ msgstr "Kasuta fondi_nime tekstina"
+
+#~ msgid "_Border (pixels)"
+#~ msgstr "Ääri_s (pikslit)"
+
+#~ msgid "_Color scheme"
+#~ msgstr "_Värviskeem"
+
+#~ msgid "_Text"
+#~ msgstr "_Tekst"
+
+#~ msgid "_Frosty..."
+#~ msgstr "_Härmane..."
+
+#~ msgid "Add shadow"
+#~ msgstr "Lisa vari"
+
+#~ msgid "Blur border"
+#~ msgstr "Udusta ääris"
+
+#~ msgid "Shadow weight (%)"
+#~ msgstr "Varju kaal (%)"
+
+#~ msgid "Autocrop"
+#~ msgstr "Automaatkärbe"
+
+#~ msgid "Dark color"
+#~ msgstr "Tume värv"
+
+#~ msgid "Highlight color"
+#~ msgstr "Esiletõstetud värv"
+
+#~ msgid "Index image"
+#~ msgstr "Indekspilt"
+
+#~ msgid "Number of colors"
+#~ msgstr "Värvide arv"
+
+#~ msgid "Remove background"
+#~ msgstr "Eemalda tagapõhi"
+
+#~ msgid "Shadow color"
+#~ msgstr "Varju värv"
+
+#~ msgid "Shadow"
+#~ msgstr "Vari"
+
+#~ msgid "Effect size (pixels * 3)"
+#~ msgstr "Effekti suurus (pikslid * 3)"
+
+#~ msgid "Border size (pixels)"
+#~ msgstr "Äärise suurus (pikslites)"
+
+#~ msgid "Custom _Gradient..."
+#~ msgstr "Omatehtud _spektrikomplekt..."
+
+#~ msgid "_Grid..."
+#~ msgstr "_Abijoon..."
+
+#~ msgid "New Guides from _Selection"
+#~ msgstr "Uued abijooned _valikust"
+
+#~ msgid "Direction"
+#~ msgstr "Suund"
+
+#~ msgid "New Guide (by _Percent)..."
+#~ msgstr "Uus abijoon (_protsendi järgi)..."
+
+#~ msgid "Vertical"
+#~ msgstr "Vertikaalne"
+
+#~ msgid "New _Guide..."
+#~ msgstr "_Uus abijoon..."
+
+#~ msgid "Position"
+#~ msgstr "Positsioon"
+
+#~ msgid "Remove all horizontal and vertical guides"
+#~ msgstr "Eemalda kõik horisontaalsed ja vertikaalsed abijooned"
+
+#~ msgid "_Remove all Guides"
+#~ msgstr "_Eemalda kõik abijooned"
+
+#~ msgid "BG opacity"
+#~ msgstr "Tausta läbipaistmatus"
+
+#~ msgid "Frame color"
+#~ msgstr "Raami värv"
+
+#~ msgid "Frame size"
+#~ msgstr "Raami suurus"
+
+#~ msgid "Create an image filled with a topographic map pattern"
+#~ msgstr "Loo pilt mis on täidetud topograafilise kaardi mustriga"
+
+#~ msgid "Land height"
+#~ msgstr "Maa kõrgus"
+
+#~ msgid "Sea depth"
+#~ msgstr "Mere sügavus"
+
+#~ msgid "_Land..."
+#~ msgstr "_Maa..."
+
+#~ msgid "Fill the current selection with lava"
+#~ msgstr "Täida aktiivne valik laavaga"
+
+#~ msgid "Roughness"
+#~ msgstr "Karedus"
+
+#~ msgid "Seed"
+#~ msgstr "Seeme"
+
+#~ msgid "Use current gradient"
+#~ msgstr "Kasuta aktiivset spektrikomplekti"
+
+#~ msgid "_Lava..."
+#~ msgstr "_Laava..."
+
+#~ msgid "Number of lines"
+#~ msgstr "Ridade arv"
+
+#~ msgid "Offset radius"
+#~ msgstr "Nihke raadius"
+
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#~ msgid "Re_ctangular, Feathered..."
+#~ msgstr "Ristkülik, _pehmendatud..."
+
+#~ msgid "Spacing"
+#~ msgstr "Vahemaa"
+
+#~ msgid "_Rectangular..."
+#~ msgstr "_Ristkülikukujuline..."
+
+#~ msgid "Create shadow"
+#~ msgstr "Tekita vari"
+
+#~ msgid "Effect size (pixels * 5)"
+#~ msgstr "Effekri suurus (pikslid * 5)"
+
+#~ msgid "N_eon..."
+#~ msgstr "N_eoon..."
+
+#~ msgid "Cell size (pixels)"
+#~ msgstr "Kärje suurus (pikslites)"
+
+#~ msgid "Density (%)"
+#~ msgstr "Sügavus (%)"
+
+#, fuzzy
+#~ msgid "Newsprint Te_xt..."
+#~ msgstr "Ajalehepaberi tekst..."
+
+#~ msgid "Make an image look like an old photo"
+#~ msgstr "Pane pilt vana fotona välja nägema"
+
+#~ msgid "Sepia"
+#~ msgstr "Seepia"
+
+#~ msgid "_Old Photo..."
+#~ msgstr "_Vana foto..."
+
+#~ msgid "Brush name"
+#~ msgstr "Pintsli nimi"
+
+#~ msgid "File name"
+#~ msgstr "Faili nimi"
+
+#~ msgid "New _Brush..."
+#~ msgstr "Uus pi_ntsel..."
+
+#~ msgid "Paste the clipboard contents into a new brush"
+#~ msgstr "Tee lõikelaua sisu alusel uus pintsel"
+
+#~ msgid "There is no image data in the clipboard to paste."
+#~ msgstr "Lõikelaual pole asetamiseks pildiandmeid."
+
+#~ msgid "New _Pattern..."
+#~ msgstr "Uus _muster..."
+
+#~ msgid "Paste the clipboard contents into a new pattern"
+#~ msgstr "Tee lõikelaua sisu alusel uus muster"
+
+#~ msgid "Pattern name"
+#~ msgstr "Mustri nimi"
+
+#~ msgid "Angle"
+#~ msgstr "Nurk"
+
+#~ msgid "Interpolation"
+#~ msgstr "Interpoleerimine"
+
+#~ msgid "Lower color"
+#~ msgstr "Alumine värv"
+
+#~ msgid "Lower color (active)"
+#~ msgstr "Alumine värv (aktiivne)"
+
+#~ msgid "Not pressed"
+#~ msgstr "Vajutamata"
+
+#~ msgid "Not pressed (active)"
+#~ msgstr "Vajutamata (aktiivne)"
+
+#~ msgid "Padding X"
+#~ msgstr "Polsterdus X"
+
+#~ msgid "Padding Y"
+#~ msgstr "Polsterdus Y"
+
+#~ msgid "Text color (active)"
+#~ msgstr "Teksti värv (aktiivne)"
+
+#~ msgid "Upper color"
+#~ msgstr "Ülemine värv"
+
+#~ msgid "Upper color (active)"
+#~ msgstr "Ülemine värv (aktiivne)"
+
+#~ msgid "_Round Button..."
+#~ msgstr "Üma_rnurkne nupp..."
+
+#~ msgid "Behavior"
+#~ msgstr "Käitumine"
+
+#~ msgid "Black"
+#~ msgstr "Must"
+
+#~ msgid "Edge behavior"
+#~ msgstr "Serva käitumine"
+
+#~ msgid "Number of frames"
+#~ msgstr "Raamide arv"
+
+#~ msgid "Add background"
+#~ msgstr "Lisa tagapõhi"
+
+#~ msgid "Edge radius"
+#~ msgstr "Serva raadius"
+
+#~ msgid "_Round Corners..."
+#~ msgstr "Üma_rda nurgad..."
+
+#, fuzzy
+#~ msgid "Palette"
+#~ msgstr "Muster"
+
+#~ msgid "Concave"
+#~ msgstr "Nõgus"
+
+#~ msgid "Radius (%)"
+#~ msgstr "Raadius (%)"
+
+#~ msgid "Round the corners of the current selection"
+#~ msgstr "Muuda valitud ala nurgad ümaramaks"
+
+#~ msgid "Rounded R_ectangle..."
+#~ msgstr "Ümarnurkne ristkülik..."
+
+#~ msgid "Font color"
+#~ msgstr "Fondi värv"
+
+#~ msgid "Number"
+#~ msgstr "Arv"
+
+#~ msgid "Speed Text..."
+#~ msgstr "Kiirtekst..."
+
+#~ msgid "Radius (pixels)"
+#~ msgstr "Raadius (pikslites)"
+
+#~ msgid "Sphere color"
+#~ msgstr "Kera värv"
+
+#~ msgid "_Sphere..."
+#~ msgstr "_Kera..."
+
+#~ msgid "Frames"
+#~ msgstr "Raamid"
+
+#~ msgid "Airbrush"
+#~ msgstr "Aerosoolvärv"
+
+#~ msgid "Brush"
+#~ msgstr "Pintsel"
+
+#~ msgid "Color method"
+#~ msgstr "Värvimise viis"
+
+#~ msgid "Frame"
+#~ msgstr "Raam"
+
+#~ msgid "Pentagon"
+#~ msgstr "Viisnurk"
+
+#~ msgid "Shape"
+#~ msgstr "Kuju"
+
+#~ msgid "Start angle"
+#~ msgstr "Algusnurk"
+
+#~ msgid "Tool"
+#~ msgstr "Tööriist"
+
+#~ msgid "Triangle"
+#~ msgstr "Kolmnurk"
+
+#~ msgid "Type"
+#~ msgstr "Tüüp"
+
+#~ msgid "Base color"
+#~ msgstr "Baasvärv"
+
+#~ msgid "Edge only"
+#~ msgstr "Ainult servad"
+
+#~ msgid "Edge width"
+#~ msgstr "Serva laius"
+
+#~ msgid "RLE"
+#~ msgstr "RLE"
+
+#~ msgid "Foreground color"
+#~ msgstr "Esiplaani värv"
+
+#~ msgid "Mask opacity"
+#~ msgstr "Maski läbipaistmatus"
+
+#~ msgid "Mask size"
+#~ msgstr "Maski suurus"
+
+#~ msgid "Shadow darkness"
+#~ msgstr "Varju tumedus"
+
+#~ msgid "Shadow depth"
+#~ msgstr "Varju sügavus"
+
+#~ msgid "Bookmark to the GIMP web site"
+#~ msgstr "Järjehoidja GIMPi kodulehele"
+
+#~ msgid "Bookmark to the user manual"
+#~ msgstr "Järjehoidja kasutamisjuhendisse"
+
+#~ msgid "Create and Use _Selections"
+#~ msgstr "_Valikute loomine ja kasutamine"
+
+#~ msgid "Create, Open and Save _Files"
+#~ msgstr "_Failide loomine, avamine ja salvestamine"
+
+#~ msgid "Drawing _Simple Objects"
+#~ msgstr "Liht_sate objektide joonistamine"
+
+#~ msgid "How to Use _Dialogs"
+#~ msgstr "Kuidas _dialooge kasutada"
+
+#~ msgid "Plug-in _Registry"
+#~ msgstr "Pistikute _register"
+
+#~ msgid "Using _Paths"
+#~ msgstr "Vektor_joonte kasutamine"
+
+#~ msgid "_Basic Concepts"
+#~ msgstr "Üldised _mõisted"
+
+#~ msgid "_Developer Web Site"
+#~ msgstr "_Arendajate lehekülg"
+
+#~ msgid "_Main Web Site"
+#~ msgstr "_Pealehekülg"
+
+#~ msgid "_Preparing your Images for the Web"
+#~ msgstr "_Piltide ettevalmistamine internetilehele panemiseks"
+
+#~ msgid "_User Manual Web Site"
+#~ msgstr "Kas_utamisjuhendi kodulehekülg"
+
+#~ msgid "_Working with Digital Camera Photos"
+#~ msgstr "_Digitaalkaamera fotodega töötamine"
+
+#~ msgid "/Script-Fu/"
+#~ msgstr "/Script-Fu/"
+
+#~ msgid "<Toolbox>/Xtns/Languages/Script-Fu"
+#~ msgstr "<Toolbox>/Xtns/Languages/Script-Fu"
+
+#~ msgid "About %s"
+#~ msgstr "%s teave"
+
+#~ msgid "Author:"
+#~ msgstr "Autor:"
+
+#~ msgid "Copyright:"
+#~ msgstr "Copyright:"
+
+#~ msgid "Date:"
+#~ msgstr "Kuupäev:"
+
+#~ msgid "Image Types:"
+#~ msgstr "Pildi tüübid:"

@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gimptransformtools: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="up" href="libgimp-image.html" title="Manupulating Images and their Properties">
+<link rel="prev" href="libgimp-gimpselectiontools.html" title="gimpselectiontools">
+<link rel="next" href="libgimp-gimpundo.html" title="gimpundo">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libgimp-gimptransformtools.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimp-image.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libgimp-gimpselectiontools.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libgimp-gimpundo.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libgimp-gimptransformtools"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libgimp-gimptransformtools.top_of_page"></a>gimptransformtools</span></h2>
+<p>gimptransformtools</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libgimp-gimptransformtools.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptransformtools.html#gimp-flip" title="gimp_flip ()">gimp_flip</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptransformtools.html#gimp-perspective" title="gimp_perspective ()">gimp_perspective</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptransformtools.html#gimp-rotate" title="gimp_rotate ()">gimp_rotate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptransformtools.html#gimp-scale" title="gimp_scale ()">gimp_scale</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptransformtools.html#gimp-shear" title="gimp_shear ()">gimp_shear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libgimp-gimptransformtools.html#gimp-transform-2d" title="gimp_transform_2d ()">gimp_transform_2d</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimptransformtools.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimptransformtools.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-flip"></a><h3>gimp_flip ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_flip (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> drawable_ID</code></em>,
+           <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpOrientationType" title="enum GimpOrientationType"><span class="type">GimpOrientationType</span></a> flip_type</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_flip</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-flip-simple" title="gimp_item_transform_flip_simple ()"><code class="function">gimp_item_transform_flip_simple()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-perspective"></a><h3>gimp_perspective ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_perspective (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> drawable_ID</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> interpolation</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x0</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y0</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x1</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y1</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x2</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y2</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x3</code></em>,
+                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y3</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_perspective</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-perspective" title="gimp_item_transform_perspective ()"><code class="function">gimp_item_transform_perspective()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-rotate"></a><h3>gimp_rotate ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_rotate (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> drawable_ID</code></em>,
+             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> interpolation</code></em>,
+             <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> angle</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_rotate</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-rotate" title="gimp_item_transform_rotate ()"><code class="function">gimp_item_transform_rotate()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-scale"></a><h3>gimp_scale ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_scale (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> drawable_ID</code></em>,
+            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> interpolation</code></em>,
+            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x0</code></em>,
+            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y0</code></em>,
+            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> x1</code></em>,
+            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> y1</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_scale</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-scale" title="gimp_item_transform_scale ()"><code class="function">gimp_item_transform_scale()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-shear"></a><h3>gimp_shear ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_shear (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> drawable_ID</code></em>,
+            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> interpolation</code></em>,
+            <em class="parameter"><code><a class="link" href="libgimp-gimpenums.html#GimpOrientationType" title="enum GimpOrientationType"><span class="type">GimpOrientationType</span></a> shear_type</code></em>,
+            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> magnitude</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_shear</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-shear" title="gimp_item_transform_shear ()"><code class="function">gimp_item_transform_shear()</code></a> instead.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-transform-2d"></a><h3>gimp_transform_2d ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+gimp_transform_2d (<em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint32"><span class="type">gint32</span></a> drawable_ID</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> interpolation</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> source_x</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> source_y</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> scale_x</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> scale_y</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> angle</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> dest_x</code></em>,
+                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> dest_y</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gimp_transform_2d</code> is deprecated and should not be used in newly-written code.</p>
+<p>Use <a class="link" href="libgimp-gimpitemtransform.html#gimp-item-transform-2d" title="gimp_item_transform_2d ()"><code class="function">gimp_item_transform_2d()</code></a> instead.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libgimp-gimptransformtools.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

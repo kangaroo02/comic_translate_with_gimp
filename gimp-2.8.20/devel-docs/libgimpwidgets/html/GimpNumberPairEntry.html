@@ -1,0 +1,915 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GimpNumberPairEntry: GIMP Widgets Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Widgets Library Reference Manual">
+<link rel="up" href="libgimpwidgets-widgets.html" title="Part I. GIMP Widgets">
+<link rel="prev" href="GimpMemsizeEntry.html" title="GimpMemSizeEntry">
+<link rel="next" href="GimpOffsetArea.html" title="GimpOffsetArea">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GimpNumberPairEntry.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GimpNumberPairEntry.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GimpNumberPairEntry.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GimpNumberPairEntry.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GimpNumberPairEntry.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libgimpwidgets-widgets.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GimpMemsizeEntry.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GimpOffsetArea.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GimpNumberPairEntry"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GimpNumberPairEntry.top_of_page"></a>GimpNumberPairEntry</span></h2>
+<p>GimpNumberPairEntry — A <a href="/usr/share/gtk-doc/html/gtk2GtkEntry.html#GtkEntry-struct"><span class="type">GtkEntry</span></a> subclass to enter ratios.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"><img src="gimp-number-pair-entry.png"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GimpNumberPairEntry.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gtk2GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpNumberPairEntry.html#gimp-number-pair-entry-new" title="gimp_number_pair_entry_new ()">gimp_number_pair_entry_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpNumberPairEntry.html#gimp-number-pair-entry-set-default-values" title="gimp_number_pair_entry_set_default_values ()">gimp_number_pair_entry_set_default_values</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpNumberPairEntry.html#gimp-number-pair-entry-get-default-values" title="gimp_number_pair_entry_get_default_values ()">gimp_number_pair_entry_get_default_values</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpNumberPairEntry.html#gimp-number-pair-entry-set-values" title="gimp_number_pair_entry_set_values ()">gimp_number_pair_entry_set_values</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpNumberPairEntry.html#gimp-number-pair-entry-get-values" title="gimp_number_pair_entry_get_values ()">gimp_number_pair_entry_get_values</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GimpNumberPairEntry.html#GimpAspectType" title="enum GimpAspectType"><span class="returnvalue">GimpAspectType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GimpNumberPairEntry.html#gimp-number-pair-entry-get-aspect" title="gimp_number_pair_entry_get_aspect ()">gimp_number_pair_entry_get_aspect</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpNumberPairEntry.html#gimp-number-pair-entry-set-aspect" title="gimp_number_pair_entry_set_aspect ()">gimp_number_pair_entry_set_aspect</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GimpNumberPairEntry.html#gimp-number-pair-entry-get-ratio" title="gimp_number_pair_entry_get_ratio ()">gimp_number_pair_entry_get_ratio</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpNumberPairEntry.html#gimp-number-pair-entry-set-ratio" title="gimp_number_pair_entry_set_ratio ()">gimp_number_pair_entry_set_ratio</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GimpNumberPairEntry.html#gimp-number-pair-entry-get-user-override" title="gimp_number_pair_entry_get_user_override ()">gimp_number_pair_entry_get_user_override</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpNumberPairEntry.html#gimp-number-pair-entry-set-user-override" title="gimp_number_pair_entry_set_user_override ()">gimp_number_pair_entry_set_user_override</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GimpNumberPairEntry.html#gimp-number-pair-entry-get-default-text" title="gimp_number_pair_entry_get_default_text ()">gimp_number_pair_entry_get_default_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GimpNumberPairEntry.html#gimp-number-pair-entry-set-default-text" title="gimp_number_pair_entry_set_default_text ()">gimp_number_pair_entry_set_default_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpNumberPairEntry.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GimpNumberPairEntry.html#GimpNumberPairEntry--allow-simplification" title="The “allow-simplification” property">allow-simplification</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="GimpNumberPairEntry.html#GimpAspectType" title="enum GimpAspectType"><span class="type">GimpAspectType</span></a></td>
+<td class="property_name"><a class="link" href="GimpNumberPairEntry.html#GimpNumberPairEntry--aspect" title="The “aspect” property">aspect</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="GimpNumberPairEntry.html#GimpNumberPairEntry--default-left-number" title="The “default-left-number” property">default-left-number</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="GimpNumberPairEntry.html#GimpNumberPairEntry--default-right-number" title="The “default-right-number” property">default-right-number</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="GimpNumberPairEntry.html#GimpNumberPairEntry--default-text" title="The “default-text” property">default-text</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="GimpNumberPairEntry.html#GimpNumberPairEntry--left-number" title="The “left-number” property">left-number</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="GimpNumberPairEntry.html#GimpNumberPairEntry--max-valid-value" title="The “max-valid-value” property">max-valid-value</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="GimpNumberPairEntry.html#GimpNumberPairEntry--min-valid-value" title="The “min-valid-value” property">min-valid-value</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="GimpNumberPairEntry.html#GimpNumberPairEntry--ratio" title="The “ratio” property">ratio</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="GimpNumberPairEntry.html#GimpNumberPairEntry--right-number" title="The “right-number” property">right-number</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="GimpNumberPairEntry.html#GimpNumberPairEntry--separators" title="The “separators” property">separators</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GimpNumberPairEntry.html#GimpNumberPairEntry--user-override" title="The “user-override” property">user-override</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpNumberPairEntry.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GimpNumberPairEntry.html#GimpNumberPairEntry-numbers-changed" title="The “numbers-changed” signal">numbers-changed</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobjectgobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GimpNumberPairEntry.html#GimpNumberPairEntry-ratio-changed" title="The “ratio-changed” signal">ratio-changed</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobjectgobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpNumberPairEntry.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GimpNumberPairEntry.html#GimpNumberPairEntry-struct" title="GimpNumberPairEntry">GimpNumberPairEntry</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GimpNumberPairEntry.html#GimpAspectType" title="enum GimpAspectType">GimpAspectType</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GimpNumberPairEntry.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkObject.html#GtkObject-struct">GtkObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkWidget.html#GtkWidget-struct">GtkWidget</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gtk2GtkEntry.html#GtkEntry-struct">GtkEntry</a>
+                    <span class="lineart">╰──</span> GimpNumberPairEntry
+</pre>
+</div>
+<div class="refsect1">
+<a name="GimpNumberPairEntry.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GimpNumberPairEntry implements
+ AtkImplementorIface,  <a href="/usr/share/gtk-doc/html/gtk2GtkBuildable.html#GtkBuildable-struct">GtkBuildable</a>,  <a href="/usr/share/gtk-doc/html/gtk2GtkEditable.html#GtkEditable-struct">GtkEditable</a> and  <a href="/usr/share/gtk-doc/html/gtk2GtkCellEditable.html#GtkCellEditable-struct">GtkCellEditable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GimpNumberPairEntry.description"></a><h2>Description</h2>
+<p>A <a href="/usr/share/gtk-doc/html/gtk2GtkEntry.html#GtkEntry-struct"><span class="type">GtkEntry</span></a> subclass to enter ratios.</p>
+</div>
+<div class="refsect1">
+<a name="GimpNumberPairEntry.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gimp-number-pair-entry-new"></a><h3>gimp_number_pair_entry_new ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gtk2GtkWidget.html#GtkWidget-struct"><span class="returnvalue">GtkWidget</span></a> *
+gimp_number_pair_entry_new (<em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *separators</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> allow_simplification</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> min_valid_value</code></em>,
+                            <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> max_valid_value</code></em>);</pre>
+<p>Creates a new <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> widget, which is a GtkEntry that
+accepts two numbers separated by a separator. Typical input example
+with a 'x' separator: "377x233".</p>
+<p>The widget supports simplification of the entered ratio when the
+input ends in '=', if "allow-simplification" is TRUE.</p>
+<p>The "separators" property contains a string of characters valid as
+separators when parsing input. The first separator is used when
+displaying the current values.</p>
+<p>It is possible to specify what range of values that shall be
+considered as valid when parsing user input, by changing
+"min-valid-value" and "max-valid-value".</p>
+<p>The first separator of <em class="parameter"><code>separators</code></em>
+ is used to display the current
+value.</p>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-new.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>separators</p></td>
+<td class="parameter_description"><p>The allowed separators.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>allow_simplification</p></td>
+<td class="parameter_description"><p>Whether to do simplification on the entered term.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>min_valid_value</p></td>
+<td class="parameter_description"><p>The minimum allowed result value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_valid_value</p></td>
+<td class="parameter_description"><p>The maximum allowed result value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-new.returns"></a><h4>Returns</h4>
+<p> The new <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> widget.</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-number-pair-entry-set-default-values"></a><h3>gimp_number_pair_entry_set_default_values ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_number_pair_entry_set_default_values
+                               (<em class="parameter"><code><a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> *entry</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> left</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> right</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-set-default-values.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>entry</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>left</p></td>
+<td class="parameter_description"><p>Default left value in the entry.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>right</p></td>
+<td class="parameter_description"><p>Default right value in the entry.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-number-pair-entry-get-default-values"></a><h3>gimp_number_pair_entry_get_default_values ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_number_pair_entry_get_default_values
+                               (<em class="parameter"><code><a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> *entry</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *left</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *right</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-get-default-values.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>entry</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>left</p></td>
+<td class="parameter_description"><p>Pointer of where to put left value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>right</p></td>
+<td class="parameter_description"><p>Pointer of where to put right value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-number-pair-entry-set-values"></a><h3>gimp_number_pair_entry_set_values ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_number_pair_entry_set_values (<em class="parameter"><code><a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> *entry</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> left</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> right</code></em>);</pre>
+<p>Forces setting the numbers displayed by a <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a>,
+ignoring if the user has set his/her own value. The state of
+user-override will not be changed.</p>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-set-values.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>entry</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>left</p></td>
+<td class="parameter_description"><p>Left number in the entry.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>right</p></td>
+<td class="parameter_description"><p>Right number in the entry.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-number-pair-entry-get-values"></a><h3>gimp_number_pair_entry_get_values ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_number_pair_entry_get_values (<em class="parameter"><code><a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> *entry</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *left</code></em>,
+                                   <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> *right</code></em>);</pre>
+<p>Gets the numbers displayed by a <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a>.</p>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-get-values.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>entry</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>left</p></td>
+<td class="parameter_description"><p>Pointer of where to store the left number (may be <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>right</p></td>
+<td class="parameter_description"><p>Pointer of to store the right number (may be <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-number-pair-entry-get-aspect"></a><h3>gimp_number_pair_entry_get_aspect ()</h3>
+<pre class="programlisting"><a class="link" href="GimpNumberPairEntry.html#GimpAspectType" title="enum GimpAspectType"><span class="returnvalue">GimpAspectType</span></a>
+gimp_number_pair_entry_get_aspect (<em class="parameter"><code><a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> *entry</code></em>);</pre>
+<p>Gets the aspect of the ratio displayed by a <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a>.</p>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-get-aspect.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>entry</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-get-aspect.returns"></a><h4>Returns</h4>
+<p> The entry's current aspect.</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-number-pair-entry-set-aspect"></a><h3>gimp_number_pair_entry_set_aspect ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_number_pair_entry_set_aspect (<em class="parameter"><code><a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> *entry</code></em>,
+                                   <em class="parameter"><code><a class="link" href="GimpNumberPairEntry.html#GimpAspectType" title="enum GimpAspectType"><span class="type">GimpAspectType</span></a> aspect</code></em>);</pre>
+<p>Sets the aspect of the ratio by swapping the left_number and
+right_number if necessary (or setting them to 1.0 in case that
+<em class="parameter"><code>aspect</code></em>
+ is <a class="link" href="GimpNumberPairEntry.html#GIMP-ASPECT-SQUARE:CAPS"><code class="literal">GIMP_ASPECT_SQUARE</code></a>).</p>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-set-aspect.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>entry</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>aspect</p></td>
+<td class="parameter_description"><p>The new aspect.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-number-pair-entry-get-ratio"></a><h3>gimp_number_pair_entry_get_ratio ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+gimp_number_pair_entry_get_ratio (<em class="parameter"><code><a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> *entry</code></em>);</pre>
+<p>Retrieves the ratio of the numbers displayed by a <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a>.</p>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-get-ratio.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>entry</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-get-ratio.returns"></a><h4>Returns</h4>
+<p> The ratio value.</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-number-pair-entry-set-ratio"></a><h3>gimp_number_pair_entry_set_ratio ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_number_pair_entry_set_ratio (<em class="parameter"><code><a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> *entry</code></em>,
+                                  <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a> ratio</code></em>);</pre>
+<p>Sets the numbers of the <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> to have the desired
+ratio. If the new ratio is different than the previous ratio, the
+"ratio-changed" signal is emitted.</p>
+<p>An attempt is made to convert the decimal number into a fraction
+with left_number and right_number &lt; 1000.</p>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-set-ratio.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>entry</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ratio</p></td>
+<td class="parameter_description"><p>Ratio to set in the widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-number-pair-entry-get-user-override"></a><h3>gimp_number_pair_entry_get_user_override ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gimp_number_pair_entry_get_user_override
+                               (<em class="parameter"><code><a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> *entry</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-get-user-override.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>entry</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-get-user-override.returns"></a><h4>Returns</h4>
+<p> Wether or not the the widget is in user overridden mode.</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-number-pair-entry-set-user-override"></a><h3>gimp_number_pair_entry_set_user_override ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_number_pair_entry_set_user_override
+                               (<em class="parameter"><code><a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> *entry</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> user_override</code></em>);</pre>
+<p>When the entry is not in user overridden mode, the values will
+change when the default values are changed. When in user overridden
+mode, setting default values will not affect the active values.</p>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-set-user-override.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>entry</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_override</p></td>
+<td class="parameter_description"><p><a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> sets the entry in user overridden mode,
+<a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> disables.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-number-pair-entry-get-default-text"></a><h3>gimp_number_pair_entry_get_default_text ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gimp_number_pair_entry_get_default_text
+                               (<em class="parameter"><code><a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> *entry</code></em>);</pre>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-get-default-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>entry</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-get-default-text.returns"></a><h4>Returns</h4>
+<p> the string manully set to be shown, or <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if values are
+shown in a normal fashion.</p>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gimp-number-pair-entry-set-default-text"></a><h3>gimp_number_pair_entry_set_default_text ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gimp_number_pair_entry_set_default_text
+                               (<em class="parameter"><code><a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> *entry</code></em>,
+                                <em class="parameter"><code>const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *string</code></em>);</pre>
+<p>Causes the entry to show a given string when in automatic mode,
+instead of the default numbers. The only thing this does is making
+the <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> showing this string, the internal state
+and API calls are not affected.</p>
+<p>Set the default string to <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to display default values as
+normal.</p>
+<div class="refsect3">
+<a name="gimp-number-pair-entry-set-default-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>entry</p></td>
+<td class="parameter_description"><p>A <a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> widget.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>string</p></td>
+<td class="parameter_description"><p>Default string.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: GIMP 2.4</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpNumberPairEntry.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GimpNumberPairEntry-struct"></a><h3>GimpNumberPairEntry</h3>
+<pre class="programlisting">typedef struct _GimpNumberPairEntry GimpNumberPairEntry;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpAspectType"></a><h3>enum GimpAspectType</h3>
+<p>Aspect ratios.</p>
+<div class="refsect3">
+<a name="GimpAspectType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-ASPECT-SQUARE:CAPS"></a>GIMP_ASPECT_SQUARE</p></td>
+<td class="enum_member_description">
+<p>it's a 1:1 square</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-ASPECT-PORTRAIT:CAPS"></a>GIMP_ASPECT_PORTRAIT</p></td>
+<td class="enum_member_description">
+<p>it's higher than it's wide</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GIMP-ASPECT-LANDSCAPE:CAPS"></a>GIMP_ASPECT_LANDSCAPE</p></td>
+<td class="enum_member_description">
+<p>it's wider than it's high</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpNumberPairEntry.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GimpNumberPairEntry--allow-simplification"></a><h3>The <code class="literal">“allow-simplification”</code> property</h3>
+<pre class="programlisting">  “allow-simplification”     <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether to allow simplification.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpNumberPairEntry--aspect"></a><h3>The <code class="literal">“aspect”</code> property</h3>
+<pre class="programlisting">  “aspect”                   <a class="link" href="GimpNumberPairEntry.html#GimpAspectType" title="enum GimpAspectType"><span class="type">GimpAspectType</span></a></pre>
+<p>Flags: Read / Write</p>
+<p>Default value: GIMP_ASPECT_SQUARE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpNumberPairEntry--default-left-number"></a><h3>The <code class="literal">“default-left-number”</code> property</h3>
+<pre class="programlisting">  “default-left-number”      <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= G_MINDOUBLE</p>
+<p>Default value: 100</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpNumberPairEntry--default-right-number"></a><h3>The <code class="literal">“default-right-number”</code> property</h3>
+<pre class="programlisting">  “default-right-number”     <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= G_MINDOUBLE</p>
+<p>Default value: 100</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpNumberPairEntry--default-text"></a><h3>The <code class="literal">“default-text”</code> property</h3>
+<pre class="programlisting">  “default-text”             <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>String to show when in automatic mode.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpNumberPairEntry--left-number"></a><h3>The <code class="literal">“left-number”</code> property</h3>
+<pre class="programlisting">  “left-number”              <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= G_MINDOUBLE</p>
+<p>Default value: 100</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpNumberPairEntry--max-valid-value"></a><h3>The <code class="literal">“max-valid-value”</code> property</h3>
+<pre class="programlisting">  “max-valid-value”          <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Maximum value valid when parsing input.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= G_MINDOUBLE</p>
+<p>Default value: 1.79769e+308</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpNumberPairEntry--min-valid-value"></a><h3>The <code class="literal">“min-valid-value”</code> property</h3>
+<pre class="programlisting">  “min-valid-value”          <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Minimum value valid when parsing input.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= G_MINDOUBLE</p>
+<p>Default value: 2.22507e-308</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpNumberPairEntry--ratio"></a><h3>The <code class="literal">“ratio”</code> property</h3>
+<pre class="programlisting">  “ratio”                    <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= G_MINDOUBLE</p>
+<p>Default value: 1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpNumberPairEntry--right-number"></a><h3>The <code class="literal">“right-number”</code> property</h3>
+<pre class="programlisting">  “right-number”             <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= G_MINDOUBLE</p>
+<p>Default value: 100</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpNumberPairEntry--separators"></a><h3>The <code class="literal">“separators”</code> property</h3>
+<pre class="programlisting">  “separators”               <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>A string of valid separators.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpNumberPairEntry--user-override"></a><h3>The <code class="literal">“user-override”</code> property</h3>
+<pre class="programlisting">  “user-override”            <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the widget is in 'user override' mode.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GimpNumberPairEntry.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GimpNumberPairEntry-numbers-changed"></a><h3>The <code class="literal">“numbers-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> *gimpnumberpairentry,
+               <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>             user_data)</pre>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobjectgobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GimpNumberPairEntry-ratio-changed"></a><h3>The <code class="literal">“ratio-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GimpNumberPairEntry.html" title="GimpNumberPairEntry"><span class="type">GimpNumberPairEntry</span></a> *gimpnumberpairentry,
+               <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>             user_data)</pre>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobjectgobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GIMP Library Reference Manual: GIMP Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GIMP Library Reference Manual">
+<link rel="next" href="libgimp.html" title="Part I. GIMP Library">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="book">
+<div class="titlepage">
+<div>
+<div><table class="navigation" id="top" width="100%" cellpadding="2" cellspacing="0"><tr><th valign="middle"><p class="title">GIMP Library Reference Manual</p></th></tr></table></div>
+<div><p class="releaseinfo">
+      for GIMP 2.8.20
+
+    </p></div>
+</div>
+<hr>
+</div>
+<div class="toc"><dl class="toc">
+<dt><span class="part"><a href="libgimp.html">I. GIMP Library</a></span></dt>
+<dd><dl>
+<dt><span class="chapter"><a href="libgimp-general.html">Functions not Related to Specific Images</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimp.html">gimp</a></span><span class="refpurpose"> — Miscellaneous procedures</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpenums.html">gimpenums</a></span><span class="refpurpose"> — Enums and definitions.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpbuffer.html">gimpbuffer</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpcontext.html">gimpcontext</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpgimprc.html">gimpgimprc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimphelp.html">gimphelp</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpmessage.html">gimpmessage</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpplugin.html">gimpplugin</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpproceduraldb.html">gimpproceduraldb</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpprogress.html">gimpprogress</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="libgimp-image.html">Manupulating Images and their Properties</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpchannel.html">gimpchannel</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpcolor.html">gimpcolor</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpconvert.html">gimpconvert</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpdisplay.html">gimpdisplay</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpdrawable.html">gimpdrawable</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpdrawabletransform.html">gimpdrawabletransform</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpedit.html">gimpedit</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpfileops.html">gimpfileops</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpfloatingsel.html">gimpfloatingsel</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpgrid.html">gimpgrid</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpguides.html">gimpguides</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpimage.html">gimpimage</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpimageselect.html">gimpimageselect</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpitem.html">gimpitem</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpitemtransform.html">gimpitemtransform</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimplayer.html">gimplayer</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimppaths.html">gimppaths</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimppixbuf.html">gimppixbuf</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimppixelfetcher.html">gimppixelfetcher</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimppixelrgn.html">gimppixelrgn</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpregioniterator.html">gimpregioniterator</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpselection.html">gimpselection</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimptextlayer.html">gimptextlayer</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimptexttool.html">gimptexttool</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimptile.html">gimptile</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimppainttools.html">gimppainttools</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpselectiontools.html">gimpselectiontools</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimptransformtools.html">gimptransformtools</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpundo.html">gimpundo</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpvectors.html">gimpvectors</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="libgimp-data.html">Data Objects</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpbrush.html">gimpbrush</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpbrushes.html">gimpbrushes</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpdynamics.html">gimpdynamics</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpfonts.html">gimpfonts</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpgradient.html">gimpgradient</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpgradients.html">gimpgradients</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimppalette.html">gimppalette</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimppalettes.html">gimppalettes</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimppattern.html">gimppattern</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimppatterns.html">gimppatterns</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="libgimp-selectors.html">Controlling the Core's Selection Dialogs</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="GimpSelectButton.html">GimpSelectButton</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GimpBrushSelectButton.html">GimpBrushSelectButton</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GimpFontSelectButton.html">GimpFontSelectButton</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GimpGradientSelectButton.html">GimpGradientSelectButton</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GimpPaletteSelectButton.html">GimpPaletteSelectButton</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GimpPatternSelectButton.html">GimpPatternSelectButton</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpbrushselect.html">gimpbrushselect</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpfontselect.html">gimpfontselect</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpgradientselect.html">gimpgradientselect</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimppaletteselect.html">gimppaletteselect</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimppatternselect.html">gimppatternselect</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+</dl></dd>
+<dt><span class="part"><a href="libgimpui.html">II. GIMP User Interface Library</a></span></dt>
+<dd><dl>
+<dt><span class="chapter"><a href="libgimpui-hierarchy.html">Object Hierarchy</a></span></dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpui.html">gimpui</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpexport.html">gimpexport</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GimpDrawablePreview.html">GimpDrawablePreview</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GimpAspectPreview.html">GimpAspectPreview</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GimpZoomPreview.html">GimpZoomPreview</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-GimpItemComboBox.html">GimpItemComboBox</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GimpImageComboBox.html">GimpImageComboBox</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GimpProgressBar.html">GimpProgressBar</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpmenu.html">gimpmenu</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpbrushmenu.html">gimpbrushmenu</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpfontmenu.html">gimpfontmenu</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimpgradientmenu.html">gimpgradientmenu</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimppalettemenu.html">gimppalettemenu</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-gimppatternmenu.html">gimppatternmenu</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GimpProcBrowserDialog.html">GimpProcBrowserDialog</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="libgimp-GimpProcView.html">GimpProcView</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="index"><a href="libgimp-index.html">Index</a></span></dt>
+<dt><span class="index"><a href="libgimp-index-new-in-2-2.html">Index of new symbols in GIMP 2.2</a></span></dt>
+<dt><span class="index"><a href="libgimp-index-new-in-2-4.html">Index of new symbols in GIMP 2.4</a></span></dt>
+<dt><span class="index"><a href="libgimp-index-new-in-2-6.html">Index of new symbols in GIMP 2.6</a></span></dt>
+<dt><span class="index"><a href="libgimp-index-new-in-2-8.html">Index of new symbols in GIMP 2.8</a></span></dt>
+<dt><span class="index"><a href="libgimp-index-deprecated.html">Index of deprecated symbols</a></span></dt>
+</dl></div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>
