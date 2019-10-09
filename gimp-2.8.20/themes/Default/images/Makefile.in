@@ -11,7 +11,7 @@
 # but WITHOUT ANY WARRANTY, to the extent permitted by law; without
 # even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.
-
+# changes_isaiah 898_899
 @SET_MAKE@
 
 VPATH = @srcdir@
@@ -895,6 +895,8 @@ STOCK_TOOL_IMAGES = \
 	tools/stock-tool-smudge-22.png			\
 	tools/stock-tool-text-16.png			\
 	tools/stock-tool-text-22.png			\
+  tools/stock-tool-helper-16.png      \
+  tools/stock-tool-helper-22.png      \
 	tools/stock-tool-threshold-16.png		\
 	tools/stock-tool-threshold-22.png		\
 	tools/stock-tool-zoom-16.png			\

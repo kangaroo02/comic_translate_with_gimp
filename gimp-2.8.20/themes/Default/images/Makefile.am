@@ -1,5 +1,5 @@
 ## Process this file with automake to produce Makefile.in
-
+# changes_isaiah 348_349
 SUBDIRS = preferences
 
 themedatadir = $(gimpdatadir)/themes/Default/images
@@ -345,6 +345,8 @@ STOCK_TOOL_IMAGES = \
 	tools/stock-tool-smudge-22.png			\
 	tools/stock-tool-text-16.png			\
 	tools/stock-tool-text-22.png			\
+	tools/stock-tool-helper-16.png			\
+	tools/stock-tool-helper-22.png			\
 	tools/stock-tool-threshold-16.png		\
 	tools/stock-tool-threshold-22.png		\
 	tools/stock-tool-zoom-16.png			\

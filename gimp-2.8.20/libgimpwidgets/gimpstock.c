@@ -18,7 +18,7 @@
  * License along with this library.  If not, see
  * <http://www.gnu.org/licenses/>.
  */
-
+// changes_isaiah 344, 500, 668
 #include "config.h"
 
 #include <gtk/gtk.h>
@@ -341,6 +341,7 @@ static const GtkStockItem gimp_stock_items[] =
   { GIMP_STOCK_TOOL_SHEAR,        N_("_Shear"),       0, 0, LIBGIMP_DOMAIN },
   { GIMP_STOCK_TOOL_SMUDGE,              NULL,        0, 0, LIBGIMP_DOMAIN },
   { GIMP_STOCK_TOOL_TEXT,                NULL,        0, 0, LIBGIMP_DOMAIN },
+  { GIMP_STOCK_TOOL_HELPER,              NULL,        0, 0, LIBGIMP_DOMAIN },
   { GIMP_STOCK_TOOL_THRESHOLD,           NULL,        0, 0, LIBGIMP_DOMAIN },
   { GIMP_STOCK_TOOL_ZOOM,                NULL,        0, 0, LIBGIMP_DOMAIN }
 };
@@ -496,6 +497,7 @@ gimp_stock_button_pixbufs[] =
   { GIMP_STOCK_TOOL_SHEAR,               stock_tool_shear_22               },
   { GIMP_STOCK_TOOL_SMUDGE,              stock_tool_smudge_22              },
   { GIMP_STOCK_TOOL_TEXT,                stock_tool_text_22                },
+  { GIMP_STOCK_TOOL_HELPER,              stock_tool_helper_22              },
   { GIMP_STOCK_TOOL_THRESHOLD,           stock_tool_threshold_22           },
   { GIMP_STOCK_TOOL_ZOOM,                stock_tool_zoom_22                },
 
@@ -663,6 +665,7 @@ gimp_stock_menu_pixbufs[] =
   { GIMP_STOCK_TOOL_SHEAR,               stock_tool_shear_16               },
   { GIMP_STOCK_TOOL_SMUDGE,              stock_tool_smudge_16              },
   { GIMP_STOCK_TOOL_TEXT,                stock_tool_text_16                },
+  { GIMP_STOCK_TOOL_HELPER,              stock_tool_helper_16              },
   { GIMP_STOCK_TOOL_THRESHOLD,           stock_tool_threshold_16           },
   { GIMP_STOCK_TOOL_ZOOM,                stock_tool_zoom_16                },
 

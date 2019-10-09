@@ -18,7 +18,7 @@
  * License along with this library.  If not, see
  * <http://www.gnu.org/licenses/>.
  */
-
+// changes_isaiah 144
 #if !defined (__GIMP_WIDGETS_H_INSIDE__) && !defined (GIMP_WIDGETS_COMPILATION)
 #error "Only <libgimpwidgets/gimpwidgets.h> can be included directly."
 #endif
@@ -141,6 +141,7 @@ G_BEGIN_DECLS
 #define GIMP_STOCK_TOOL_SHEAR               "gimp-tool-shear"
 #define GIMP_STOCK_TOOL_SMUDGE              "gimp-tool-smudge"
 #define GIMP_STOCK_TOOL_TEXT                "gimp-tool-text"
+#define GIMP_STOCK_TOOL_HELPER              "gimp-tool-helper"
 #define GIMP_STOCK_TOOL_THRESHOLD           "gimp-tool-threshold"
 #define GIMP_STOCK_TOOL_ZOOM                "gimp-tool-zoom"
 

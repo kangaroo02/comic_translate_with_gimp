@@ -1,5 +1,5 @@
 ## Process this file with automake to produce Makefile.in
-
+# changes_isaiah 179_184
 AM_CPPFLAGS = \
 	-DG_LOG_DOMAIN=\"Gimp-Tools\"
 
@@ -176,6 +176,12 @@ libapptools_a_sources = \
 	gimptexttool.h			\
 	gimptexttool-editor.c		\
 	gimptexttool-editor.h		\
+	gimphelperoptions.c		\
+	gimphelperoptions.h		\
+	gimphelpertool.c		\
+	gimphelpertool.h		\
+	gimphelpertool-editor.c		\
+	gimphelpertool-editor.h		\
 	gimpthresholdtool.c		\
 	gimpthresholdtool.h		\
 	gimptool.c			\

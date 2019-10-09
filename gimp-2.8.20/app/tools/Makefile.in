@@ -11,7 +11,7 @@
 # but WITHOUT ANY WARRANTY, to the extent permitted by law; without
 # even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.
-
+# changes_isaiah 165_166, 909_911
 @SET_MAKE@
 
 VPATH = @srcdir@
@@ -162,6 +162,8 @@ am__objects_2 = gimp-tools.$(OBJEXT) tool_manager.$(OBJEXT) \
 	gimpsmudgetool.$(OBJEXT) gimpsourcetool.$(OBJEXT) \
 	gimptextoptions.$(OBJEXT) gimptexttool.$(OBJEXT) \
 	gimptexttool-editor.$(OBJEXT) gimpthresholdtool.$(OBJEXT) \
+	gimphelperoptions.$(OBJEXT) gimphelpertool.$(OBJEXT) \
+	gimphelpertool-editor.$(OBJEXT) \
 	gimptool.$(OBJEXT) gimptool-progress.$(OBJEXT) \
 	gimptoolcontrol.$(OBJEXT) gimptooloptions-gui.$(OBJEXT) \
 	gimptransformoptions.$(OBJEXT) gimptransformtool.$(OBJEXT) \
@@ -904,6 +906,9 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gimptextoptions.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gimptexttool-editor.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gimptexttool.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gimphelperoptions.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gimphelpertool-editor.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gimphelpertool.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gimpthresholdtool.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gimptool-progress.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gimptool.Po@am__quote@

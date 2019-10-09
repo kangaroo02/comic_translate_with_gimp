@@ -1,0 +1,198 @@
+#改變開啟畫面change splash#
+data/images : add file megumin.jpg
+data/images : grep -rl "gimp-splash.png" | xargs sed -i "s#gimp-splash.png#megumin.jpg#g"
+app/gui/splash.c
+
+
+#增加功能（目前只能增加左邊，右邊還沒獨立）in app/tools#
+app/tools : add six helper files
+app/tools/.deps : add three files
+
+重新命名
+rename 's/^gimptext/gimphelper/' *
+改變include檔名
+grep -rl "gimptextoptions" | xargs sed -i "s#gimptextoptions#gimphelperoptions#g"
+grep -rl "gimptexttool" | xargs sed -i "s#gimptexttool#gimphelpertool#g"
+
+改變DEFINE名
+grep -rl "__GIMP_TEXT_OPTIONS_H__" | xargs sed -i "s#__GIMP_TEXT_OPTIONS_H__#__GIMP_HELPER_OPTIONS_H__#g"
+
+grep -rl "__GIMP_TEXT_TOOL_H__" | xargs sed -i "s#__GIMP_TEXT_TOOL_H__#__GIMP_HELPER_TOOL_H__#g"
+
+grep -rl "__GIMP_TEXT_TOOL_EDITOR_H__" | xargs sed -i "s#__GIMP_TEXT_TOOL_EDITOR_H__#__GIMP_HELPER_TOOL_EDITOR_H__#g"
+
+grep -rl "GIMP_STOCK_TOOL_TEXT" | xargs sed -i "s#GIMP_STOCK_TOOL_TEXT#GIMP_STOCK_TOOL_HELPER#g"
+
+#函數名稱for function names
+grep -rl "gimp_text_tool_" | xargs sed -i "s#gimp_text_tool_#gimp_helper_tool_#g"
+grep -rl "gimp_text_" | xargs sed -i "s#gimp_text_#gimp_helper_#g"
+
+#結構名稱for adviod redefining struct
+grep -rl "GimpTextTool" | xargs sed -i "s#GimpTextTool#GimpHelperTool#g"
+grep -rl "GimpTextToolClass" | xargs sed -i "s#GimpTextToolClass#GimpHelperToolClass#g"
+#改變DEFINE名
+grep -rl "TEXT_OPTIONS" | xargs sed -i "s#TEXT_OPTIONS#HELPER_OPTIONS#g"
+grep -rl "TEXT_TOOL" | xargs sed -i "s#TEXT_TOOL#HELPER_TOOL#g"
+grep -rl "GimpTextOptions" | xargs sed -i "s#GimpTextOptions#GimpHelperOptions#g"
+
+
+#有些東西是要改回來的something need to be restore
+grep -rl "gimp_helper_buffer" | xargs sed -i "s#gimp_helper_buffer#gimp_text_buffer#g"
+grep -rl "gimp_helper_layer" | xargs sed -i "s#gimp_helper_layer#gimp_text_layer#g"
+grep -rl "gimp_helper_layout" | xargs sed -i "s#gimp_helper_layout#gimp_text_layout#g"
+
+grep -rl "gimp_helper_vectors" | xargs sed -i "s#gimp_helper_vectors#gimp_text_vectors#g"
+grep -rl "gimp_helper_editor_" | xargs sed -i "s#gimp_helper_editor_#gimp_text_editor_#g"
+grep -rl "gimp_helper_proxy_new" | xargs sed -i "s#gimp_helper_proxy_new#gimp_text_proxy_new#g"
+grep -rl "gimp_helper_style_editor_new" | xargs sed -i "s#gimp_helper_style_editor_new#gimp_text_style_editor_new#g"
+
+
+
+app/tools/Makefile* : add lines
+Makefile.am
+	gimphelperoptions.c		\
+	gimphelperoptions.h		\
+	gimphelpertool.c		\
+	gimphelpertool.h		\
+	gimphelpertool-editor.c		\
+	gimphelpertool-editor.h		\
+
+Makefile.in
+	gimphelperoptions.$(OBJEXT) gimphelpertool.$(OBJEXT) \
+	gimphelpertool-editor.$(OBJEXT) \
+
+
+
+	@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gimphelperoptions.Po@am__quote@
+	@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gimphelpertool-editor.Po@am__quote@
+	@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gimphelpertool.Po@am__quote@
+
+check if Makefile has this:
+	include ./$(DEPDIR)/gimphelperoptions.Po
+	include ./$(DEPDIR)/gimphelpertool-editor.Po
+	include ./$(DEPDIR)/gimphelpertool.Po
+
+#icon#
+themes/Default/images/tools : add two stock-tool-helper*png file
+themes/Default/images/Makefile* : add two lines
+
+	tools/stock-tool-helper-16.png			\
+	tools/stock-tool-helper-22.png			\
+
+
+themes/Default/images/stock-icons.list : add four lines
+stock-icons.list is created by makefile.in
+
+check if it has this:
+	stock_tool_helper_16
+  	./tools/stock-tool-helper-16.png
+	stock_tool_helper_22
+	./tools/stock-tool-helper-22.png
+
+libgimpwidgets/gimpstock.h : add one line
+	#define GIMP_STOCK_TOOL_HELPER              "gimp-tool-helper"
+libgimpwidgets/gimpstock.c : add three line about
+	GIMP_STOCK_TOOL_TEXT
+
+	{ GIMP_STOCK_TOOL_HELPER,              NULL,        0, 0, LIBGIMP_DOMAIN },
+	{ GIMP_STOCK_TOOL_HELPER,              stock_tool_helper_22              },
+	{ GIMP_STOCK_TOOL_HELPER,              stock_tool_helper_16              },
+
+themes/Default/images/gimp-stock-pixbufs.h : do nothing
+app/tools/gimp-tools.c : register
+
+
+到此為第一次commit
+是成功把button又召喚出來的一天，只是不知道gui option獨立了沒
+獨立了，科科
+
+FillTalkBox.cpp 加入function
+#include <string>
+ 
+void findAndReplaceAll(std::string & data, std::string toSearch, std::string replaceStr)
+{
+	// Get the first occurrence
+	size_t pos = data.find(toSearch);
+ 
+	// Repeat till end is reached
+	while( pos != std::string::npos)
+	{
+		// Replace this occurrence of Sub String
+		data.replace(pos, toSearch.size(), replaceStr);
+		// Get the next occurrence from the current position
+		pos =data.find(toSearch, pos + replaceStr.size());
+	}
+}
+
+commit 第五次
+gimphelpertool.c 很精彩 改一大堆
+FillTalkBox 有關的也改一大堆
+每次make也要記得手動 make 我的函式
+所有東西不可以有中文路徑
+
+
+放入圖片的函式 在 app/display/gimpdisplayshell-dnd.c 之中
+從display拿取許多的參數
+最後呼叫file_open_layers跟gimp_image_add_layers（應該是gimp_image_add_layer更好）
+
+
+
+
+commit 第六次
+helper 成功自動引入圖片
+剩下兩件事
+保留文字方塊跟輸入文字
+
+
+
+
+commit 第七次
+helper調整文字方塊大小bug修好
+
+himphelpertool.h 增加一個 gboolean helper_on
+button press 的create new layer設定helper_on
+button release 增加helper_on的邏輯閘
+
+
+commit 8 
+helper 可以保留文字方塊了
+但是要第二下才可以
+move default改成 active layer
+
+
+(之後繼續）： 讓helper在使用的時候，按ctrl可以進入move模式，會方便很多
+(其實內建就有了  是 ctrl +alt)
+
+
+
+commit 9 自動輸入字成功
+
+自動輸入文字，再來是召喚自動翻譯，
+helper_translated_text = "texting";				
+g_object_set(text_tool->buffer, "text", helper_translated_text, NULL);
+就要用到google了～
+
+
+
+
+commit 10 extract talkbox
+changes in filltalkbox.cpp and fillalkbox.h
+
+最後加分題是儲存各種偏好設定（如：專有名詞翻譯、字體設定），感覺非常難寫而且沒什麼用
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
