@@ -101,6 +101,8 @@ libgimpwidgets/gimpstock.c : add three line about
 themes/Default/images/gimp-stock-pixbufs.h : do nothing
 app/tools/gimp-tools.c : register
 
+    gimp_helper_tool_register,
+
 
 到此為第一次commit
 是成功把button又召喚出來的一天，只是不知道gui option獨立了沒

@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
+// changes_isaiah 148
 #include "config.h"
 
 #include <gegl.h>
@@ -145,6 +145,7 @@ gimp_tools_init (Gimp *gimp)
     gimp_blend_tool_register,
     gimp_bucket_fill_tool_register,
     gimp_text_tool_register,
+    gimp_helper_tool_register,
 
     /*  transform tools  */
 
