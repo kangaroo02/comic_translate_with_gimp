@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-// changes_isaiah 148
+// changes_isaiah 84, 149
 #include "config.h"
 
 #include <gegl.h>
@@ -81,6 +81,7 @@
 #include "gimpsheartool.h"
 #include "gimpsmudgetool.h"
 #include "gimptexttool.h"
+#include "gimphelpertool.h"
 #include "gimpvectortool.h"
 
 #include "gimp-intl.h"
