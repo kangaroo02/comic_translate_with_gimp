@@ -21,6 +21,7 @@
  */
 /* changes_isaiah */
 #include <limits.h> /* PATH_MAX */
+#include <unistd.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -548,8 +549,22 @@ static void gimp_helper_tool_button_release(GimpTool *tool,
 	if (callhelper == FALSE) {
 
 	} else {
+	    char cwd[PATH_MAX]; /* PATH_MAX incudes the \0 so +1 is not required */
+	    char cwd2ftb[] = "/app/tools/helpercore/FillTalkBoxapp ";
+		// cwd = /home/isaiah/comic_translate_with_gimp/gimp-2.8.20
+	    if (getcwd(cwd, sizeof(cwd)) != NULL) {
+	        // printf("Current working dir: %s\n", cwd);
+	    } else {
+	        perror("getcwd() error");
+	        return 1;
+	    }
+	    char *function_location;
+	    function_location = malloc(strlen(cwd) + strlen(cwd2ftb));
+	    strcpy(function_location, cwd); /* copy name into the new var */
+		strcat(function_location, cwd2ftb); /* add the extension */
 
-		char *function_location = "/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/FillTalkBoxapp ";
+	    // char *function_location = "/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/FillTalkBoxapp ";
+
 		int temp_x = coords->x;
 		int temp_y = coords->y;
 		int x_size = 0;
@@ -572,13 +587,13 @@ static void gimp_helper_tool_button_release(GimpTool *tool,
 		int calling_size = strlen(function_location) + strlen(gchar_uri)
 				+ x_size + y_size + 3;
 		char function_calling[calling_size];
-			printf("The x is: %s\n", x_char);
-			printf("The y is: %s\n", y_char);
-			printf("The function_location is: %s\n", function_location);
-			printf("The uri is: %s\n", gchar_uri);
-			printf("x_size is : %d\n", x_size);
-			printf("y_size is : %d\n", y_size);
-			printf("callint size is : %d\n", calling_size);
+			// printf("The x is: %s\n", x_char);
+			// printf("The y is: %s\n", y_char);
+			// printf("The function_location is: %s\n", function_location);
+			// printf("The uri is: %s\n", gchar_uri);
+			// printf("x_size is : %d\n", x_size);
+			// printf("y_size is : %d\n", y_size);
+			// printf("callint size is : %d\n", calling_size);
 		//so far so good
 		{
 			int i = 0;
@@ -649,8 +664,17 @@ static void gimp_helper_tool_button_release(GimpTool *tool,
 			open_as_layers = (image != NULL);
 
 			//in for loop
-			const gchar *uri =
-					"/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/transparent_mask.png";
+		    char cwd2mask_png[] = "/app/tools/helpercore/temp/transparent_mask.png";
+
+		    char *transparent_mask_location;
+		    transparent_mask_location = malloc(strlen(cwd) + strlen(cwd2mask_png));
+		    strcpy(transparent_mask_location, cwd); /* copy name into the new var */
+			strcat(transparent_mask_location, cwd2mask_png); /* add the extension */
+			const gchar *uri = transparent_mask_location;
+			printf("The uri is: %s\n", uri);
+
+			// const gchar *uri =
+			// 		"/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/transparent_mask.png";
 			GimpPDBStatusType status;
 			GError *error = NULL;
 			gboolean warn = FALSE;
@@ -720,6 +744,27 @@ static void gimp_helper_tool_button_release(GimpTool *tool,
 			if (image)
 				gimp_image_flush(image);
 
+
+			//get all the path
+			char cwd2helper_translated_text[] = "/app/tools/helpercore/temp/Translated.txt";
+			char cwd2helper_border_text[] = "/app/tools/helpercore/temp/bounded_box_coordinate.txt";
+
+
+		    char *translated_text_location;
+		    char *border_text_location;
+
+		    translated_text_location = malloc(strlen(cwd) + strlen(cwd2helper_translated_text));
+		    border_text_location = malloc(strlen(cwd) + strlen(cwd2helper_border_text));
+
+		    strcpy(translated_text_location, cwd); /* copy name into the new var */
+			strcat(translated_text_location, cwd2helper_translated_text); /* add the extension */
+
+			strcpy(border_text_location, cwd); /* copy name into the new var */
+			strcat(border_text_location, cwd2helper_border_text); /* add the extension */
+
+
+
+
 			/*  插入文字  */
 			/*  auto text layer changes_isaiah  */
 
@@ -735,11 +780,11 @@ static void gimp_helper_tool_button_release(GimpTool *tool,
 			gchar *helper_border_text;
 //				helper_translated_text = "這是我的翻譯";
 			helper_translated_text =
-					read_file(
-							"/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/Translated.txt");
+					read_file(translated_text_location);
+					//"/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/Translated.txt"
 			helper_border_text =
-					read_file(
-							"/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/bounded_box_coordinate.txt");
+					read_file(border_text_location);
+					// "/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/bounded_box_coordinate.txt"
 			//printf(helper_border_text);
 
 			if (helper_border_text == "fail") {
