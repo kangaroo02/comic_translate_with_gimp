@@ -284,11 +284,11 @@ Mat FillTalkBox::chi_transparent_maker(Mat input)
 			pixel[3] = 0;
 			}
     }
-	imwrite("/home/isaiah/gimp-helper-2019/gimp-2.8.20/app/tools/helpercore/temp/transparent_mask.png", input_bgra);
+	imwrite("/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/transparent_mask.png", input_bgra);
 	
 	string coordinate = Get_bounded_box_coordinate(input);
 	
-	std::ofstream outfile("/home/isaiah/gimp-helper-2019/gimp-2.8.20/app/tools/helpercore/temp/bounded_box_coordinate.txt");
+	std::ofstream outfile("/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/bounded_box_coordinate.txt");
 	outfile << coordinate <<std::endl;
 	outfile.close();
 
@@ -319,7 +319,7 @@ Mat FillTalkBox::chi_extract_word(Mat original, Mat transparent_mask){
 			}
 		}
 	}
-	imwrite("/home/isaiah/gimp-helper-2019/gimp-2.8.20/app/tools/helpercore/temp/talkbox.jpg", extract_word);
+	imwrite("/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/talkbox.jpg", extract_word);
 	return extract_word;
 }
 

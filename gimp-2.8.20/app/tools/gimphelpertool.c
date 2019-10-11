@@ -20,6 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 /* changes_isaiah */
+#include <limits.h> /* PATH_MAX */
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -548,8 +549,7 @@ static void gimp_helper_tool_button_release(GimpTool *tool,
 
 	} else {
 
-		char *function_location =
-				"/home/isaiah/gimp-helper-2019/gimp-2.8.20/app/tools/helpercore/FillTalkBoxapp ";
+		char *function_location = "/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/FillTalkBoxapp ";
 		int temp_x = coords->x;
 		int temp_y = coords->y;
 		int x_size = 0;
@@ -572,13 +572,13 @@ static void gimp_helper_tool_button_release(GimpTool *tool,
 		int calling_size = strlen(function_location) + strlen(gchar_uri)
 				+ x_size + y_size + 3;
 		char function_calling[calling_size];
-		//		printf("The x is: %s\n", x_char);
-		//		printf("The y is: %s\n", y_char);
-		//		printf("The function_location is: %s\n", function_location);
-		//		printf("The uri is: %s\n", gchar_uri);
-		//		printf("x_size is : %d\n", x_size);
-		//		printf("y_size is : %d\n", y_size);
-		//		printf("callint size is : %d\n", calling_size);
+			printf("The x is: %s\n", x_char);
+			printf("The y is: %s\n", y_char);
+			printf("The function_location is: %s\n", function_location);
+			printf("The uri is: %s\n", gchar_uri);
+			printf("x_size is : %d\n", x_size);
+			printf("y_size is : %d\n", y_size);
+			printf("callint size is : %d\n", calling_size);
 		//so far so good
 		{
 			int i = 0;
@@ -650,7 +650,7 @@ static void gimp_helper_tool_button_release(GimpTool *tool,
 
 			//in for loop
 			const gchar *uri =
-					"/home/isaiah/gimp-helper-2019/gimp-2.8.20/app/tools/helpercore/temp/transparent_mask.png";
+					"/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/transparent_mask.png";
 			GimpPDBStatusType status;
 			GError *error = NULL;
 			gboolean warn = FALSE;
@@ -726,7 +726,7 @@ static void gimp_helper_tool_button_release(GimpTool *tool,
 			text_tool->image = image;					//set image				
 			int status_of_detect_and_translate =
 					system(
-							"python3.5 /home/isaiah/gimp-helper-2019/gimp-2.8.20/app/tools/helpercore/Detect_and_Translate.py");
+							"python3 /home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/Detect_and_Translate.py");
 
 //				std::ifstream read_translated("/home/isaiah/gimp-helper-2019/gimp-2.8.20/app/tools/helpercore/temp/Translated.txt");
 //				std::string read_translated_str((std::istreambuf_iterator<char>(t)), std::istreambuf_iterator<char>());
@@ -736,10 +736,10 @@ static void gimp_helper_tool_button_release(GimpTool *tool,
 //				helper_translated_text = "這是我的翻譯";
 			helper_translated_text =
 					read_file(
-							"/home/isaiah/gimp-helper-2019/gimp-2.8.20/app/tools/helpercore/temp/Translated.txt");
+							"/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/Translated.txt");
 			helper_border_text =
 					read_file(
-							"/home/isaiah/gimp-helper-2019/gimp-2.8.20/app/tools/helpercore/temp/bounded_box_coordinate.txt");
+							"/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/bounded_box_coordinate.txt");
 			//printf(helper_border_text);
 
 			if (helper_border_text == "fail") {
