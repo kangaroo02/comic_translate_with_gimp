@@ -95,38 +95,6 @@ The following three are only valid for that session if you for any reason restar
 
    		cd gimp-2.8.20/
 	
-	
-	
-	
-- - - 
-### NOW WE NEED TO CHANGE THE PATH IN THE CODE,
-some of the path variable that should be auto-detect when installing gimp are written and now are fixed(I don’t know how to restore it), so we have to change the path variable manually.(sorry
-
-	grep -rl "/home/isaiah/gimp-helper-2019/gimp-2.8.20/" | xargs sed -i "s#/home/isaiah/gimp-helper-2019/gimp-2.8.20/#  PLEASE INPUT YOUR PATH HERE    #g"
-
- FOR EXAMPLE :  my path is “/home/username/path_to_helper/comic-translate-helper/gimp-2.8.20/”
- 
- THAN I SHALL INPUT : 
-
-	grep -rl "/home/isaiah/gimp-helper-2019/gimp-2.8.20/" | xargs sed -i "s#/home/isaiah/gimp-helper-2019/gimp-2.8.20/#/home/isaiah/path_to_helper/comic-translate-helper/gimp-2.8.20/#g"
-
-- - - 
-
-### CHANGING PYTHON VERSION ONLY IF YOUR PYTHON IS NOT 3.5
-how to change the default pytyon version in your system:https://unix.stackexchange.com/questions/410579/change-the-python3-default-version-in-ubuntu
-
- 	grep -rl "python3.5" | xargs sed -i "s#python3.5#   YOUR PYTHON VERSION    #g"
-
- TO CHECK THE PYTHON VERSION
-
-	ls -ls /usr/bin/python*
-	python --version
-
- EXAMPLE (python3.6 for me)
-
-	grep -rl "python3.5" | xargs sed -i "s#python3.5#python3.6#g"
-
-- - -
 
 ### Install gimp
 		sudo apt install python-gtk2 python-gtk2-dev
@@ -149,7 +117,6 @@ https://pydeeplearning.com/opencv/install-opencv-with-c-on-ubuntu-18-04/
 		sudo apt-get install libopencv-dev
 
 
-
 >  7. step : install  pytesseract
 https://pypi.org/project/pytesseract/
 https://github.com/tesseract-ocr/tesseract/wiki
@@ -169,7 +136,7 @@ english
  	  	sudo apt-get install tesseract-ocr-eng
 chinese traditional
 
-  	 	sudo apt-get install tesseract-ocr-chi_tra
+  	 	sudo apt-get install tesseract-ocr-chi-tra
 	
 
 >  8. step : install googletrans
