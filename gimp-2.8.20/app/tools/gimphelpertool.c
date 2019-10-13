@@ -671,7 +671,7 @@ static void gimp_helper_tool_button_release(GimpTool *tool,
 		    strcpy(transparent_mask_location, cwd); /* copy name into the new var */
 			strcat(transparent_mask_location, cwd2mask_png); /* add the extension */
 			const gchar *uri = transparent_mask_location;
-			printf("The uri is: %s\n", uri);
+			// printf("The uri is: %s\n", uri);
 
 			// const gchar *uri =
 			// 		"/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/transparent_mask.png";
@@ -746,6 +746,8 @@ static void gimp_helper_tool_button_release(GimpTool *tool,
 
 
 			//get all the path
+			// cwd = /home/isaiah/comic_translate_with_gimp/gimp-2.8.20
+
 			char cwd2helper_translated_text[] = "/app/tools/helpercore/temp/Translated.txt";
 			char cwd2helper_border_text[] = "/app/tools/helpercore/temp/bounded_box_coordinate.txt";
 
@@ -763,15 +765,25 @@ static void gimp_helper_tool_button_release(GimpTool *tool,
 			strcat(border_text_location, cwd2helper_border_text); /* add the extension */
 
 
+		    char using_python[] = "python3 ";
+		    char cwd_2_Detect_and_Translate[] = "/app/tools/helpercore/Detect_and_Translate.py";
+		    char *Detect_and_Translate_location;
+		    Detect_and_Translate_location = malloc(strlen(cwd) + strlen(cwd_2_Detect_and_Translate));
+		    strcpy(Detect_and_Translate_location, cwd); /* copy name into the new var */
+			strcat(Detect_and_Translate_location, cwd_2_Detect_and_Translate); /* add the extension */
 
+		    char *system_Detect_and_Translate_py;
+		    system_Detect_and_Translate_py = malloc(strlen(using_python) + strlen(Detect_and_Translate_location));
+		    strcpy(system_Detect_and_Translate_py, using_python); /* copy name into the new var */
+			strcat(system_Detect_and_Translate_py, Detect_and_Translate_location); /* add the extension */
 
 			/*  插入文字  */
 			/*  auto text layer changes_isaiah  */
 
 			text_tool->image = image;					//set image				
 			int status_of_detect_and_translate =
-					system(
-							"python3 /home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/Detect_and_Translate.py");
+					system(system_Detect_and_Translate_py);
+					// "python3 /home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/Detect_and_Translate.py");
 
 //				std::ifstream read_translated("/home/isaiah/gimp-helper-2019/gimp-2.8.20/app/tools/helpercore/temp/Translated.txt");
 //				std::string read_translated_str((std::istreambuf_iterator<char>(t)), std::istreambuf_iterator<char>());
