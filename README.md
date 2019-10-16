@@ -23,7 +23,7 @@ The fellowing code are executed in ubuntu system.
 make sure that all your path are in english
 my path is only "/helper/"
 
-		git clone https://github.com/kangaroo02/comic-translate-helper.git
+		git clone https://github.com/kangaroo02/comic_translate_with_gimp.git
 
 
 >  2. step : install the dependence of gimp
