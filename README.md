@@ -63,9 +63,10 @@ https://askubuntu.com/questions/496549/error-you-must-put-some-source-uris-in-yo
 
 The following three are only valid for that session if you for any reason restart the terminal, you'll have to execute them again
 
-		export PATH=/opt/gimp-2.8/bin:$PATH
-		export PKG_CONFIG_PATH=/opt/gimp-2.8/lib/pkgconfig
-		export LD_LIBRARY_PATH=/opt/gimp-2.8/lib
+	export PATH=/opt/gimp-2.8/bin:$PATH
+	export PKG_CONFIG_PATH=/opt/gimp-2.8/lib/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}}
+	export LD_LIBRARY_PATH=/opt/gimp-2.8/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
 
 (Remember the above three have to be executed again if you restart your session. )
 
@@ -156,6 +157,6 @@ https://py-googletrans.readthedocs.io/en/latest/
 ## Run comic translate helper (actually gimp) in terminal
 
 	export PATH=/opt/gimp-2.8/bin:$PATH
-	export PKG_CONFIG_PATH=/opt/gimp-2.8/lib/pkgconfig
-	export LD_LIBRARY_PATH=/opt/gimp-2.8/lib
+	export PKG_CONFIG_PATH=/opt/gimp-2.8/lib/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}}
+	export LD_LIBRARY_PATH=/opt/gimp-2.8/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 	gimp
