@@ -116,7 +116,7 @@ https://pydeeplearning.com/opencv/install-opencv-with-c-on-ubuntu-18-04/
 		sudo apt-get update
 		sudo apt-get upgrade
 		sudo apt-get install libopencv-dev
-		pip3 install opencv-contrib-python
+		sudo pip3 install opencv-contrib-python
 
 >  7. step : install  pytesseract
 https://pypi.org/project/pytesseract/
