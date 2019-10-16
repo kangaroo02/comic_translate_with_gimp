@@ -1,3 +1,6 @@
+## Demonstration
+https://www.youtube.com/watch?v=me0RL50W8ZU&feature=youtu.be
+
 ## Discription 
 The is a comic translate helper tool, uploaded by Isaiah Yang.
 (I would rather use the word "uploaded" because 99% of the code are written by other open sources, I just changes a little of it, contains 99.9 % Gimp 2.8.20)
