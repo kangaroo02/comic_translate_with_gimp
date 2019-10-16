@@ -159,6 +159,8 @@ https://py-googletrans.readthedocs.io/en/latest/
 	export PATH=/opt/gimp-2.8/bin:$PATH
 	export PKG_CONFIG_PATH=/opt/gimp-2.8/lib/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}}
 	export LD_LIBRARY_PATH=/opt/gimp-2.8/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+	
+	//cd to your gimp2.8 folder
 	gimp
 
 
