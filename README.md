@@ -160,3 +160,15 @@ https://py-googletrans.readthedocs.io/en/latest/
 	export PKG_CONFIG_PATH=/opt/gimp-2.8/lib/pkgconfig${PKG_CONFIG_PATH:+:${PKG_CONFIG_PATH}}
 	export LD_LIBRARY_PATH=/opt/gimp-2.8/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 	gimp
+
+
+>  step : change translate language
+
+	cd gimp-2.8.20/app/tools/helpercore
+	edit Detect_and_Translate.py
+
+input:tesseract-ocr language list
+https://askubuntu.com/questions/793634/how-do-i-install-a-new-language-pack-for-tesseract-on-16-04
+
+output:googletrans language list
+https://py-googletrans.readthedocs.io/en/latest/
