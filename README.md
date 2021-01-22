@@ -119,14 +119,15 @@ https://pydeeplearning.com/opencv/install-opencv-with-c-on-ubuntu-18-04/
 		sudo apt-get update
 		sudo apt-get upgrade
 		sudo apt-get install libopencv-dev
-		sudo pip3 install opencv-contrib-python
 
->  7. step : install  pytesseract
+>  7. step : install  pytesseract (change the python version as yours)
 https://pypi.org/project/pytesseract/
 https://github.com/tesseract-ocr/tesseract/wiki
 
 		sudo apt-get install python3-pip
-		sudo pip3 install pytesseract
+		python3.6 -m pip install --upgrade pip
+		sudo python3.6 -m pip install opencv-contrib-python
+		python3.6 -m pip install pytesseract
 		sudo apt-get install tesseract-ocr
 		sudo apt install libtesseract-dev
 
@@ -135,6 +136,7 @@ https://github.com/tesseract-ocr/tesseract/wiki
 japanese
 
    		sudo apt-get install tesseract-ocr-jpn
+   		sudo apt-get install tesseract-ocr-jpn-vert
 english
 
  	  	sudo apt-get install tesseract-ocr-eng
@@ -146,7 +148,7 @@ chinese traditional
 >  8. step : install googletrans
 https://py-googletrans.readthedocs.io/en/latest/
 
-		sudo pip3 install googletrans
+		python3.6 -m pip install googletrans==4.0.0-rc1
 
 
 >  9. step : rebuild something

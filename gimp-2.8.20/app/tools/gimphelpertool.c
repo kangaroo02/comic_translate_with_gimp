@@ -525,6 +525,11 @@ static void gimp_helper_tool_button_release(GimpTool *tool,
 		g_object_get(text_tool, "x1", &x1, "y1", &y1, "x2", &x2, "y2", &y2,
 				NULL);
 
+		if(y2>gimp_image_get_height(image) || y2<0 || x2 > gimp_image_get_width(image) || x2<0 ){
+			return;
+		}
+
+
 		if (release_type == GIMP_BUTTON_RELEASE_CLICK || (x2 - x1) < 3
 				|| (y2 - y1) < 3) {
 			/*  unless the rectangle is unreasonably small to hold any
@@ -636,7 +641,7 @@ static void gimp_helper_tool_button_release(GimpTool *tool,
 			}
 			function_calling[i] = ' ';
 		}
-		//printf("The calling is: %s\n", function_calling);
+		// printf("The calling is: %s\n", function_calling);
 		int status_of_fill_text_box = system(function_calling);
 
 		/* changes_isaiah 開始耍寶 插入圖片 */

@@ -13,6 +13,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "Find_path.cpp"
 
 
 Point FillTalkBox::activated_point = Point(-1, -1); //for mouse's usage
@@ -51,6 +52,15 @@ int FillTalkBox::talk_box_detect(int x, int y) {
 		if (activated_point.x == -1 && activated_point.y == -1) {
 			//imshow("【Original】", original);
 		}
+
+
+		if(x>original.cols or x<0 or y>original.rows or y<0){
+			activated_point.x = -1;
+			activated_point.y = -1;
+			return -1;
+		}
+
+
 		//doing jobs
 		if (activated_point.x != -1 && activated_point.y != -1) {
 			//stpe 0. find the cover color
@@ -80,7 +90,6 @@ int FillTalkBox::talk_box_detect(int x, int y) {
 
 			//step 6-3. save the talkbox
 			Mat talkbox = chi_extract_word(original, transparent_mask);
-
 			//These are useful but shouldn't be here
 			/*
 			//step 2-2. findContours;
@@ -216,8 +225,15 @@ Mat FillTalkBox::chi_inverse_extract(Mat input) {
 
 		}
 	}
+	int erosion_size = 5;
+	Mat element = getStructuringElement( MORPH_RECT,
+                                     Size( 2*erosion_size + 1, 2*erosion_size+1 ),
+                                     Point( erosion_size, erosion_size ) );
 
-	//imshow("【inverse extraction】", inverse_extraction);
+	erode(inverse_extraction, inverse_extraction, element);
+
+	// imshow("【inverse extraction】", inverse_extraction);
+	// waitKey(3000);
 	return inverse_extraction;
 }
 
@@ -284,11 +300,13 @@ Mat FillTalkBox::chi_transparent_maker(Mat input)
 			pixel[3] = 0;
 			}
     }
-	imwrite("/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/transparent_mask.png", input_bgra);
+
+    string path = get_current_dir();
+	imwrite(path + "/app/tools/helpercore/temp/transparent_mask.png", input_bgra);
 	
 	string coordinate = Get_bounded_box_coordinate(input);
 	
-	std::ofstream outfile("/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/bounded_box_coordinate.txt");
+	std::ofstream outfile(path + "/app/tools/helpercore/temp/bounded_box_coordinate.txt");
 	outfile << coordinate <<std::endl;
 	outfile.close();
 
@@ -301,6 +319,10 @@ Mat FillTalkBox::chi_extract_word(Mat original, Mat transparent_mask){
     cv::cvtColor(transparent_mask, extract_word, CV_BGR2BGRA);
     cv::cvtColor(original, original_bgra, CV_BGR2BGRA);
 	
+    // imshow("transparent_mask", transparent_mask);
+    // imshow("original", original);
+    // waitKey(2000);
+
 	for (int i = 0; i < transparent_mask.rows; i++) {
 		for (int j = 0; j < transparent_mask.cols; j++) {
 
@@ -319,7 +341,9 @@ Mat FillTalkBox::chi_extract_word(Mat original, Mat transparent_mask){
 			}
 		}
 	}
-	imwrite("/home/isaiah/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/temp/talkbox.jpg", extract_word);
+	string path = get_current_dir();
+	imwrite(path + "/app/tools/helpercore/temp/talkbox.jpg", extract_word);
+	// cout << path + "/app/tools/helpercore/temp/talkbox.jpg" << endl;
 	return extract_word;
 }
 

@@ -33,7 +33,7 @@ int main(int argc, char **argv) {
 
 
 	//default
-	FillTalkBox a("file:///home/isaiah/gimp-helper-2019/gimp-2.8.20/app/tools/helpercore/OnePiece-2.jpg");
+	FillTalkBox a("file:////home/ubuntu/comic_translate_with_gimp/gimp-2.8.20/app/tools/helpercore/OnePiece-2.jpg");
 	a.talk_box_detect(10, 10);
 
 	//printf("Success!\n");
